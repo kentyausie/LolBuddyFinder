@@ -218,6 +218,7 @@ h2 {
 <input type="checkbox" value="akali"><img src="/champion_icons/akali.png" height=50></img>Akali</input>
 <input type="checkbox" value="alistar"><img src="/champion_icons/alistar.png" height=50></img>Alistar</input>
 <input type="checkbox" value="amumu"><img src="/champion_icons/amumu.png" height=50></img>Amumu</input>
+<input type="checkbox" value="anivia"><img src="/champion_icons/anivia.png" height=50></img>Anivia</input>
 <br>
 <input class="submitButton" type="submit" name="submit" value="Submit">
 </p>
