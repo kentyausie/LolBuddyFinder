@@ -29,8 +29,9 @@
 <body>
 <h2>Sign up form</h2>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-<p class="align">
 <p class="box">
+<p class="align">
+
 <input class="textbox" type="text" name="sumName" placeholder="Summoner Name" value=""><br>
 
 <input class="textbox" type="email" name="email" placeholder="Email" value=""><br>
