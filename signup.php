@@ -1,4 +1,4 @@
-//<?php include 'validation.php';?>
+<?php include 'validation.php';?>
 <!DOCTYPE HTML>
 <html>
 <head>
