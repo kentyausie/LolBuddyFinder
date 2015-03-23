@@ -15,6 +15,11 @@
 	height:5%;
 }
 
+h2 {
+	text-align:center;
+	font-size:50px;
+}
+
 </style>
 <head>
 <img src="headpic.jpg" class="headImg"
