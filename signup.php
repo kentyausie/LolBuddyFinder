@@ -37,7 +37,7 @@ function KeepCount() {
 </script>
 
 <head>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style.css">
 <!--<img src="headpic.jpg" class="headImg"></img>-->
 <title>Sign up form</title>
 </head>
