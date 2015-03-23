@@ -25,10 +25,10 @@
 }
 .selectBox2 {
 	width: 240px;
-   height: 34px;
-   overflow: hidden;
-   background: url(new_arrow.png) no-repeat right #ddd;
-   border: 1px solid #ccc;
+	height: 34px;
+	overflow: hidden;
+	background: url(new_arrow.png) no-repeat right #ddd;
+	border: 1px solid #000;
 }
 
 h2 {
