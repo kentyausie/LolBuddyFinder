@@ -13,6 +13,7 @@ border-width: medium;
 }
 .headImg {
 	width:100%;
+	height:10%;
 }
 
 </style>
