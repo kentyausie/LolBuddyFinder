@@ -43,7 +43,7 @@ function KeepCount() {
 </head>
 
 <body>
-<h2>Sign up form</h2>
+<h2>Sign Up Form</h2>
 <form method="post" name="signupForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
 <p class="align">
