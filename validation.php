@@ -1,3 +1,15 @@
+<?php
+$server = "tcp:kqkok1b1b2.database.windows.net,1433";
+$user = "kyausie_lolbuddyfinder@kqkok1b1b2";
+$pwd = "THrawn23";
+$db = "lolbuddyfinder";
+
+$conn = sqlsrv_connect($server, array("UID"=>$user, "PWD"=>$pwd, "Database"=>$db));
+
+if($conn === false){
+    die(print_r(sqlsrv_errors()));
+}
+
 $fname =""; // Sender Name
 $lname =""; // Sender Name
 $company =""; // Subject of mail
@@ -146,14 +158,16 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 
 	if($valid=="true"){
 
-		$sql = "INSERT INTO address_book (first, last, company, phone, email, website, address1, address2, city, province, postal, birthday, date, notes) VALUES ('".$fname."','".$lname."','".$company."','".$phone."','".$email."','".$website."','".$address1."','".$address2."','".$city."','".$province."','".$postal."','".$birthday."','".$date."','".$notes."')";
-
-		if ($conn->query($sql) === TRUE) {
+		$sql = "INSERT INTO dbo.address_book (first, last, company, phone, email, website, address1, address2, city, province, postal, birthday, date, notes) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+		$params = array(&$fname,&$lname,&$company,&$phone,&$email,&$website,&$address1,&$address2,&$city,&$province,&$postal,&$birthday,&$date,&$notes);
+		$stmt = sqlsrv_query( $conn, $sql, $params);
+		if ($stmt) {
 	 	   echo "New record created successfully<br>";
 		} else {
-		    echo "Error: " . $sql . "<br>" . $conn->error;
+			echo "FAIL";
+		    die( print_r(sqlsvr_errors(),true));
 		}
-               echo "<a href=SQLindex.html>Home</a>";
+        echo "<a href=index.html>Home</a>";
 	}
 	$conn->close();
 }
