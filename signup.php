@@ -27,7 +27,7 @@
 	width: 300px;
 	height: 34px;
 	overflow: hidden;
-	background: url(new_arrow.png) no-repeat right #000;
+	background: url(new_arrow.png) no-repeat right #fff;
 	border: 1px solid #000;
 }
 
