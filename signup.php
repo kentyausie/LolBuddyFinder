@@ -188,7 +188,7 @@
 </p>
 </form>
 
-<form action="signup.php">
+<form action="index.html">
     <p class="align">
     <input type="submit" value="Home" class="submitButton">
 	</p>
