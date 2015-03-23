@@ -1,7 +1,6 @@
 <?php include 'validation.php';?>
 <!DOCTYPE HTML>
 <html>
-<head>
 <style>
 .error {color: #FF0000;}
 .box {
@@ -12,8 +11,13 @@ border-width: medium;
 	height:30px;
 	font-size:25px;
 }
+.headImg {
+	width:100%;
+}
 
 </style>
+<head>
+<img src="headpic.jpg" class="headImg"
 <title>Sign up form</title>
 </head>
 <body>
