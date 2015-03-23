@@ -9,7 +9,8 @@
 border-width: medium;
 }
 .textbox {
-	height:200px;
+	height:50px;
+	font-size:40px;
 }
 
 </style>
