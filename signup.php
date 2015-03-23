@@ -21,6 +21,7 @@
     padding-bottom: 25px;
     padding-left: 50px;
     line-height:50px;
+    -webkit-appearance: menulist-button;
 }
 
 h2 {
