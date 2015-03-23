@@ -1,4 +1,4 @@
-<?php include 'validation.php';?>
+//<?php include 'validation.php';?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -10,12 +10,12 @@ border-width: medium;
 }
 
 </style>
-<title>PHP Contact Form with Validation</title>
+<title>Sign up form</title>
 </head>
 <body>
 <div class="container">
 <div class="main">
-<h2>PHP Contact Form with Validation</h2>
+<h2>Sign up form</h2>
 <p><span class="error">* required field.</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 <p class="box">
