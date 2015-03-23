@@ -6,11 +6,6 @@
 	width:100%;
 	text-align:center;
 }
-.box {
-	border-style: inset;
-    border-width: medium;
-    width:100%;
-}
 .textbox {
 	height:30px;
 	font-size:25px;
@@ -29,7 +24,7 @@
 <body>
 <h2>Sign up form</h2>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-<p class="">
+
 <p class="align">
 
 <input class="textbox" type="text" name="sumName" placeholder="Summoner Name" value=""><br>
@@ -39,13 +34,16 @@
 <input class="textbox" type="password" name="password1" placeholder="Password" value=""><br>
 
 <input class="textbox" type="password" name="password2" placeholder="Re-type Password" value=""><br>
-</p>
-</p>
+
+
 <input class="textbox" type="submit" name="submit" value="Submit">
+</p>
 </form>
 
 <form action="signup.php">
+    <p class="align">
     <input type="submit" value="Home" class="textbox">
+	</p>
 </form>
 
 </div>
