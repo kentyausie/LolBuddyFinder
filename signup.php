@@ -20,6 +20,7 @@ select {
     padding-right: 50px;
     padding-bottom: 25px;
     padding-left: 50px;
+    height:50px;
 }
 
 h2 {
