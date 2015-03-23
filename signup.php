@@ -30,7 +30,7 @@ h2 {
 
 </style>
 <head>
-<img src="headpic.jpg" class="headImg"
+<img src="headpic.jpg" class="headImg"></img>
 <title>Sign up form</title>
 </head>
 
