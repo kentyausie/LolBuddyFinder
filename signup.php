@@ -7,13 +7,14 @@
 	border-style: inset;
 	border-width: medium;
 	width:50%;
+	text-align:center;
 }
 .textbox {
 	height:30px;
 	font-size:25px;
 }
 .headImg {
-	width:50%;
+	width:100%;
 	height:5%;
 }
 
@@ -42,12 +43,12 @@
 <span class="error">*<?php echo $phoneError;?></span><br>
 
 </p>
-<input class="submit" type="submit" name="submit" value="Submit">
+<input class="textbox" type="submit" name="submit" value="Submit">
 <span class="success"><?php echo $successMessage;?></span><br>
 </form>
 
 <form action="signup.php">
-    <input type="submit" value="Home">
+    <input type="submit" value="Home" class="textbox">
 </form>
 
 </div>
