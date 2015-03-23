@@ -72,7 +72,7 @@ function KeepCount() {
 	
 	if (NewCount == 6)
 	{
-		alert('Pick No More Than Please')
+		alert('Pick No More Than Five')
 		document.signupForm; return false;
 	}
 } 
