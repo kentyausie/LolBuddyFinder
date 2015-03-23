@@ -20,48 +20,17 @@ border-width: medium;
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 <p class="box">
 <input class="input" type="text" name="sumName" placeholder="Summoner Name" value="">
-<span class="error">*<?php echo $fnameError;?></span><br>
+//<span class="error">*<?php echo $fnameError;?></span><br>
 
-<input class="email" type="text" name="email" placeholder="email" value="">
-<span class="error">*<?php echo $lnameError;?></span><br>
+<input class="email" type="email" name="email" placeholder="email" value="">
+//<span class="error">*<?php echo $lnameError;?></span><br>
 
-<input class="input" type="text" name="company" value="">
-<span class="error"><?php echo $companyError;?></span><br>
-<label>Phone :</label>
-<input class="input" type="text" name="phone" value="">
-<span class="error">*<?php echo $phoneError;?></span><br>
-<label>Email :</label>
-<input class="input" type="email" name="email" value="">
-<span class="error">*<?php echo $emailError;?></span><br>
-<label>Website :</label>
-<input class="input" type="url" name="website" value="">
-<span class="error"><?php echo $websiteError;?></span><br>
-<label>Address 1 :</label>
-<input class="input" type="text" name="address1" value="">
-<span class="error">*<?php echo $address1Error;?></span><br>
-<label>Address 2 :</label>
-<input class="input" type="text" name="address2" value="">
-<span class="error"><?php echo $address2Error;?></span><br>
-<label>City :</label>
-<input class="input" type="text" name="city" value="">
-<span class="error">*<?php echo $cityError;?></span><br>
-<label>Province :</label> <select name="province">
-                        <option value="Select" disabled>Select</option>
-                        <option value="AB">AB</option>
-                        <option value="BC">BC</option>
-                        <option value="MB">MB</option>
-                        <option value="NB">NB</option>
-                        <option value="NL">NL</option>
-                        <option value="NS">NS</option>
-                        <option value="NT">NT</option>
-                        <option value="NU">NU</option>
-                        <option value="ON">ON</option>
-                        <option value="PE">PE</option>
-                        <option value="QC">QC</option>
-                        <option value="SK">SK</option>
-                        <option value="YT">YT</option>
+<input class="input" type="password" name="password1" placeholder="Password" value="">
+//<span class="error"><?php echo $companyError;?></span><br>
 
-                        </select><span class="error">*<?php echo $provinceError;?></span><br>
+<input class="input" type="password" name="password2" placeholder="Re-type Password" value="">
+//<span class="error">*<?php echo $phoneError;?></span><br>
+
 </p>
 <input class="submit" type="submit" name="submit" value="Submit">
 <span class="success"><?php echo $successMessage;?></span><br>
