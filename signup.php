@@ -40,6 +40,8 @@ function KeepCount() {
 <link rel="stylesheet" href="style.css">
 <!--<img src="headpic.jpg" class="headImg"></img>-->
 <title>Sign up form</title>
+<p style="logo" onClick="index.html">League of Legends</p>
+<p style="logo" onClick="index.html">Buddy Finder</p>
 </head>
 
 <body>
