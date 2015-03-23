@@ -33,10 +33,10 @@ border-width: medium;
 
 </p>
 <input class="submit" type="submit" name="submit" value="Submit">
-<span class="success"><?php echo $successMessage;?></span><br>
+//<span class="success"><?php echo $successMessage;?></span><br>
 </form>
 
-<form action="SQLindex.html">
+<form action="signup.php">
     <input type="submit" value="Home">
 </form>
 
