@@ -16,11 +16,11 @@
 }
 
 .selectBox {
-	padding-top: 25px;
-    padding-right: 50px;
-    padding-bottom: 25px;
-    padding-left: 50px;
-    line-height:50px;
+	padding-top: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    line-height:100px;
     -webkit-appearance: menulist-button;
 }
 
