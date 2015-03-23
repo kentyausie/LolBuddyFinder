@@ -213,7 +213,7 @@ h2 {
 <option value="Tokelau Is.">(GMT+13:00) Tokelau Is.</option>
 </select><br>
 
-<input type="checkbox" value="aatrox"><img src="champion_icons/aarox.jpg"></img>Aatrox</input><br>
+<input type="checkbox" value="aatrox"><img src="/champion_icons/aarox.png"></img>Aatrox</input><br>
 <input class="submitButton" type="submit" name="submit" value="Submit">
 </p>
 </form>
