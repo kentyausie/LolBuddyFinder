@@ -1,4 +1,5 @@
 <?php
+/*
 $server = "tcp:kqkok1b1b2.database.windows.net,1433";
 $user = "kyausie_lolbuddyfinder@kqkok1b1b2";
 $pwd = "THrawn23";
@@ -9,7 +10,7 @@ $conn = sqlsrv_connect($server, array("UID"=>$user, "PWD"=>$pwd, "Database"=>$db
 if($conn === false){
     die(print_r(sqlsrv_errors()));
 }
-
+*/
 $fname =""; // Sender Name
 $lname =""; // Sender Name
 $company =""; // Subject of mail
