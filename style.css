@@ -41,6 +41,11 @@ h2 {
 	cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
 }
 
+.topButton {
+	width:100px;
+	background:#3e9cbf;
+}
+
 .logo {
 	font-size:20px;
 	text-align:left;
