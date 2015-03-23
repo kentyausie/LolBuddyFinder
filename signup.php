@@ -12,7 +12,7 @@ border-width: medium;
 	font-size:25px;
 }
 .headImg {
-	width:100%;
+	width:50%;
 	height:5%;
 }
 
