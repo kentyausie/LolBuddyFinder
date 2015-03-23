@@ -20,6 +20,14 @@ h2 {
 	font-size:50px;
 }
 
+.submitButton {
+	width:500px;
+	background: #3e9cbf; /*the colour of the button*/
+	padding: 8px 14px 10px; /*apply some padding inside the button*/
+	border:1px solid #3e9cbf; /*required or the default border for the browser will appear*/
+	cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+}
+
 </style>
 <head>
 <img src="headpic.jpg" class="headImg"
