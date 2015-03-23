@@ -55,7 +55,7 @@ h2 {
 
 <form action="signup.php">
     <p class="align">
-    <input type="submit" value="Home" class="textbox">
+    <input type="submit" value="Home" class="submitButton">
 	</p>
 </form>
 
