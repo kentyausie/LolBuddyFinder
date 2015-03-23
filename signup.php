@@ -212,7 +212,7 @@ h2 {
 <option value="Nuku&#39;alofa">(GMT+13:00) Nuku&#39;alofa</option>
 <option value="Tokelau Is.">(GMT+13:00) Tokelau Is.</option>
 </select><br>
-
+<label>Select up to 5 champions</label>
 <input type="checkbox" value="aatrox"><img src="/champion_icons/aatrox.png" height=10></img>Aatrox</input><br>
 <input class="submitButton" type="submit" name="submit" value="Submit">
 </p>
