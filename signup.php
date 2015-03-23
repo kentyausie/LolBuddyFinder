@@ -21,7 +21,7 @@ h2 {
 }
 
 .submitButton {
-	width:300px;
+	width:250px;
 	background: #3e9cbf; /*the colour of the button*/
 	padding: 8px 14px 10px; /*apply some padding inside the button*/
 	border:1px solid #3e9cbf; /*required or the default border for the browser will appear*/
