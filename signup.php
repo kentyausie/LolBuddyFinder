@@ -49,7 +49,7 @@ h2 {
 <input class="textbox" type="password" name="password2" placeholder="Re-type Password" value=""><br>
 
 
-<input class="textbox" type="submit" name="submit" value="Submit">
+<input class="submitButton" type="submit" name="submit" value="Submit">
 </p>
 </form>
 
