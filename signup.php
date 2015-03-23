@@ -24,7 +24,7 @@
     font-size:25px;
 }
 .selectBox2 {
-	width: 240px;
+	width: 300px;
 	height: 34px;
 	overflow: hidden;
 	background: url(new_arrow.png) no-repeat right #ddd;
