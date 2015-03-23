@@ -4,8 +4,9 @@
 <style>
 .error {color: #FF0000;}
 .box {
-		border-style: inset;
-border-width: medium;
+	border-style: inset;
+	border-width: medium;
+	width:50%;
 }
 .textbox {
 	height:30px;
@@ -27,7 +28,7 @@ border-width: medium;
 <h2>Sign up form</h2>
 <p><span class="error">* required field.</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-<p class="">
+<p class="box">
 <input class="textbox" type="text" name="sumName" placeholder="Summoner Name" value="">
 <span class="error">*<?php echo $sumError;?></span><br>
 
