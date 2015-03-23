@@ -9,7 +9,7 @@
 .box {
 	border-style: inset;
     border-width: medium;
-    width:25%;
+    width:100%;
 }
 .textbox {
 	height:30px;
