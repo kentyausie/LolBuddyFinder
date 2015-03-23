@@ -215,6 +215,9 @@ h2 {
 <label>Select up to 5 champions:</label><br>
 <input type="checkbox" value="aatrox"><img src="/champion_icons/aatrox.png" height=50></img>Aatrox</input>
 <input type="checkbox" value="ahri"><img src="/champion_icons/ahri.png" height=50></img>Ahri</input>
+<input type="checkbox" value="akali"><img src="/champion_icons/akali.png" height=50></img>Akali</input>
+<input type="checkbox" value="alistar"><img src="/champion_icons/alistar.png" height=50></img>Alistar</input>
+<input type="checkbox" value="amumu"><img src="/champion_icons/amumu.png" height=50></img>Amumu</input>
 <br>
 <input class="submitButton" type="submit" name="submit" value="Submit">
 </p>
