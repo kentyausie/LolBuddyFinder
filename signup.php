@@ -23,6 +23,13 @@
     line-height:100px;
     font-size:25px;
 }
+.selectBox2 {
+	width: 240px;
+   height: 34px;
+   overflow: hidden;
+   background: url(new_arrow.png) no-repeat right #ddd;
+   border: 1px solid #ccc;
+}
 
 h2 {
 	text-align:center;
@@ -57,7 +64,7 @@ h2 {
 
 <input class="textbox" type="password" name="password2" placeholder="Re-type Password" value=""><br>
 
-<select class="selectBox" name="user[time_zone]" id="user_time_zone">
+<select class="selectBox2" name="user[time_zone]" id="user_time_zone">
 <option value="American Samoa">(GMT-11:00) American Samoa</option>
 <option value="International Date Line West">(GMT-11:00) International Date Line West</option>
 <option value="Midway Island">(GMT-11:00) Midway Island</option>
