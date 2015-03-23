@@ -29,7 +29,7 @@
 <body>
 <h2>Sign up form</h2>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-<p class="box">
+<p class="">
 <p class="align">
 
 <input class="textbox" type="text" name="sumName" placeholder="Summoner Name" value=""><br>
