@@ -45,6 +45,39 @@ h2 {
 }
 
 </style>
+
+<script>
+
+function KeepCount() {
+
+	var NewCount = 0
+
+	if (document.signupForm.aatrox.checked)
+		{NewCount = NewCount + 1}
+
+	if (document.signupForm.ahri.checked)
+		{NewCount = NewCount + 1}
+
+	if (document.signupForm.akali.checked)
+		{NewCount = NewCount + 1}
+
+	if (document.signupForm.alistar.checked)
+		{NewCount = NewCount + 1}
+
+	if (document.signupForm.amumu.checked)
+		{NewCount = NewCount + 1}
+	
+	if (document.signupForm.anivia.checked)
+		{NewCount = NewCount + 1}
+	
+	if (NewCount == 6)
+	{
+		alert('Pick No More Than Please')
+		document.signupForm; return false;
+	}
+} 
+</script>
+
 <head>
 <!--<img src="headpic.jpg" class="headImg"></img>-->
 <title>Sign up form</title>
@@ -52,7 +85,7 @@ h2 {
 
 <body>
 <h2>Sign up form</h2>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+<form method="post" name="signupForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
 <p class="align">
 
@@ -213,12 +246,12 @@ h2 {
 <option value="Tokelau Is.">(GMT+13:00) Tokelau Is.</option>
 </select><br>
 <label>Select up to 5 champions:</label><br>
-<input type="checkbox" value="aatrox"><img src="/champion_icons/aatrox.png" height=50></img>Aatrox</input>
-<input type="checkbox" value="ahri"><img src="/champion_icons/ahri.png" height=50></img>Ahri</input>
-<input type="checkbox" value="akali"><img src="/champion_icons/akali.png" height=50></img>Akali</input>
-<input type="checkbox" value="alistar"><img src="/champion_icons/alistar.png" height=50></img>Alistar</input>
-<input type="checkbox" value="amumu"><img src="/champion_icons/amumu.png" height=50></img>Amumu</input>
-<input type="checkbox" value="anivia"><img src="/champion_icons/anivia.png" height=50></img>Anivia</input>
+<input type="checkbox" name="aatrox" value="aatrox" onClick="return KeepCount()"><img src="/champion_icons/aatrox.png" height=50></img>Aatrox</input>
+<input type="checkbox" name="ahri" value="ahri" onClick="return KeepCount()"><img src="/champion_icons/ahri.png" height=50></img>Ahri</input>
+<input type="checkbox" name="akali" value="akali" onClick="return KeepCount()"><img src="/champion_icons/akali.png" height=50></img>Akali</input>
+<input type="checkbox" name="alistar" value="alistar" onClick="return KeepCount()"><img src="/champion_icons/alistar.png" height=50></img>Alistar</input>
+<input type="checkbox" name="amumu" value="amumu" onClick="return KeepCount()"><img src="/champion_icons/amumu.png" height=50></img>Amumu</input>
+<input type="checkbox" name="anivia" value="anivia" onClick="return KeepCount()"><img src="/champion_icons/anivia.png" height=50></img>Anivia</input>
 <br>
 <input class="submitButton" type="submit" name="submit" value="Submit">
 </p>
