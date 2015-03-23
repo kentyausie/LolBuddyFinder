@@ -24,10 +24,6 @@
     font-size:25px;
 }
 .selectBox2 {
-	padding-top: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
 	width: 300px;
 	height: 34px;
 	overflow: hidden;
@@ -50,7 +46,7 @@ h2 {
 
 </style>
 <head>
-<img src="headpic.jpg" class="headImg"></img>
+<!--<img src="headpic.jpg" class="headImg"></img>-->
 <title>Sign up form</title>
 </head>
 
