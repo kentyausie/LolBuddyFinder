@@ -8,6 +8,9 @@
 		border-style: inset;
 border-width: medium;
 }
+.textbox {
+	height:200px;
+}
 
 </style>
 <title>Sign up form</title>
@@ -19,14 +22,14 @@ border-width: medium;
 <p><span class="error">* required field.</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 <p class="box">
-<input class="input" type="text" name="sumName" placeholder="Summoner Name" value="">
-<span class="error">*<?php echo $fnameError;?></span><br>
+<input class="textbox" type="text" name="sumName" placeholder="Summoner Name" value="">
+<span class="error">*<?php echo $sumError;?></span><br>
 
 <input class="email" type="email" name="email" placeholder="Email" value="">
 <span class="error">*<?php echo $lnameError;?></span><br>
 
 <input class="input" type="password" name="password1" placeholder="Password" value="">
-<span class="error"><?php echo $companyError;?></span><br>
+<span class="error">*<?php echo $companyError;?></span><br>
 
 <input class="input" type="password" name="password2" placeholder="Re-type Password" value="">
 <span class="error">*<?php echo $phoneError;?></span><br>
