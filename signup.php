@@ -22,7 +22,7 @@ border-width: medium;
 <h2>Sign up form</h2>
 <p><span class="error">* required field.</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-<p class="box">
+<p class="">
 <input class="textbox" type="text" name="sumName" placeholder="Summoner Name" value="">
 <span class="error">*<?php echo $sumError;?></span><br>
 
