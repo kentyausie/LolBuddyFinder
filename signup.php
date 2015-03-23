@@ -4,9 +4,7 @@
 <style>
 .error {color: #FF0000;}
 .box {
-	border-style: inset;
-	border-width: medium;
-	width:50%;
+	width:100%;
 	text-align:center;
 }
 .textbox {
