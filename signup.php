@@ -15,6 +15,13 @@
 	height:5%;
 }
 
+select {
+	padding-top: 25px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+}
+
 h2 {
 	text-align:center;
 	font-size:50px;
@@ -48,7 +55,7 @@ h2 {
 
 <input class="textbox" type="password" name="password2" placeholder="Re-type Password" value=""><br>
 
-<select class="textbox" name="user[time_zone]" id="user_time_zone">
+<select class="" name="user[time_zone]" id="user_time_zone">
 <option value="American Samoa">(GMT-11:00) American Samoa</option>
 <option value="International Date Line West">(GMT-11:00) International Date Line West</option>
 <option value="Midway Island">(GMT-11:00) Midway Island</option>
