@@ -24,15 +24,11 @@
     font-size:25px;
 }
 .selectBox2 {
-	padding-top: 100px;
-    padding-right: 100px;
-    padding-bottom: 100px;
-    padding-left: 100px;
 	width: 300px;
 	height: 34px;
 	overflow: hidden;
 	background: url(new_arrow.png) no-repeat right #fff;
-	border: 1px solid #000;
+	border: 1px solid #fff;
 }
 
 h2 {
