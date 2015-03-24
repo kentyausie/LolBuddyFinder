@@ -3,7 +3,10 @@ function KeepCount() {
 	var NewCount = 0
 
 	if (document.signupForm.aatrox.checked)
-		{NewCount = NewCount + 1}
+	{
+		NewCount = NewCount + 1;
+		alert("true");
+	}
 
 	if (document.signupForm.ahri.checked)
 		{NewCount = NewCount + 1}
