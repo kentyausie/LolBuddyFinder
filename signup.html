@@ -2,6 +2,27 @@
 <html>
 <style>
 
+  input[type=checkbox] {
+    display:none;
+  }
+
+  input[type=checkbox] + label
+   {
+       background: #999;
+       height: 16px;
+       width: 16px;
+       display:inline-block;
+       padding: 0 0 0 0px;
+   }
+   
+   input[type=checkbox]:checked + label
+    {
+        background: #0080FF;
+        height: 16px;
+        width: 16px;
+        display:inline-block;
+        padding: 0 0 0 0px;
+    }
 </style>
 
 <script src="myScripts.js"></script>
@@ -197,6 +218,7 @@ function check(var name){
 <input type="checkbox" name="amumu" value="amumu" onClick="return KeepCount()"><img src="/champion_icons/amumusquare.png" height=50 onClick="check(amumu)"></img></input>
 <input type="checkbox" name="anivia" value="anivia" onClick="return KeepCount()"><img src="/champion_icons/aniviasquare.png" height=50 onClick="check(anivia)"></img></input>
 <br>
+<input type='checkbox' name='thing' value='valuable' id="thing"/><label for="thing"></label>
 <input class="submitButton" type="submit" name="submit" value="Submit">
 </p>
 </form>
