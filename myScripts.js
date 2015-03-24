@@ -27,3 +27,7 @@ function KeepCount() {
 	}
 }
 
+function check(var name){
+	
+	
+}
