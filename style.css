@@ -2,7 +2,13 @@
 .align {
 	width:100%;
 	text-align:center;
+	color:#BCBCBB;
 }
+.alignWhite {
+	width:100%;
+	text-align:center;
+}
+
 .formDescriptions{
 	color:#BCBCBB;
 	text-align:center;
