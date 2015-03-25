@@ -74,6 +74,42 @@ function KeepCount() {
 	if (document.signupForm.ezreal.checked)
 		{NewCount = NewCount + 1}
 	
+	if (document.signupForm.fiddlesticks.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.fiora.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.fizz.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.galio.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.gangplank.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.garen.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.gnar.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.gragas.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.graves.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.hecarim.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.heimerdinger.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.irelia.checked)
+		{NewCount = NewCount + 1}
+	
 	if (NewCount == 6)
 	{
 		alert('Pick No More Than Five')
