@@ -19,6 +19,21 @@ function KeepCount() {
 	
 	if (document.signupForm.anivia.checked)
 		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.annie.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.ashe.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.azir.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.bard.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.braum.checked)
+		{NewCount = NewCount + 1}
 	
 	if (NewCount == 6)
 	{
