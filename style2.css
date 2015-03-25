@@ -3,28 +3,13 @@
 	width:100%;
 	text-align:center;
 }
-.formDescriptions{
-	color:#BCBCBB;
-	text-align:center;
-}
-.formDescriptionText{
-	color:#BCBCBB;
-}
-.formTextArea{
-text-align:center;
-}
-
 .textbox {
-	height:20px;
-	font-size:15px;
-	
+	height:30px;
+	font-size:25px;
 }
 .headImg {
 	width:100%;
-}
-
-.headText{
-	color:#BCBCBB;
+	height:5%;
 }
 
 .selectBox {
@@ -45,7 +30,7 @@ text-align:center;
 
 h2 {
 	text-align:center;
-	font-size:30px;
+	font-size:50px;
 }
 
 .submitButton {
@@ -59,15 +44,9 @@ h2 {
 	width:100px;
 	background:#3e9cbf;
 	border:1px solid #3e9cbf;
-	
 }
 
 .logo {
 	font-size:20px;
 	text-align:left;
 }
-
-body {
-    background-color: #1E1E1D;
-}
-
