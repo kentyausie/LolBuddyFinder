@@ -32,7 +32,46 @@ function KeepCount() {
 	if (document.signupForm.bard.checked)
 		{NewCount = NewCount + 1}
 		
+	if (document.signupForm.blitzcrank.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.brand.checked)
+		{NewCount = NewCount + 1}
+		
 	if (document.signupForm.braum.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.caitlyn.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.cassiopeia.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.chogath.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.corki.checked)
+		{NewCount = NewCount + 1}
+	
+	if (document.signupForm.darius.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.diana.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.draven.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.drmundo.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.elise.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.evelynn.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.ezreal.checked)
 		{NewCount = NewCount + 1}
 	
 	if (NewCount == 6)
