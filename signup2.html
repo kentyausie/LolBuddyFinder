@@ -29,33 +29,25 @@
 <script src="myScripts.js"></script>
 
 <head>
-<img src="head_img.jpg" class="headImg"></img>
 <link rel="stylesheet" href="style.css">
-<!--<img src="headpic.jpg" class="headImg"></img>-->
 <title>Sign up form</title>
+<p class="logo">League of Legends</p>
+<p class="logo">Buddy Finder</p>
 </head>
 
 <body>
-<h2 class="headText">LOL Buddy Finder </h2>
-<form method="post" name="signupForm" action="signup.html">
+<h2>Sign Up Form</h2>
+<form method="get" name="signupForm" action="signup.html">
 
 <p class="align">
 
-
-<label class="formDescriptionText">Summoner Name:&nbsp&nbsp</label>
-
 <input class="textbox" type="text" name="sumName" placeholder="Summoner Name" value=""><br>
 
-
-
-<label class="formDescriptionText">Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
-	
 <input class="textbox" type="email" name="email" placeholder="Email" value=""><br>
 
+<input class="textbox" type="password" name="password1" placeholder="Password" value=""><br>
 
-<label class="formDescriptionText">Password:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label><input class="textbox" type="password" name="password1" placeholder="Password" value=""><br>
-
-<label class="formDescriptionText">Re-type password:&nbsp&nbsp</label><input class="textbox" type="password" name="password2" placeholder="Re-type Password" value=""><br>
+<input class="textbox" type="password" name="password2" placeholder="Re-type Password" value=""><br>
 
 <select class="selectBox2" name="user[time_zone]" id="user_time_zone">
 <option value="American Samoa">(GMT-11:00) American Samoa</option>
@@ -294,6 +286,7 @@
           </label>
           <br>
           <br>
+
 <input class="submitButton" type="submit" name="submit" value="Submit">
 </p>
 </form>
