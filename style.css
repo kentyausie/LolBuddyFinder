@@ -3,6 +3,7 @@
 	width:100%;
 	text-align:center;
 	color:#BCBCBB;
+	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
 }
 .alignWhite {
 	width:100%;
@@ -12,6 +13,7 @@
 .formDescriptions{
 	color:#BCBCBB;
 	text-align:center;
+	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
 }
 .formDescriptionText{
 	color:#BCBCBB;
@@ -32,6 +34,7 @@ text-align:center;
 
 .headText{
 	color:#BCBCBB;
+	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
 }
 
 .selectBox {
