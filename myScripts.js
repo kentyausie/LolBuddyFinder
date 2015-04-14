@@ -109,6 +109,42 @@ function KeepCount() {
 		
 	if (document.signupForm.irelia.checked)
 		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.janna.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.jarvaniv.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.jax.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.jayce.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.jinx.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.kalista.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.karma.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.karthus.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.kassadin.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.katarina.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.kayle.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.kennen.checked)
+		{NewCount = NewCount + 1}
 	
 	if (NewCount == 6)
 	{
