@@ -181,6 +181,42 @@ function KeepCount() {
 		
 	if (document.signupForm.maokai.checked)
 		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.masteryi.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.missfortune.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.mordekaiser.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.morgana.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.nami.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.nasus.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.nautilus.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.nidalee.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.nocturne.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.nunu.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.olaf.checked)
+		{NewCount = NewCount + 1}
+		
+	if (document.signupForm.orianna.checked)
+		{NewCount = NewCount + 1}
 	
 	if (NewCount == 6)
 	{
