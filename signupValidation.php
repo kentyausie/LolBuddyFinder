@@ -25,7 +25,7 @@ $password1Error="";
 $password2Error=""; 
 
 $successMessage =""; // On submitting form below function will execute.
-if(isset($_GET['submit'])) { // Checking null values in message.
+if(isset($_POST['submit'])) { // Checking null values in message.
 	if (empty($_GET["sumName"])){
 		$sumError = "Summoner name is required";
 		$valid = "false"; 
