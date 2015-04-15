@@ -381,3 +381,39 @@ function KeepCount() {
 	}
 }
 
+function summonerLookUp(name) {
+	
+    var SUMMONER_NAME = name;
+
+    var API_KEY = "01edb1d0-a26b-4f78-afbb-3eeb9de5b0f9";
+
+    if (SUMMONER_NAME !== "") {
+
+        $.ajax({
+            url: 'https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/' + SUMMONER_NAME + '?api_key=' + API_KEY,
+            type: 'GET',
+            dataType: 'json',
+            data: {
+
+            },
+            success: function (json) {
+            	alert("hello");
+                var SUMMONER_NAME_NOSPACES = SUMMONER_NAME.replace(" ", "");
+
+                SUMMONER_NAME_NOSPACES = SUMMONER_NAME_NOSPACES.toLowerCase().trim();
+
+                summonerLevel = json[SUMMONER_NAME_NOSPACES].summonerLevel;
+                summonerID = json[SUMMONER_NAME_NOSPACES].id;
+
+                document.write(summonerLevel);
+                document.write(summonerID);
+                
+                sumName = json[SUMMONER_NAME_NOSPACES].name;
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("error getting Summoner data!");
+            }
+        });
+    } else {}
+}
+
