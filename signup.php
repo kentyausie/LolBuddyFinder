@@ -69,7 +69,7 @@
 <input type="checkbox" name="top" id="top" value="top"><label class="formDescriptionText">Top</label></input>
 <input type="checkbox" name="mid" id="mid" value="mid"><label class="formDescriptionText">Mid</label></input>
 <input type="checkbox" name="jungle" id="jungle" value="jungle"><label class="formDescriptionText">Jungle</label></input>
-<input type="checkbox" name="adc" id="adc" value="adc"><label class="formDescriptionText">AD Carry</label></input>
+<input type="checkbox" name="adc" id="adc" value="adc"><label class="formDescriptionText">ADC</label></input>
 <input type="checkbox" name="support" id="support" value="support"><label class="formDescriptionText">Support</label></input>
 <br>
 
