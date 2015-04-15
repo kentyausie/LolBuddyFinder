@@ -5,3 +5,13 @@ rank
 region
 
 string.
+
+
+
+Roles:
+
+top
+mid
+jungle
+AD Carry
+Support

@@ -64,6 +64,15 @@
 <input class="textbox" type="password" name="password2" placeholder="Re-type Password" value="">
 <span class="error">*<?php echo $password2Error;?></span><br>
 
+<Label class="formDescriptionText">Select Your Role(s):</label>
+
+<input type="checkbox" name="top" id="top" value="top"><label class="formDescriptionText">Top</label></input>
+<input type="checkbox" name="mid" id="mid" value="mid"><label class="formDescriptionText">Mid</label></input>
+<input type="checkbox" name="jungle" id="jungle" value="jungle"><label class="formDescriptionText">Jungle</label></input>
+<input type="checkbox" name="adc" id="adc" value="adc"><label class="formDescriptionText">AD Carry</label></input>
+<input type="checkbox" name="support" id="support" value="support"><label class="formDescriptionText">Support</label></input>
+<br>
+
 <label class="formDescriptionText">Select up to 5 champions:</label><br>
 <input type="checkbox" name="aatrox" id="aatrox" value="aatrox" onClick="return KeepCount()"><label for="aatrox"><img src="/champion_icons/aatroxsquare.png" height=50 ></img></label></input>
 <input type="checkbox" name="ahri" id="ahri" value="ahri" onClick="return KeepCount()"><label for="ahri"><img src="/champion_icons/ahrisquare.png" height=50 ></img></label></input>
