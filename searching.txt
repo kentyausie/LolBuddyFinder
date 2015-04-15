@@ -1,0 +1,7 @@
+champion
+role
+language
+rank
+region
+
+string.
