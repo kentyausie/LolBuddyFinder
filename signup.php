@@ -53,13 +53,16 @@
 <span class="error">*<?php echo $sumError;?></span><br>
 
 <label class="formDescriptionText">Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>	
-<input class="textbox" type="email" name="email" placeholder="Email" value=""><br>
+<input class="textbox" type="email" name="email" placeholder="Email" value="">
+<span class="error">*<?php echo $emailError;?></span><br>
 
 <label class="formDescriptionText">Password:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
-<input class="textbox" type="password" name="password1" placeholder="Password" value=""><br>
+<input class="textbox" type="password" name="password1" placeholder="Password" value="">
+<span class="error">*<?php echo $password1Error;?></span><br>
 
 <label class="formDescriptionText">Re-type password:&nbsp&nbsp</label>
-<input class="textbox" type="password" name="password2" placeholder="Re-type Password" value=""><br>
+<input class="textbox" type="password" name="password2" placeholder="Re-type Password" value="">
+<span class="error">*<?php echo $password2Error;?></span><br>
 
 <select class="selectBox2" name="user[time_zone]" id="user_time_zone">
 <option value="American Samoa">(GMT-11:00) American Samoa</option>
