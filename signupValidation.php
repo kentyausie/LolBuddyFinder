@@ -26,11 +26,11 @@ $password2Error="";
 
 $successMessage =""; // On submitting form below function will execute.
 if(isset($_POST['submit'])) { // Checking null values in message.
-	if (empty($_GET["sumName"])){
+	if (empty($_POST["sumName"])){
 		$sumError = "Summoner name is required";
 		$valid = "false"; 
 	} else {
-		$sumName = test_input($_GET["sumName"]); // check name only contains letters and whitespace
+		$sumName = test_input($_POST["sumName"]); // check name only contains letters and whitespace
 		if (!preg_match("/^[a-zA-Z ]*$/",$sumName))
 		{
 			$sumError = "Only letters and white space allowed";
@@ -38,24 +38,24 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		}
 	} // Checking null values in the message.
 
-	if (empty($_GET["email"])){
+	if (empty($_POST["email"])){
 		$emailError = "Email address is required";
 		$valid = "false"; 
 	} else {
 	        $email = test_input($_POST["email"]);
     }
 
-	if (empty($_GET["password1"]))
+	if (empty($_POST["password1"]))
 	{
 		$password1Error = "Password is required";
 		$valid = "false"; 
 	}
 	else
  	{
-		$password1 = test_input($_GET["password1"]);
+		$password1 = test_input($_POST["password1"]);
 	}
 	
-	if (empty($_GET["password2"]))
+	if (empty($_POST["password2"]))
 	{
 		$password2Error = "Please re-type password";
 		$valid = "false"; 
