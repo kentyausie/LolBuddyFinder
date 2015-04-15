@@ -799,5 +799,7 @@ function getChampions() {
 		
 	if (document.signupForm.zyra.checked)
 		{newCount = newCount + 1}
+		
+	return champions;
 	
 }
