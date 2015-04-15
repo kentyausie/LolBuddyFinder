@@ -42,7 +42,7 @@
 
 <body>
 <h2 class="headText">LOL Buddy Finder </h2>
-<form name="signupForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+<form method="post" name="signupForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
 <p class="align">
 
