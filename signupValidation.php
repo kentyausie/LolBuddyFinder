@@ -62,7 +62,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 	}
 	else
  	{
-		$password2 = test_input($_GET["password2"]);
+		$password2 = test_input($_POST["password2"]);
 		if(strcmp($password1,$password2) != 0){
 			$password2Error = "Password doesn't match";
 			$valid = "false";
