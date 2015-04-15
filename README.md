@@ -1,2 +1,0 @@
-# lolbuddyfinder
-sup man
