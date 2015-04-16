@@ -29,6 +29,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 	if (empty($_POST["sumName"])){
 		$sumError = "Summoner name is required";
 		$valid = "false"; 
+		echo 'alert("end")';
 	} else {
 		$sumName = test_input($_POST["sumName"]); // check name only contains letters and whitespace
 		if (!preg_match("/^[a-zA-Z ]*$/",$sumName))
