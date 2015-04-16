@@ -79,7 +79,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		}
     	echo "<a href=SQLindex.html>Home</a>";
     	*/
-    	echo $summName;
+    	alert($summName);
 	}
 	
 	$conn->close();
