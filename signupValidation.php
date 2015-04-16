@@ -68,7 +68,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 			$valid = "false";
 		}
 	}
-
+	
 	if($valid=="true"){
 		/*
 		$sql = "UPDATE address_book SET first='".$fname."', last='".$lname."', company='".$company."', phone='".$phone."', email='".$email."' , website='".$website."', address1='".$address1."', address2='".$address2."', city='".$city."', province='".$province."', postal='".$postal."', birthday='".$birthday."', date='".$date."', notes='".$notes."' WHERE id=".$_POST['id'];
@@ -81,7 +81,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
     	*/
     	echo 'alert("message successfully sent")';
 	}
-	
+	echo 'alert("end")';
 	$conn->close();
 }
 function test_input($data)
