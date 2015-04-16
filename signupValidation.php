@@ -68,9 +68,9 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 			$valid = "false";
 		}
 	}
-/*
-	if($valid=="true"){
 
+	if($valid=="true"){
+		/*
 		$sql = "UPDATE address_book SET first='".$fname."', last='".$lname."', company='".$company."', phone='".$phone."', email='".$email."' , website='".$website."', address1='".$address1."', address2='".$address2."', city='".$city."', province='".$province."', postal='".$postal."', birthday='".$birthday."', date='".$date."', notes='".$notes."' WHERE id=".$_POST['id'];
 		if ($conn->query($sql) === FALSE) {
     		echo "Error updating record: " . $conn->error."<br>";
@@ -78,8 +78,10 @@ if(isset($_POST['submit'])) { // Checking null values in message.
     		echo "Update Successful<br>";
 		}
     	echo "<a href=SQLindex.html>Home</a>";
+    	*/
+    	echo $summName;
 	}
-	*/
+	
 	$conn->close();
 }
 function test_input($data)
