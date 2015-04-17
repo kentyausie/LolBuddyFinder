@@ -405,7 +405,7 @@ function summonerLookUp() {
                 summonerLevel = json[SUMMONER_NAME_NOSPACES].summonerLevel;
                 summonerID = json[SUMMONER_NAME_NOSPACES].id;
 				
-				alert(SUMMsummonerLevel + " " + summonerID);
+				alert(summonerLevel + " " + summonerID);
                 //document.write(summonerLevel);
                 //document.write(summonerID);
                 
