@@ -123,7 +123,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		if ($conn->query($sql) === FALSE) {
     		echo $conn->error;
 		}else {
-    		echo '<script> alert("Update Successful"); </script>';
+    		echo "Update Successful";
 		}
     	echo "<a href=SQLindex.html>Home</a>";
     
