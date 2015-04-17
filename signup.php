@@ -28,10 +28,6 @@
 </style>
 
 <script src="myScripts.js"></script>
-<script>
-
-
-</script>
 
 <head>
 <img src="head_img.jpg" class="headImg"></img>
@@ -49,8 +45,10 @@
 
 <label class="formDescriptionText">Summoner Name:&nbsp&nbsp</label>
 
-<input class="textbox" type="text" name="sumName" placeholder="Summoner Name" value="">
+<input class="textbox" type="text" name="sumName" id="sumName" placeholder="Summoner Name" onblur="summonerLookUp()" value="">
 <span class="error">*<?php echo $sumError;?></span><br>
+
+<input type="hidden" name="sumInfo" id="sumInfo" value="">
 
 <label class="formDescriptionText">Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>	
 <input class="textbox" type="email" name="email" placeholder="Email" value="">

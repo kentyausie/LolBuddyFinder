@@ -404,14 +404,16 @@ function summonerLookUp() {
 
                 summonerLevel = json[SUMMONER_NAME_NOSPACES].summonerLevel;
                 summonerID = json[SUMMONER_NAME_NOSPACES].id;
-
-                document.write(summonerLevel);
-                document.write(summonerID);
+				
+				alert(summonerLevel + " " + summonerID);
+                //document.write(summonerLevel);
+                //document.write(summonerID);
                 
-                sumName = json[SUMMONER_NAME_NOSPACES].name;
+                document.getElementById("sumInfo").value = json[SUMMONER_NAME_NOSPACES];
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
                 alert("error getting Summoner data!");
+                document.getElementById("sumName").value = "";
             }
         });
     } else {}
