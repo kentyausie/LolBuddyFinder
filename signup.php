@@ -391,6 +391,15 @@
 <option value="Nuku&#39;alofa">(GMT+13:00) Nuku&#39;alofa</option>
 <option value="Tokelau Is.">(GMT+13:00) Tokelau Is.</option>
 </select><br><br>
+<select name="language" class="selectBox">
+<option value="english">English</option>
+<option value="french">French</option>
+<option value="spanish">French</option>
+<option value="korean">Korean</option>
+<option value="chinese">Chinese</option>
+<option value="japanese">Japanese</option>
+<option value="penguin">Penguin</option>
+</select><br><br>
 <input class="submitButton" type="submit" name="submit" value="Submit">
 </p>
 </form>
