@@ -388,13 +388,14 @@ function summonerLookUp() {
 		
 		alert("Select your region");
 	} else {
+		alert("Hello2");
 		var region = document.getElementById("region");
     	var sumName = document.getElementById("sumName").value;
     	var API_KEY = "01edb1d0-a26b-4f78-afbb-3eeb9de5b0f9";
     	if (sumName !== "") {
        		var xmlhttp = new XMLHttpRequest();
 			var url = "https://na.api.pvp.net/api/lol/"+region.value+"/v1.4/summoner/by-name/"+sumName+"?api_key="+API_KEY;
-
+			
 
 			xmlhttp.open("GET", url, false);
 			xmlhttp.send();
