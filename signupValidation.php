@@ -48,12 +48,11 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 	} else {
 		$id=$_POST["sumInfo"];
 	}
-	echo "<script> alert(".$sumInfo."); </script>";
 	if (empty($_POST["email"])){
 		$emailError = "Email address is required";
 		$valid = "false"; 
 	} else {
-	        $email = test_input($_POST["email"]);
+	    $email = test_input($_POST["email"]);
     }
 
 	if (empty($_POST["password1"]))
@@ -85,7 +84,6 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		$champError="Select at least one champion";
 		$valid=false;
 	} else {
-		echo '<script> alert("champions"); </script>';
 		$count=-1;
 		foreach($_POST["champions"] as $champ){
 			$count = $count +1;
