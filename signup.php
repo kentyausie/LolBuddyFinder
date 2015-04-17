@@ -64,7 +64,7 @@
 <input class="textbox" type="password" name="password2" placeholder="Re-type Password" value="">
 <span class="error">*<?php echo $password2Error;?></span><br>
 
-<Label class="formDescriptionText">Select Your Role(s):</label>
+<Label class="formDescriptionText">Select Your Role(s):</label><br>
 
 <input type="checkbox" name="top" id="top" value="top"><label for="top"><img src="/roles/top.png" height=50 ></img></label></input>
 <input type="checkbox" name="mid" id="mid" value="mid"><label for="mid"><img src="/roles/mid.png" height=50 ></img></label></input>
