@@ -417,7 +417,9 @@ function summonerLookUp() {
                 document.getElementById("sumName").value = "";
             }
         });
-    } else {}
+    } else {
+    	alert("Need Summoner Name");
+    }
 }
 
 function getChampions() {
