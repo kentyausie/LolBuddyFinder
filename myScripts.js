@@ -395,13 +395,19 @@ function summonerLookUp() {
 
 		xmlhttp.open("GET", url, false);
 		xmlhttp.send();
-		var arr = JSON.parse(xmlhttp.responseText);
-
-		var sumInfo = arr[sumName];
-		alert(sumInfo.name);
-		alert(sumInfo.summonerLevel);
-		document.getElementById("sumInfo").value = sumInfo;
-	
+		if(xmlhttp.status == 200){
+			var arr = JSON.parse(xmlhttp.responseText);
+			var sumInfo = arr[sumName];
+			alert(sumInfo.name);
+			alert(sumInfo.summonerLevel);
+			document.getElementById("sumInfo").value = sumInfo;
+		}
+		else if(xmlhttp.status == 404){
+			alert("Invalid summoner name");
+		}
+		else{
+			alert("Unknown error");
+		}
     } else {
     	alert("Need Summoner Name");
     	document.getElementById("sumName").value = "";
