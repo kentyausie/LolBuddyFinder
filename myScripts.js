@@ -385,7 +385,7 @@ function summonerLookUp() {
     var sumName = document.getElementById("sumName").value;
 
     var API_KEY = "01edb1d0-a26b-4f78-afbb-3eeb9de5b0f9";
-
+alert("Hello1");
     if (sumName !== "") {
 		alert("Hello");
         var xmlhttp = new XMLHttpRequest();
