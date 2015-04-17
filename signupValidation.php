@@ -24,7 +24,7 @@ $adc=0;
 $support=0;
 $roleCount=0;
 $valid = "true"; 
-
+$id="";
 
 $sumError =""; // Sender Name
 $emailError =""; // Sender's email ID
@@ -42,6 +42,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		echo '<script language="javascript" src="myScripts.js">alert("Test")</script>';
 	} // Checking null values in the message.
 	$sumInfo=$_POST["sumInfo"];
+	echo "<script> alert(".$sumInfo.id."); </script>";
 	if (empty($_POST["email"])){
 		$emailError = "Email address is required";
 		$valid = "false"; 
@@ -73,7 +74,6 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		}
 	}
 	if(isset($_POST["top"])){
-		echo "<script> alert('error'); </script>";
 		$top=1;
 		$roleCount=$roleCount+1;
 	}
@@ -100,7 +100,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 	
 	if($valid=="true"){
 		
-		$sql = "UPDATE Registration SET summoner='".$sumName."', email='".$email."' , password='".$password1."', address1='".$address1."', address2='".$address2."', city='".$city."', province='".$province."', postal='".$postal."', birthday='".$birthday."', date='".$date."', notes='".$notes."' WHERE id=".$_POST['id'];
+		$sql = "INSERT INTO address_book (summonerID, summoner, last, company, phone, email, website, address1, address2, city, province, postal, birthday, date, notes) VALUES ('".$fname."','".$lname."','".$company."','".$phone."','".$email."','".$website."','".$address1."','".$address2."','".$city."','".$province."','".$postal."','".$birthday."','".$date."','".$notes."')";
 		if ($conn->query($sql) === FALSE) {
     		echo "Error updating record: " . $conn->error."<br>";
 		}else {
