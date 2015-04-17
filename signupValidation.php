@@ -104,7 +104,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 	
 	if($valid=="true"){
 		
-		$sql = "INSERT INTO address_book (summonerID, summoner, email, password, roleTop, roleMid, roleJungle, roleADC, roleSupport) VALUES ('".$id."','".$sumName."','".$email."','".$password."','".$top."','".$mid."','".$jungle."','".$adc."','".$support."')";
+		$sql = "INSERT INTO Registration (summonerID, summoner, email, password, roleTop, roleMid, roleJungle, roleADC, roleSupport) VALUES ('".$id."','".$sumName."','".$email."','".$password."','".$top."','".$mid."','".$jungle."','".$adc."','".$support."')";
 		if ($conn->query($sql) === FALSE) {
     		echo "Error updating record: " . $conn->error."<br>";
 		}else {
