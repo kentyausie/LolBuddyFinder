@@ -382,12 +382,16 @@ function KeepCount() {
 }
 
 function summonerLookUp() {
-	
-	if(!document.getElementsByName("region").checked){
-		alert("Select your region");
+	var region = "";
+	if(document.getElementsById("na").checked){
+		region = "na";
 	} else {
+		alert("Select a region");
+	}
+	
+	
+	if(!region == ""){
 		alert("Hello2");
-		var region = document.getElementById("region").value;
     	var sumName = document.getElementById("sumName").value;
     	var API_KEY = "01edb1d0-a26b-4f78-afbb-3eeb9de5b0f9";
     	if (sumName !== "") {

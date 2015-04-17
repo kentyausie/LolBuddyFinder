@@ -44,16 +44,16 @@
 <p class="align">
 
 <label class="formDescriptionText">Region</label><br>
-<label class="formDescriptionText">BR<input type="radio" value="br" name="region[]" id="br" /></label>
-<label class="formDescriptionText">EUNE<input type="radio" value="eune" name="region[]" id="eune" /></label>
-<label class="formDescriptionText">EUW<input type="radio" value="euw" name="region[]" id="euw" /></label>
-<label class="formDescriptionText">KR<input type="radio" value="kr" name="region[]" id="kr" /></label>
-<label class="formDescriptionText">LAN<input type="radio" value="lan" name="region[]" id="lan" /></label>
-<label class="formDescriptionText">LAS<input type="radio" value="las" name="region[]" id="las" /></label>
-<label class="formDescriptionText">NA<input type="radio" value="na" name="region[]" id="na" /></label>
-<label class="formDescriptionText">OCE<input type="radio" value="oce" name="region[]" id="oce" /></label>
-<label class="formDescriptionText">RU<input type="radio" value="ru" name="region[]" id="ru" /></label>
-<label class="formDescriptionText">TR<input type="radio" value="tr" name="region[]" id="tr" /></label>
+<label class="formDescriptionText">BR<input type="radio" value="br" name="region" id="br" /></label>
+<label class="formDescriptionText">EUNE<input type="radio" value="eune" name="region" id="eune" /></label>
+<label class="formDescriptionText">EUW<input type="radio" value="euw" name="region" id="euw" /></label>
+<label class="formDescriptionText">KR<input type="radio" value="kr" name="region" id="kr" /></label>
+<label class="formDescriptionText">LAN<input type="radio" value="lan" name="region" id="lan" /></label>
+<label class="formDescriptionText">LAS<input type="radio" value="las" name="region" id="las" /></label>
+<label class="formDescriptionText">NA<input type="radio" value="na" name="region" id="na" /></label>
+<label class="formDescriptionText">OCE<input type="radio" value="oce" name="region" id="oce" /></label>
+<label class="formDescriptionText">RU<input type="radio" value="ru" name="region" id="ru" /></label>
+<label class="formDescriptionText">TR<input type="radio" value="tr" name="region" id="tr" /></label>
 <br>
 
 <label class="formDescriptionText">Summoner Name:&nbsp&nbsp</label>
