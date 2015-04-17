@@ -37,7 +37,7 @@
 </head>
 
 <body>
-summonerLookUp();
+
 <h2 class="headText">LOL Buddy Finder </h2>
 <form method="post" name="signupForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
@@ -46,7 +46,7 @@ summonerLookUp();
 
 <label class="formDescriptionText">Summoner Name:&nbsp&nbsp</label>
 
-<input class="textbox" type="text" name="sumName" id="sumName" placeholder="Summoner Name" value="">
+<input class="textbox" type="text" name="sumName" id="sumName" onblur="summonerLookUp()" placeholder="Summoner Name" value="">
 <span class="error">*<?php echo $sumError;?></span><br>
 
 <input type="hidden" name="sumInfo" id="sumInfo" value="">
