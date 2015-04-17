@@ -386,6 +386,7 @@ function summonerLookUp() {
 	var region = "";
 	if(document.getElementsById("na").checked){
 		region = "na";
+		alert("na");
 	} else {
 		alert("Select a region");
 	}
