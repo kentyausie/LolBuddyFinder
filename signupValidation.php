@@ -121,16 +121,16 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		
 		$sql = "INSERT INTO Registration (summonerID, summoner, email, password, roleTop, roleMid, roleJungle, roleADC, roleSupport, champ1, champ2. champ3, champ4, champ5) VALUES ('".$id."','".$sumName."','".$email."','".$password."','".$top."','".$mid."','".$jungle."','".$adc."','".$support."','".$champions[0]."','".$champions[1]."','".$champions[2]."','".$champions[3]."','".$champions[4]."')";
 		if ($conn->query($sql) === FALSE) {
-    		echo '<script> alert("Error updating record: "'. $conn->error.'); </script>';
+    		echo $conn->error;
 		}else {
-    		echo "Update Successful<br>";
+    		echo '<script> alert("Update Successful"); </script>';
 		}
     	echo "<a href=SQLindex.html>Home</a>";
     
-    	session_start();
-    	$_SESSION['name']=$sumName;
-    	header('LOCATION: confirm.php');
-       	exit();
+    	//session_start();
+    	//$_SESSION['name']=$sumName;
+    	//header('LOCATION: confirm.php');
+       	//exit();
 	}
 	$conn->close();
 }
