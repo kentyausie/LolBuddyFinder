@@ -1,0 +1,26 @@
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| ID          | int(11)      | NO   | PRI | 0       |       |
+| summoner    | varchar(255) | YES  |     | NULL    |       |
+| email       | varchar(255) | YES  |     | NULL    |       |
+| password    | varchar(255) | YES  |     | NULL    |       |
+| champ1      | varchar(255) | YES  |     | NULL    |       |
+| champ2      | varchar(255) | YES  |     | NULL    |       |
+| champ3      | varchar(255) | YES  |     | NULL    |       |
+| champ4      | varchar(255) | YES  |     | NULL    |       |
+| champ5      | varchar(255) | YES  |     | NULL    |       |
+| roleTop     | bit(1)       | YES  |     | 0       |       |
+| roleMid     | bit(1)       | YES  |     | NULL    |       |
+| roleJungle  | bit(1)       | YES  |     | NULL    |       |
+| roleADC     | bit(1)       | YES  |     | NULL    |       |
+| roleSupport | bit(1)       | YES  |     | NULL    |       |
+| region      | varchar(255) | YES  |     | NULL    |       |
+| timezone    | varchar(255) | YES  |     | NULL    |       |
+| language    | varchar(255) | YES  |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+
+changes needed 
+
+add summonerID
+roleMid, roleJungle,roleADC,roleSupport default 0
