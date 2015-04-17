@@ -31,7 +31,9 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		$valid = "false"; 
 	} else {
 		$sumName = test_input($_POST["sumName"]); // check name only contains letters and whitespace
-		echo '<script src="myScripts.js"> summonerLookUp(); </script>';
+		echo '<script language="javascript" src="myScripts.js">';
+		echo 'summonerLookUp()';
+		echo '</script>';
 	} // Checking null values in the message.
 
 	if (empty($_POST["email"])){
