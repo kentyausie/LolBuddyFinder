@@ -77,19 +77,19 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		$top=1;
 		$roleCount=$roleCount+1;
 	}
-	if($_POST["mid"].checked){
+	if(isset($_POST["mid"])){
 		$mid=1;
 		$roleCount=$roleCount+1;
 	}
-	if($_POST["jungle"].checked){
+	if(isset($_POST["jungle"])){
 		$jungle=1;
 		$roleCount=$roleCount+1;
 	}
-	if($_POST["adc"].checked){
+	if(isset($_POST["adc"])){
 		$adc=1;
 		$roleCount=$roleCount+1;
 	}
-	if($_POST["support"].checked){
+	if(isset($_POST["support"])){
 		$support=1;
 		$roleCount=$roleCount+1;
 	}
