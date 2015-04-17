@@ -76,6 +76,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		}
     	echo "<a href=SQLindex.html>Home</a>";
     	*/
+    	session_start();
     	$_SESSION['name']=$sumName;
     	header('LOCATION: index.php');
        	exit();
