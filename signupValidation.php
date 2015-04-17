@@ -29,7 +29,6 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 	if (empty($_POST["sumName"])){
 		$sumError = "Summoner name is required";
 		$valid = "false"; 
-		echo 'alert("end")';
 	} else {
 		$sumName = test_input($_POST["sumName"]); // check name only contains letters and whitespace
 		if (!preg_match("/^[a-zA-Z ]*$/",$sumName))
@@ -80,9 +79,11 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		}
     	echo "<a href=SQLindex.html>Home</a>";
     	*/
-    	echo 'alert("message successfully sent")';
 	}
-	echo 'alert("end")';
+	
+	echo '<script language="javascript">';
+echo 'alert("message successfully sent")';
+echo '</script>';
 	$conn->close();
 }
 function test_input($data)
