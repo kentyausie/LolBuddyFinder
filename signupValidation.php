@@ -1,6 +1,6 @@
 <?php
 $servername = "lovett.usask.ca";
-$username = "cmpt350_key053";
+$username = "cmpt350_key053"; 
 $password = "awp0t6pokb";
 $dbname = "cmpt350_key053";
 

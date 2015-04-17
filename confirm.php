@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
 <html>
-<?php session_start(); ?>
+<?php session_start(); 
+$name = $_SESSION['name'];?>
 
 <label>Confirm</label>
-<label><?php $_SESSION['name'] ?></label>
+<label><?php echo $_SESSION['name'] ?></label>
 </html>
