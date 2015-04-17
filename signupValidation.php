@@ -25,12 +25,14 @@ $support=0;
 $roleCount=0;
 $valid = "true"; 
 $id="";
+$champions = array("","","","","");
 
 $sumError =""; // Sender Name
 $emailError =""; // Sender's email ID
 $password1Error="";
 $password2Error="";
 $roleError="";
+$champError="";
 
 $successMessage =""; // On submitting form below function will execute.
 if(isset($_POST['submit'])) { // Checking null values in message.
@@ -77,6 +79,18 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 			$valid = "false";
 		}
 	}
+	
+	
+	if(empty($_POST["champions"])){
+		$champError="Select at least one champion";
+		$valid=false;
+	} else {
+		$count=-1;
+		foreach($_POST["champions"] as $champ){
+			$count = $count +1;
+			$champions[$count] = $champ;
+		}
+	}
 	if(isset($_POST["top"])){
 		$top=1;
 		$roleCount=$roleCount+1;
@@ -104,7 +118,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 	
 	if($valid=="true"){
 		
-		$sql = "INSERT INTO Registration (summonerID, summoner, email, password, roleTop, roleMid, roleJungle, roleADC, roleSupport) VALUES ('".$id."','".$sumName."','".$email."','".$password."','".$top."','".$mid."','".$jungle."','".$adc."','".$support."')";
+		$sql = "INSERT INTO Registration (summonerID, summoner, email, password, roleTop, roleMid, roleJungle, roleADC, roleSupport, champ1, champ2. champ3, champ4, champ5) VALUES ('".$id."','".$sumName."','".$email."','".$password."','".$top."','".$mid."','".$jungle."','".$adc."','".$support."','".$champions[0]."','".$champions[1]."','".$champions[2]."','".$champions[3]."','".$champions[4]."')";
 		if ($conn->query($sql) === FALSE) {
     		echo "Error updating record: " . $conn->error."<br>";
 		}else {
