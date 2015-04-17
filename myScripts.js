@@ -389,33 +389,23 @@ function summonerLookUp() {
 
     if (sumName !== "") {
 		
-        $.ajax({
-            url: 'https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/' + sumName + '?api_key=' + API_KEY,
-            type: 'GET',
-            dataType: 'json',
-            data: {
+        var xmlhttp = new XMLHttpRequest();
+var url = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/"+sumName+"?api_key="+API_KEY;
 
-            },
-            success: function (json) {
-            	alert("hello");
-                var SUMMONER_NAME_NOSPACES = sumName.replace(" ", "");
 
-                SUMMONER_NAME_NOSPACES = SUMMONER_NAME_NOSPACES.toLowerCase().trim();
+xmlhttp.open("GET", url, false);
+xmlhttp.send();
+var myArr = JSON.parse(xmlhttp.responseText);
+myFunction(myArr, sumName);
 
-                summonerLevel = json[SUMMONER_NAME_NOSPACES].summonerLevel;
-                summonerID = json[SUMMONER_NAME_NOSPACES].id;
-				
-				alert(summonerLevel + " " + summonerID);
-                //document.write(summonerLevel);
-                //document.write(summonerID);
-                
-                document.getElementById("sumInfo").value = json[SUMMONER_NAME_NOSPACES];
-            },
-            error: function (XMLHttpRequest, textStatus, errorThrown) {
-                alert("error getting Summoner data!");
-                document.getElementById("sumName").value = "";
-            }
-        });
+summonerLookUp();
+
+function myFunction(arr, sumName) {
+	var sumInfo = arr[sumName];
+	alert(sumInfo.name);
+	alert(sumInfo.summonerLevel);
+	
+}
     } else {
     	alert("Need Summoner Name");
     }
