@@ -383,7 +383,7 @@ function KeepCount() {
 
 function summonerLookUp() {
 	var region = document.getElementById("region");
-	if(!isset(region){
+	if(!isset(region)){
 		alert("Select your region");
 	} else {
     	var sumName = document.getElementById("sumName").value;
