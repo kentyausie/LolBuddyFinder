@@ -382,7 +382,6 @@ function KeepCount() {
 }
 
 function summonerLookUp() {
-	alert("Hello!");
     var sumName = document.getElementById("sumName").value;
 
     var API_KEY = "01edb1d0-a26b-4f78-afbb-3eeb9de5b0f9";
@@ -398,8 +397,6 @@ function summonerLookUp() {
 		if(xmlhttp.status == 200){
 			var arr = JSON.parse(xmlhttp.responseText);
 			var sumInfo = arr[sumName];
-			alert(sumInfo.name);
-			alert(sumInfo.summonerLevel);
 			document.getElementById("sumInfo").value = sumInfo;
 		}
 		else if(xmlhttp.status == 404){
