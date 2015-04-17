@@ -400,10 +400,12 @@ function summonerLookUp() {
 		var sumInfo = arr[sumName];
 		alert(sumInfo.name);
 		alert(sumInfo.summonerLevel);
-	
+		document.getElementById("sumInfo").value = sumInfo;
 	
     } else {
     	alert("Need Summoner Name");
+    	document.getElementById("sumName").value = "";
+    	document.getElementById("sumInfo").value = null;
     }
 }
 
