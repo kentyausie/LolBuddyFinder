@@ -382,8 +382,10 @@ function KeepCount() {
 }
 
 function summonerLookUp() {
-	var region = document.getElementById("region");
-	if(!isset(region)){
+	
+	alert("Hello");
+	if(!isset(document.getElementById("region"))){
+		var region = document.getElementById("region");
 		alert("Select your region");
 	} else {
     	var sumName = document.getElementById("sumName").value;
