@@ -72,7 +72,8 @@
 <input type="checkbox" name="support" id="support" value="support"><label for="support"><img src="/roles/support.png" height=50 ></img></label></input>
 <br>
 
-<label class="formDescriptionText">Select up to 5 champions:</label><br>
+<label class="formDescriptionText">Select up to 5 champions:</label>
+<span class="error">*<?php echo $champError;?></span><br>
 <input type="checkbox" name="champions[]" id="aatrox" value="aatrox" onClick="return KeepCount()"><label for="aatrox"><img src="/champion_icons/aatroxsquare.png" height=50 ></img></label></input>
 <input type="checkbox" name="champions[]" id="ahri" value="ahri" onClick="return KeepCount()"><label for="ahri"><img src="/champion_icons/ahrisquare.png" height=50 ></img></label></input>
 <input type="checkbox" name="champions[]" id="akali" value="akali" onClick="return KeepCount()"><label for="akali"><img src="/champion_icons/akalisquare.png" height=50 ></img></label></input>
