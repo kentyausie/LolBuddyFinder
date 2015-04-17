@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <html>
-<?php session_start(); 
-$name = $_SESSION['name'];?>
+<?php session_start(); ?>
 
 <label>Confirm</label>
 <label><?php echo $_SESSION['name'] ?></label>
