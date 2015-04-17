@@ -13,6 +13,7 @@ if ($conn->connect_error) {
 
 
 $sumName =""; // Sender Name
+$sumInfo=""
 $email =""; // Sender's email ID
 $password1 =""; 
 $password2 =""; 
@@ -33,7 +34,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		$sumName = test_input($_POST["sumName"]); // check name only contains letters and whitespace
 		echo '<script language="javascript" src="myScripts.js">alert("Test")</script>';
 	} // Checking null values in the message.
-
+	$sumInfo=$_POST["sumInfo"];
 	if (empty($_POST["email"])){
 		$emailError = "Email address is required";
 		$valid = "false"; 
@@ -75,9 +76,9 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		}
     	echo "<a href=SQLindex.html>Home</a>";
     	*/
-    	echo '<script language="javascript">';
-		echo 'alert("message successfully sent2")';
-		echo '</script>';
+    	$_SESSION['name']=$sumName;
+    	header('LOCATION: confirm.php');
+       	exit();
 	}
 	$conn->close();
 }
