@@ -385,9 +385,7 @@ function summonerLookUp() {
     var sumName = document.getElementById("sumName").value;
 
     var API_KEY = "01edb1d0-a26b-4f78-afbb-3eeb9de5b0f9";
-alert("Hello1");
     if (sumName !== "") {
-		alert("Hello");
         var xmlhttp = new XMLHttpRequest();
 		var url = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/"+sumName+"?api_key="+API_KEY;
 
@@ -395,7 +393,6 @@ alert("Hello1");
 		xmlhttp.open("GET", url, false);
 		xmlhttp.send();
 		if(xmlhttp.status == 200){
-			alert("200");
 			var arr = JSON.parse(xmlhttp.responseText);
 			var sumInfo = arr[sumName].id;
 			alert(""+sumInfo);
