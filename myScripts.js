@@ -382,14 +382,13 @@ function KeepCount() {
 }
 
 function summonerLookUp() {
-	alert("Hello");
 	
     var SUMMONER_NAME = document.getElementById("sumName").value;
 
     var API_KEY = "01edb1d0-a26b-4f78-afbb-3eeb9de5b0f9";
 
     if (SUMMONER_NAME !== "") {
-
+		alert("Have name");
         $.ajax({
             url: 'https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/' + SUMMONER_NAME + '?api_key=' + API_KEY,
             type: 'GET',
