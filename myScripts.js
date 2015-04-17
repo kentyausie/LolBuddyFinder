@@ -377,13 +377,13 @@ function KeepCount() {
 	if (newCount == 6)
 	{
 		alert('Pick No More Than Five')
-		document.signupForm; råeturn false;
+		document.signupForm; return false;
 	}
 }
 
 function summonerLookUp() {
 	
-	alert(document.getElementByName("region").checked);
+	alert(document.getElementsByName("region").checked);
 	if(empty(document.getElementById("region"))){
 		
 		alert("Select your region");
