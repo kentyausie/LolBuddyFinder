@@ -384,7 +384,6 @@ function KeepCount() {
 function summonerLookUp() {
 	
 	if(!document.getElementsByName("region").checked){
-		
 		alert("Select your region");
 	} else {
 		alert("Hello2");
