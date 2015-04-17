@@ -88,7 +88,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		$count=-1;
 		foreach($_POST["champions"] as $champ){
 			$count = $count +1;
-			$champions[$count] = $champ;
+			$champions[$count] = $champ['value'];
 		}
 	}
 	if(isset($_POST["top"])){
