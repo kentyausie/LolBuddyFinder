@@ -384,7 +384,7 @@ function KeepCount() {
 function summonerLookUp() {
 	alert("Hello");
 	var region = "";
-	if(document.getElementsById("na").checked){
+	if(document.getElementById("na").checked){
 		region = "na";
 		alert("na");
 	} else {
