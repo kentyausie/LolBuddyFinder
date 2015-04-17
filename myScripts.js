@@ -390,22 +390,18 @@ function summonerLookUp() {
     if (sumName !== "") {
 		
         var xmlhttp = new XMLHttpRequest();
-var url = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/"+sumName+"?api_key="+API_KEY;
+		var url = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/"+sumName+"?api_key="+API_KEY;
 
 
-xmlhttp.open("GET", url, false);
-xmlhttp.send();
-var myArr = JSON.parse(xmlhttp.responseText);
-myFunction(myArr, sumName);
+		xmlhttp.open("GET", url, false);
+		xmlhttp.send();
+		var arr = JSON.parse(xmlhttp.responseText);
 
-summonerLookUp();
-
-function myFunction(arr, sumName) {
-	var sumInfo = arr[sumName];
-	alert(sumInfo.name);
-	alert(sumInfo.summonerLevel);
+		var sumInfo = arr[sumName];
+		alert(sumInfo.name);
+		alert(sumInfo.summonerLevel);
 	
-}
+	}
     } else {
     	alert("Need Summoner Name");
     }
