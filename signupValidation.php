@@ -31,11 +31,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		$valid = "false"; 
 	} else {
 		$sumName = test_input($_POST["sumName"]); // check name only contains letters and whitespace
-		if (!preg_match("/^[a-zA-Z ]*$/",$sumName))
-		{
-			$sumError = "Only letters and white space allowed";
-			$valid = "false"; 
-		}
+		echo "summonerLookUp()";
 	} // Checking null values in the message.
 
 	if (empty($_POST["email"])){

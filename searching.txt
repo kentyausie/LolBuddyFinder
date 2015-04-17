@@ -15,3 +15,6 @@ mid
 jungle
 AD Carry
 Support
+
+
+onblur="summonerLookUp()"
