@@ -41,8 +41,8 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		$sumName = test_input($_POST["sumName"]); // check name only contains letters and whitespace
 		echo '<script language="javascript" src="myScripts.js">alert("Test")</script>';
 	} // Checking null values in the message.
-	$sumInfo=$_POST["sumInfo"];
-	echo "<script> alert(".$sumInfo.id."); </script>";
+	$sumInfo=$_POST["sumInfo"].id;
+	echo "<script> alert(".$sumInfo."); </script>";
 	if (empty($_POST["email"])){
 		$emailError = "Email address is required";
 		$valid = "false"; 
