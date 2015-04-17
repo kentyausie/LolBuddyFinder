@@ -386,31 +386,31 @@ function summonerLookUp() {
 	if(document.getElementById("na").checked){
 		region = "na";
 	} 
-	if(document.getElementById("br").checked){
+	else if(document.getElementById("br").checked){
 		region = "br";
 	} 
-	if(document.getElementById("eune").checked){
+	else if(document.getElementById("eune").checked){
 		region = "eune";
 	}
-	if(document.getElementById("euw").checked){
+	else if(document.getElementById("euw").checked){
 		region = "euw";
 	} 
-	if(document.getElementById("kr").checked){
+	else if(document.getElementById("kr").checked){
 		region = "kr";
 	} 
-	if(document.getElementById("lan").checked){
+	else if(document.getElementById("lan").checked){
 		region = "lan";
 	} 
-	if(document.getElementById("las").checked){
+	else if(document.getElementById("las").checked){
 		region = "las";
 	} 
-	if(document.getElementById("oce").checked){
+	else if(document.getElementById("oce").checked){
 		region = "oce";
 	} 
-	if(document.getElementById("ru").checked){
+	else if(document.getElementById("ru").checked){
 		region = "ru";
 	} 
-	if(document.getElementById("tr").checked){
+	else if(document.getElementById("tr").checked){
 		region = "tr";
 	} 
 	else {
