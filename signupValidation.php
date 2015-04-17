@@ -39,10 +39,13 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		$valid = "false"; 
 	} else {
 		$sumName = test_input($_POST["sumName"]); // check name only contains letters and whitespace
-		echo '<script language="javascript" src="myScripts.js">alert("Test")</script>';
 	} // Checking null values in the message.
-	$sumInfo=$_POST["sumInfo"];
-	$id=$sumInfo;
+	if($_POST["sumInfo"]==404){
+		$sumError="Invalid Summoner name";
+		$valid=false;
+	} else {
+		$id=$_POST["sumInfo"];
+	}
 	echo "<script> alert(".$sumInfo."); </script>";
 	if (empty($_POST["email"])){
 		$emailError = "Email address is required";
@@ -101,7 +104,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 	
 	if($valid=="true"){
 		
-		$sql = "INSERT INTO address_book (summonerID, summoner, last, company, phone, email, website, address1, address2, city, province, postal, birthday, date, notes) VALUES ('".$fname."','".$lname."','".$company."','".$phone."','".$email."','".$website."','".$address1."','".$address2."','".$city."','".$province."','".$postal."','".$birthday."','".$date."','".$notes."')";
+		$sql = "INSERT INTO address_book (summonerID, summoner, email, password, roleTop, roleMid, roleJungle, roleADC, roleSupport) VALUES ('".$id."','".$sumName."','".$email."','".$password."','".$top."','".$mid."','".$jungle."','".$adc."','".$support."')";
 		if ($conn->query($sql) === FALSE) {
     		echo "Error updating record: " . $conn->error."<br>";
 		}else {

@@ -399,16 +399,12 @@ function summonerLookUp() {
 			document.getElementById("sumInfo").value = sumInfo;
 		}
 		else if(xmlhttp.status == 404){
-			alert("Invalid summoner name");
+			document.getElementById("sumInfo").value = 404;
 		}
 		else{
 			alert("Unknown error");
 		}
-    } else {
-    	alert("Need Summoner Name");
-    	document.getElementById("sumName").value = "";
-    	document.getElementById("sumInfo").value = null;
-    }
+    } else {}
 }
 
 function getChampions() {
