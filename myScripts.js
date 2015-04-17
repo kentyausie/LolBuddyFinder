@@ -383,8 +383,7 @@ function KeepCount() {
 
 function summonerLookUp() {
 	
-	alert(document.getElementsByName("region").checked);
-	if(empty(document.getElementById("region"))){
+	if(!document.getElementsByName("region").checked){
 		
 		alert("Select your region");
 	} else {
