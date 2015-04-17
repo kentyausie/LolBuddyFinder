@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 
 
 $sumName =""; // Sender Name
-$sumInfo=""
+$sumInfo="";
 $email =""; // Sender's email ID
 $password1 =""; 
 $password2 =""; 
