@@ -73,6 +73,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		}
 	}
 	if($_POST["top"].checked){
+		echo "<script> alert('error'); </script>";
 		$top=1;
 		$roleCount=$roleCount+1;
 	}
