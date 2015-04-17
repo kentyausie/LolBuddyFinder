@@ -382,6 +382,7 @@ function KeepCount() {
 }
 
 function summonerLookUp() {
+	alert("Hello");
 	
     var SUMMONER_NAME = document.getElementById("sumName").value;
 
