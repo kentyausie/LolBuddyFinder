@@ -382,6 +382,7 @@ function KeepCount() {
 }
 
 function summonerLookUp() {
+	alert("Hello");
 	var region = "";
 	if(document.getElementsById("na").checked){
 		region = "na";
