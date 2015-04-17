@@ -62,6 +62,7 @@
 <span class="error">*<?php echo $sumError;?></span><br>
 
 <input type="hidden" name="sumInfo" id="sumInfo" value="">
+<input type="hidden" name="sumRegion" id="sumRegion" value="">
 
 <label class="formDescriptionText">Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>	
 <input class="textbox" type="email" name="email" placeholder="Email" value="">
@@ -242,7 +243,7 @@
 <input type="checkbox" name="champions[]" id="zyra" value="zyra" onClick="return KeepCount()"><label for="zyra"><img src="/champion_icons/zyrasquare.png" height=50 ></img></label></input>
 <br>
 
-<select name="timeZone">
+<select name="timezone" class="selectBox">
 <option value="American Samoa">(GMT-11:00) American Samoa</option>
 <option value="International Date Line West">(GMT-11:00) International Date Line West</option>
 <option value="Midway Island">(GMT-11:00) Midway Island</option>

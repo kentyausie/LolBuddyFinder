@@ -26,6 +26,8 @@ $roleCount=0;
 $valid = "true"; 
 $id="";
 $champions = array("","","","","");
+$region = "";
+$timezone="";
 
 $sumError =""; // Sender Name
 $emailError =""; // Sender's email ID
@@ -33,6 +35,7 @@ $password1Error="";
 $password2Error="";
 $roleError="";
 $champError="";
+$regionError="";
 
 $successMessage =""; // On submitting form below function will execute.
 if(isset($_POST['submit'])) { // Checking null values in message.
@@ -41,6 +44,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		$valid = "false"; 
 	} else {
 		$sumName = test_input($_POST["sumName"]); // check name only contains letters and whitespace
+		$region = $_POST["sumRegion"];
 	} // Checking null values in the message.
 	if($_POST["sumInfo"]==404 || $_POST["sumInfo"]==""){
 		$sumError="Invalid Summoner name";
@@ -114,10 +118,11 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		$roleError="Select at least one role";
 		$valid='false';
 	}
+	$timezone = $_POST['timezone'];
 	
 	if($valid=="true"){
 		
-		$sql = "INSERT INTO Registration (summonerID, summoner, email, password, roleTop, roleMid, roleJungle, roleADC, roleSupport, champ1, champ2, champ3, champ4, champ5) VALUES ('".$id."','".$sumName."','".$email."','".$password."','".$top."','".$mid."','".$jungle."','".$adc."','".$support."','".$champions[0]."','".$champions[1]."','".$champions[2]."','".$champions[3]."','".$champions[4]."')";
+		$sql = "INSERT INTO Registration (summonerID, summoner, email, password, roleTop, roleMid, roleJungle, roleADC, roleSupport, champ1, champ2, champ3, champ4, champ5, region, timezone) VALUES ('".$id."','".$sumName."','".$email."','".$password."','".$top."','".$mid."','".$jungle."','".$adc."','".$support."','".$champions[0]."','".$champions[1]."','".$champions[2]."','".$champions[3]."','".$champions[4]."','".$region."','".$timezone."')";
 		if ($conn->query($sql) === FALSE) {
     		echo $conn->error;
 		}else {
