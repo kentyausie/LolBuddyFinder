@@ -79,11 +79,10 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		}
     	echo "<a href=SQLindex.html>Home</a>";
     	*/
+    	echo '<script language="javascript">';
+		echo 'alert("message successfully sent2")';
+		echo '</script>';
 	}
-	
-	echo '<script language="javascript">';
-echo 'alert("message successfully sent")';
-echo '</script>';
 	$conn->close();
 }
 function test_input($data)
