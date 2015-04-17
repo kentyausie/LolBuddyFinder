@@ -42,7 +42,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 	} else {
 		$sumName = test_input($_POST["sumName"]); // check name only contains letters and whitespace
 	} // Checking null values in the message.
-	if($_POST["sumInfo"]==404){
+	if($_POST["sumInfo"]==404 || $_POST["sumInfo"]==""){
 		$sumError="Invalid Summoner name";
 		$valid=false;
 	} else {
