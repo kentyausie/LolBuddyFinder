@@ -431,7 +431,6 @@ function summonerLookUp() {
 			if(xmlhttp.status == 200){
 				var arr = JSON.parse(xmlhttp.responseText);
 				var sumInfo = arr[sumName].id;
-				alert(sumInfo);
 				document.getElementById("sumInfo").value = sumInfo;
 			}
 			else if(xmlhttp.status == 404){
