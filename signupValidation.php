@@ -89,8 +89,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		$count=-1;
 		foreach($_POST["champions"] as $champ){
 			$count = $count +1;
-			echo "<script> alert(".$champ."); </script>";
-			$champions[$count] = $champ[$count];
+			$champions[$count]->value = $champ[$count];
 		}
 	}
 	if(isset($_POST["top"])){
@@ -119,7 +118,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 	}
 	
 	if($valid=="true"){
-		
+		session_start();
 		$sql = "INSERT INTO Registration (summonerID, summoner, email, password, roleTop, roleMid, roleJungle, roleADC, roleSupport, champ1, champ2. champ3, champ4, champ5) VALUES ('".$id."','".$sumName."','".$email."','".$password."','".$top."','".$mid."','".$jungle."','".$adc."','".$support."','".$champions[0]."','".$champions[1]."','".$champions[2]."','".$champions[3]."','".$champions[4]."')";
 		if ($conn->query($sql) === FALSE) {
     		echo $conn->error;
@@ -128,10 +127,10 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		}
     	echo "<a href=SQLindex.html>Home</a>";
     
-    	//session_start();
-    	//$_SESSION['name']=$sumName;
-    	//header('LOCATION: confirm.php');
-       	//exit();
+    	
+    	$_SESSION['name']=$sumName;
+    	header('LOCATION: confirm.php');
+       	exit();
 	}
 	$conn->close();
 }
