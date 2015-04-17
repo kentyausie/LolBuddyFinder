@@ -84,7 +84,7 @@ function summonerLookUp() {
 
 <label class="formDescriptionText">Summoner Name:&nbsp&nbsp</label>
 
-<input class="textbox" type="text" name="sumName" id="sumName" placeholder="Summoner Name" onblur="javascript:summonerLookUp();" value="">
+<input class="textbox" type="text" name="sumName" id="sumName" placeholder="Summoner Name" onblur="alert('test')" value="">
 <span class="error">*<?php echo $sumError;?></span><br>
 
 <input type="hidden" name="sumInfo" id="sumInfo" value="">
