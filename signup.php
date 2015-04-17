@@ -27,46 +27,7 @@
     }
 </style>
 
-<script src="myScripts.js">
-function summonerLookUp() {
-	alert("Hello");
-	
-    var SUMMONER_NAME = document.getElementById("sumName").value;
-
-    var API_KEY = "01edb1d0-a26b-4f78-afbb-3eeb9de5b0f9";
-
-    if (SUMMONER_NAME !== "") {
-
-        $.ajax({
-            url: 'https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/' + SUMMONER_NAME + '?api_key=' + API_KEY,
-            type: 'GET',
-            dataType: 'json',
-            data: {
-
-            },
-            success: function (json) {
-            	alert("hello");
-                var SUMMONER_NAME_NOSPACES = SUMMONER_NAME.replace(" ", "");
-
-                SUMMONER_NAME_NOSPACES = SUMMONER_NAME_NOSPACES.toLowerCase().trim();
-
-                summonerLevel = json[SUMMONER_NAME_NOSPACES].summonerLevel;
-                summonerID = json[SUMMONER_NAME_NOSPACES].id;
-				
-				alert(summonerLevel + " " + summonerID);
-                //document.write(summonerLevel);
-                //document.write(summonerID);
-                
-                document.getElementById("sumInfo").value = json[SUMMONER_NAME_NOSPACES];
-            },
-            error: function (XMLHttpRequest, textStatus, errorThrown) {
-                alert("error getting Summoner data!");
-                document.getElementById("sumName").value = "";
-            }
-        });
-    } else {}
-}
-</script>
+<script src="myScripts.js"></script>
 
 <head>
 <img src="head_img.jpg" class="headImg"></img>
@@ -84,7 +45,7 @@ function summonerLookUp() {
 
 <label class="formDescriptionText">Summoner Name:&nbsp&nbsp</label>
 
-<input class="textbox" type="text" name="sumName" id="sumName" placeholder="Summoner Name" onblur="alert('test')" value="">
+<input class="textbox" type="text" name="sumName" id="sumName" placeholder="Summoner Name" onblur="summonerLookUp()" value="">
 <span class="error">*<?php echo $sumError;?></span><br>
 
 <input type="hidden" name="sumInfo" id="sumInfo" value="">
