@@ -1,5 +1,60 @@
 <!Doctype>
 <html>
+<?php 
+	if(isset($_POST['submit'])) {
+		$servername = "lovett.usask.ca";
+		$username = "cmpt350_key053"; 
+		$password = "awp0t6pokb";
+		$dbname = "cmpt350_key053";
+
+		// Create connection
+		$conn = new mysqli($servername, $username, $password, $dbname);
+		// Check connection
+		if ($conn->connect_error) {
+			die("Connection failed: " . $conn->connect_error);
+			echo "<script> alert('database fail'); </script>";
+		}
+		
+		var $email=$password="";
+		var $emailError=$passwordError="";
+		var $valid="true";
+		
+		if (empty($_POST["email"])){
+			$emailError = "Email address is required";
+			$valid = "false"; 
+		} else {
+		    $email = test_input($_POST["email"]);
+   		}
+
+		if (empty($_POST["password"]))
+		{
+			$password1Error = "Password is required";
+			$valid = "false"; 
+		}
+		else
+ 		{
+			$password1 = test_input($_POST["password1"]);
+		}
+		
+		if($valid=="true"){
+		
+		$sql = "SELECT * FROM Registration WHERE email='".$email;
+		if ($conn->query($sql) === FALSE) {
+    		echo $conn->error;
+    		alert("database fail");
+		}
+    /*
+    	session_start();
+    	$_SESSION['name']=$sumName;
+    	header('LOCATION: profile.php');
+       	exit();
+       	*/
+	}
+	$conn->close();
+	
+	}
+
+?>
 <head>
 <img src="head_img.jpg" class="headImg"></img>
 	<title>LoL Buddy Finder</title>
@@ -9,8 +64,10 @@
 </head>
 <body>
 		<form name="login" style="text-align:center;">
-			<input class="textbox" type="email" value="" placeholder="E-Mail Address" name="email"></input><br>
+			<input class="textbox" type="email" value="" placeholder="E-Mail Address" name="email"></input>
+			<span class="error"><?php echo $sumError;?></span><br>
 			<input class="textbox" type="password" value="" placeholder="Password" name="password"><br><br>
+			<span class="error"><?php echo $emailError;?></span><br>
 			<input type="submit" class="submitButton" name="submit" value="Log In">
 		</form>
 		<form action="signup.php" style="text-align:center;padding-top: 15px;">
