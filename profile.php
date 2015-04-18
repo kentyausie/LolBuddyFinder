@@ -61,6 +61,6 @@ if ($result->num_rows > 0) {
 <label><?php echo $row['region']; ?></label><br>
 <label id="level" ></label>
 <script>
-  document.getElementById('lbltipAddedComment').innerHTML = 'your tip has been submitted!';
+  document.getElementById('level').innerHTML = sumInfo.summonerLevel;
 </script>
 </html>
