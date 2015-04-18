@@ -26,7 +26,7 @@ if ($result->num_rows > 0) {
 ?>
 
 <script>
-function summonerLookUp() {
+
 	var region = "<?php echo $row['region']; ?>";
 	
 	
@@ -52,12 +52,15 @@ function summonerLookUp() {
 				alert("Unknown error");
 			}
     	}
-    }
+
 </script>
 
 
 <label>Profile</label><br>
 <label><?php echo $row['summoner']; ?></label><br>
 <label><?php echo $row['region']; ?></label><br>
-<label id="level"></label>
+<label id="level" ></label>
+<script>
+  document.getElementById('lbltipAddedComment').innerHTML = 'your tip has been submitted!';
+</script>
 </html>
