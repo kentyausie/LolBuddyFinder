@@ -26,12 +26,12 @@
 
 		if (empty($_POST["password"]))
 		{
-			$password1Error = "Password is required";
+			$passwordError = "Password is required";
 			$valid = "false"; 
 		}
 		else
  		{
-			$password1 = test_input($_POST["password1"]);
+			$password = test_input($_POST["password"]);
 		}
 		
 		if($valid=="true"){
