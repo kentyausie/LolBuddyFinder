@@ -51,7 +51,7 @@ if ($result->num_rows > 0) {
 	}
 </script>
 
-<img id="profileIcon" src=></img>
+<img id="profileIcon"></img>
 
 <div style="float: right;">
 	<label>Profile</label><br>
