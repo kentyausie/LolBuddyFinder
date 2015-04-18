@@ -54,8 +54,8 @@ if ($result->num_rows > 0) {
 <div>
 <img id="profileIcon" height=100 width=100 style="float: left; "></img>
 </div>
-<div  style="margin: 0px 0px 0px 120px;">
-	<div style="float: left; width: 200px">
+<div  style="margin: 0px 0px 0px 110px;">
+	<div style="float: left; width: 150px">
 		<label>Summoner Name: </label><br>
 		<label>Summoner Level: </level>
 		
