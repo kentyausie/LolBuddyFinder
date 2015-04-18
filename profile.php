@@ -27,5 +27,5 @@ if ($result->num_rows > 0) {
 ?>
 
 <label>Confirm</label>
-<label><?php echo $row->summoner; ?></label>
+<label><?php echo $row["summoner"]; ?></label>
 </html>
