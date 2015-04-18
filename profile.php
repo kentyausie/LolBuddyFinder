@@ -71,7 +71,6 @@ if ($result->num_rows > 0) {
 			else{
 				alert("Unknown error");
 			}
-			alert("No id");
     	}
     	
     	
@@ -91,6 +90,7 @@ if ($result->num_rows > 0) {
 <div>
 	<label><?php echo $row['summoner']; ?></label><br>
 	<p id="level" style="margin: 0px 0px 0px 0px;"></p><br>
+	<p id="rank" style="margin: 0px 0px 0px 0px;"></p><br>
 	<p id="id" style="margin: 0px 0px 0px 0px;"></p><br>
 </div>
 
@@ -100,6 +100,7 @@ if ($result->num_rows > 0) {
 <script>
 	document.getElementById('level').innerHTML = ""+sumInfo.summonerLevel;
 	document.getElementById('id').innerHTML = ""+sumInfo.id;
+	document.getElementById('id').innerHTML = ""+leagueInfo.tier;
 	document.getElementById("profileIcon").src = "http://ddragon.leagueoflegends.com/cdn/4.3.12/img/profileicon/"+sumInfo.profileIconId+".png";
 </script>
 </html>
