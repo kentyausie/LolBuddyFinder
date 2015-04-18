@@ -28,9 +28,11 @@ if ($result->num_rows > 0) {
 ?>
 
 <script>
-	var region = "<?php echo $row['region']; ?>";
+	//var region = "<?php echo $row['region']; ?>";
+	var region = "na";
 	if(region.localeCompare("") !== 0){
-    	var sumName = "<?php echo $row['summoner']; ?>";
+    	//var sumName = "<?php echo $row['summoner']; ?>";
+    	var sumName = "kingkoryo";
     	var API_KEY = "01edb1d0-a26b-4f78-afbb-3eeb9de5b0f9";
     	if (sumName !== "") {
        		var xmlhttp = new XMLHttpRequest();
