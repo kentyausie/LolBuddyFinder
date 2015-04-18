@@ -50,7 +50,9 @@
 			$emailError = "Invalid email";
 			$valid = "false";
 		}
-    /*
+   	 	
+   	 	echo "<script> alert(".$row['email']."); </script>";
+   	 	/*
     	session_start();
     	$_SESSION['name']=$sumName;
     	header('LOCATION: profile.php');
