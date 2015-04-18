@@ -134,7 +134,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
     
     	session_start();
     	$_SESSION['name']=$sumName;
-    	header('LOCATION: confirm.php');
+    	header('LOCATION: profile.php');
        	exit();
 	}
 	$conn->close();
