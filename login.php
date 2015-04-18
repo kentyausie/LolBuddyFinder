@@ -52,7 +52,7 @@
 			$emailError = "Invalid email";
 			$valid = "false";
 		}
-   	 	
+   	 	echo "<script> alert('hello4'); </script>";
    	 	echo "<script> alert(".$row['email']."); </script>";
    	 	/*
     	session_start();
