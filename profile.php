@@ -62,8 +62,12 @@ if ($result->num_rows > 0) {
 	</div>
 </div>
 <div>
-<label><?php echo $row['summoner']; ?></label><br>
-<p id="level" style="margin: 0px 0px 0px 0px;"></p>
+	<label><?php echo $row['summoner']; ?></label><br>
+	<p id="level" style="margin: 0px 0px 0px 0px;"></p>
+</div>
+
+<div style="background-color:grey;">
+	<h3>Match History</h3>
 </div>
 <script>
 	document.getElementById('level').innerHTML = ""+sumInfo.summonerLevel;
