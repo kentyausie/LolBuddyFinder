@@ -1,6 +1,6 @@
 <!Doctype>
 <html>
-<?php include 'login.php' ?>
+<?php include 'login.php'; ?>
 <head>
 <img src="head_img.jpg" class="headImg"></img>
 	<title>LoL Buddy Finder</title>
