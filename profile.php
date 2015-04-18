@@ -58,7 +58,7 @@ if ($result->num_rows > 0) {
 <label>Profile</label><br>
 <label><?php echo $row['summoner']; ?></label><br>
 <label><?php echo $row['region']; ?></label><br>
-<p name="level" id="level" >Level</p>
+<p id="level"></p>
 <script>
   document.getElementById('level').innerHTML = ""+sumInfo.summonerLevel;
 </script>
