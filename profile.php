@@ -15,8 +15,8 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$name=$_SESSION['name'];
-
+//$name=$_SESSION['name'];
+$name = "wretchedthrawn";
 $sql = "SELECT * FROM address_book WHERE summoner='".$name."'";
 $result = $conn->query($sql);
 
@@ -27,5 +27,5 @@ if ($result->num_rows > 0) {
 ?>
 
 <label>Confirm</label>
-<label><?php echo $row["summoner"]; ?></label>
+<label><?php echo $row['summoner'] ?></label>
 </html>
