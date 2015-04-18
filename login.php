@@ -41,6 +41,15 @@
     		echo $conn->error;
     		alert("database fail");
 		}
+		
+		$result = $conn->query($sql);
+
+		if ($result->num_rows > 0) {
+    		$row = $result->fetch_assoc();
+		} else {
+			$emailError = "Invalid email";
+			$valid = "false";
+		}
     /*
     	session_start();
     	$_SESSION['name']=$sumName;
