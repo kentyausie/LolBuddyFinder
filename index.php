@@ -11,9 +11,9 @@
 <body>
 		<form name="login" style="text-align:center;" method="post">
 			<input class="textbox" type="email" value="" placeholder="E-Mail Address" name="email"></input>
-			<span class="error"><?php echo $sumError;?></span><br>
-			<input class="textbox" type="password" value="" placeholder="Password" name="password"><br><br>
 			<span class="error"><?php echo $emailError;?></span><br>
+			<input class="textbox" type="password" value="" placeholder="Password" name="password"><br><br>
+			<span class="error"><?php echo $passwordError;?></span><br>
 			<input type="submit" class="submitButton" name="submit" value="Log In">
 		</form>
 		<form action="signup.php" style="text-align:center;padding-top: 15px;">
