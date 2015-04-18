@@ -61,8 +61,8 @@ if ($result->num_rows > 0) {
 			xmlhttp.open("GET", url, false);
 			xmlhttp.send();
 			if(xmlhttp.status == 200){
-				var arr = JSON.parse(xmlhttp.responseText);
-				var leagueInfo = arr[id];
+				var arr2 = JSON.parse(xmlhttp.responseText);
+				var leagueInfo = arr2[id];
 				alert(leagueInfo.id);
 			}
 			else if(xmlhttp.status == 404){
@@ -89,9 +89,9 @@ if ($result->num_rows > 0) {
 </div>
 <div>
 	<p id="name" style="margin: 0px 0px 0px 0px;"></p>
-	<p id="level" style="margin: 0px 0px 0px 0px;"></p><br>
-	<p id="rank" style="margin: 0px 0px 0px 0px;"></p><br>
-	<p id="id" style="margin: 0px 0px 0px 0px;"></p><br>
+	<p id="level" style="margin: 0px 0px 0px 0px;"></p>
+	<p id="rank" style="margin: 0px 0px 0px 0px;"></p>
+	<p id="id" style="margin: 0px 0px 0px 0px;"></p>
 </div>
 
 <div style="background-color:LightSteelBlue; margin:80px 0px 0px 0px;">
