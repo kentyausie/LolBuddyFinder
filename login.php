@@ -42,11 +42,12 @@
     		echo $conn->error;
     		alert("database fail");
 		}
-
+		echo "<script> alert('hello1'); </script>";
 		$result = $conn->query($sql);
-
+		echo "<script> alert('hello2'); </script>";
 		if ($result->num_rows > 0) {
     		$row = $result->fetch_assoc();
+    		echo "<script> alert('hello3'); </script>";
 		} else {
 			$emailError = "Invalid email";
 			$valid = "false";
