@@ -53,7 +53,7 @@ if ($result->num_rows > 0) {
 <h1>Profile</h1><br>
 <img id="profileIcon" height=100 width=100 style="float: left; padding 0px 0px 50px;"></img>
 
-<div style="padding 0px 0px 100px 100px;">
+<div style="padding: 0px 0px 100px 100px;">
 	<label><?php echo $row['summoner']; ?></label><br>
 	<label><?php echo $row['region']; ?></label><br>
 	<p id="level"></p>
