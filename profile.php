@@ -66,7 +66,7 @@ if ($result->num_rows > 0) {
 	<p id="level" style="margin: 0px 0px 0px 0px;"></p>
 </div>
 
-<div style="background-color:grey; margin:300px 0px 0px 0px;">
+<div style="background-color:grey; margin:100px 0px 0px 0px;">
 	<h3>Match History</h3>
 </div>
 <script>
