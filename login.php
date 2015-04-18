@@ -13,6 +13,7 @@
 	}
 
 	if(isset($_POST['submit'])) {
+		echo "<script> alert('hello'); </script>";
 		$email=$password="";
 		$emailError=$passwordError="";
 		$valid="true";
