@@ -63,6 +63,7 @@ if ($result->num_rows > 0) {
 			if(xmlhttp.status == 200){
 				var arr2 = JSON.parse(xmlhttp.responseText);
 				var leagueInfo = arr2[id];
+				alert(id);
 				alert(leagueInfo.id);
 			}
 			else if(xmlhttp.status == 404){
