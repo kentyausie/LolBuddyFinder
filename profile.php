@@ -51,12 +51,16 @@ if ($result->num_rows > 0) {
 	}
 </script>
 
+<img id="profileIcon" src=></img>
 
-<label>Profile</label><br>
-<label><?php echo $row['summoner']; ?></label><br>
-<label><?php echo $row['region']; ?></label>
-<p id="level"></p>
+<div style="float: right;">
+	<label>Profile</label><br>
+	<label><?php echo $row['summoner']; ?></label><br>
+	<label><?php echo $row['region']; ?></label><br>
+	<p id="level"></p>
+</div>
 <script>
 	document.getElementById('level').innerHTML = ""+sumInfo.summonerLevel;
+	document.getElementById("profileIcon").src = "http://ddragon.leagueoflegends.com/cdn/4.3.12/img/profileicon/"+sumInfo.profileIconId".png";
 </script>
 </html>
