@@ -22,10 +22,11 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
+    echo "<script> alert('row'); </script>";
     $row = $result->fetch_assoc();
 };
 ?>
 
 <label>Confirm</label>
-<label><?php echo $row['summoner'] ?></label>
+<label><?php echo $row['summoner']; ?></label>
 </html>
