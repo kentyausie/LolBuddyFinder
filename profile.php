@@ -55,7 +55,6 @@ if ($result->num_rows > 0) {
     	
     	var id = sumInfo.id;
     	if (id !== "") {
-    		alert("Hello!");
        		var xmlhttp = new XMLHttpRequest();
 			var url = "https://na.api.pvp.net/api/lol/"+region+"/v2.5/league/by-summoner/"+id+"?api_key="+API_KEY;			
 
@@ -89,7 +88,7 @@ if ($result->num_rows > 0) {
 	</div>
 </div>
 <div>
-	<label><?php echo $row['summoner']; ?></label><br>
+	<p id="name" style="margin: 0px 0px 0px 0px;"></p><br>
 	<p id="level" style="margin: 0px 0px 0px 0px;"></p><br>
 	<p id="rank" style="margin: 0px 0px 0px 0px;"></p><br>
 	<p id="id" style="margin: 0px 0px 0px 0px;"></p><br>
@@ -99,6 +98,7 @@ if ($result->num_rows > 0) {
 	<h3>Match History</h3>
 </div>
 <script>
+	document.getElementById('name').innerHTML = ""+sumInfo.name;
 	document.getElementById('level').innerHTML = ""+sumInfo.summonerLevel;
 	document.getElementById('id').innerHTML = ""+sumInfo.id;
 	document.getElementById('id').innerHTML = ""+leagueInfo.tier;
