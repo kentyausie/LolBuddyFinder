@@ -9,13 +9,13 @@
 	// Check connection
 	if ($conn->connect_error) {
 		die("Connection failed: " . $conn->connect_error);
-		echo "<script> alert(".$conn->connect_error.");"
+		echo "<script> alert(".$conn->connect_error.");";
 	}
 
 	if(isset($_POST['submit'])) {
-		var $email=$password="";
-		var $emailError=$passwordError="";
-		var $valid="true";
+		$email=$password="";
+		$emailError=$passwordError="";
+		$valid="true";
 		
 		if (empty($_POST["email"])){
 			$emailError = "Email address is required";
