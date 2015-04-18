@@ -42,9 +42,8 @@ function summonerLookUp() {
 			xmlhttp.send();
 			if(xmlhttp.status == 200){
 				var arr = JSON.parse(xmlhttp.responseText);
-				var sumInfo = arr[sumName].id;
-				document.getElementById("sumInfo").value = sumInfo;
-				document.getElementById("sumRegion").value = region;
+				var sumInfo = arr[sumName];
+				document.getElementById("level").value = sumInfo.summonerLevel;
 			}
 			else if(xmlhttp.status == 404){
 				document.getElementById("sumInfo").value = 404;
@@ -60,4 +59,5 @@ function summonerLookUp() {
 <label>Profile</label><br>
 <label><?php echo $row['summoner']; ?></label><br>
 <label><?php echo $row['region']; ?></label><br>
+<label id="level"></label>
 </html>
