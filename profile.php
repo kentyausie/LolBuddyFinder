@@ -54,7 +54,7 @@ if ($result->num_rows > 0) {
     	}
     	
     	var id = sumInfo.id;
-    	
+    	alert(id);
     	if (id !== "") {
        		var xmlhttp = new XMLHttpRequest();
 			var url = "https://na.api.pvp.net/api/lol/"+region+"/v2.5/league/by-summoner/"+id+"?api_key="+API_KEY;			
