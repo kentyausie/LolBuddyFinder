@@ -88,7 +88,7 @@ if ($result->num_rows > 0) {
 	</div>
 </div>
 <div>
-	<p id="name" style="margin: 0px 0px 0px 0px;"></p><br>
+	<p id="name" style="margin: 0px 0px 0px 0px;"></p>
 	<p id="level" style="margin: 0px 0px 0px 0px;"></p><br>
 	<p id="rank" style="margin: 0px 0px 0px 0px;"></p><br>
 	<p id="id" style="margin: 0px 0px 0px 0px;"></p><br>
