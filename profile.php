@@ -61,6 +61,6 @@ if ($result->num_rows > 0) {
 </div>
 <script>
 	document.getElementById('level').innerHTML = ""+sumInfo.summonerLevel;
-	document.getElementById("profileIcon").src = "http://ddragon.leagueoflegends.com/cdn/4.3.12/img/profileicon/"+sumInfo.profileIconId".png";
+	document.getElementById("profileIcon").src = "http://ddragon.leagueoflegends.com/cdn/4.3.12/img/profileicon/"+sumInfo.profileIconId+".png";
 </script>
 </html>
