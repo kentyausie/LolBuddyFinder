@@ -51,10 +51,10 @@ if ($result->num_rows > 0) {
 	}
 </script>
 <h1>Profile</h1><br>
-<div style="margin: 0px 0px 500px 0px;">
+<div style="margin: 0px 0px 50px 0px;">
 <img id="profileIcon" height=100 width=100 style="float: left; "></img>
 </div>
-<div style="margin: 0px 0px 100px 100px;">
+<div>
 	<label><?php echo $row['summoner']; ?></label><br>
 	<label><?php echo $row['region']; ?></label><br>
 	<p id="level"></p>
