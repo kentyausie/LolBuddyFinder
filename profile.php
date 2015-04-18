@@ -62,9 +62,7 @@ if ($result->num_rows > 0) {
 			xmlhttp.send();
 			if(xmlhttp.status == 200){
 				var arr2 = JSON.parse(xmlhttp.responseText);
-				var leagueInfo = arr2[""+id];
-				alert(id);
-				alert(leagueInfo.id);
+				var leagueInfo = arr2[id];
 			}
 			else if(xmlhttp.status == 404){
 				alert("Summoner Not Found!");
@@ -102,7 +100,7 @@ if ($result->num_rows > 0) {
 	document.getElementById('name').innerHTML = ""+sumInfo.name;
 	document.getElementById('level').innerHTML = ""+sumInfo.summonerLevel;
 	document.getElementById('id').innerHTML = ""+sumInfo.id;
-	document.getElementById('id').innerHTML = ""+leagueInfo.tier;
+	document.getElementById('rank').innerHTML = ""+leagueInfo.tier;
 	document.getElementById("profileIcon").src = "http://ddragon.leagueoflegends.com/cdn/4.3.12/img/profileicon/"+sumInfo.profileIconId+".png";
 </script>
 </html>
