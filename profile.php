@@ -50,7 +50,7 @@ if ($result->num_rows > 0) {
     	}
 	}
 </script>
-<h6>Profile</h6><br>
+<h1>Profile</h1><br>
 <img id="profileIcon" height=100 width=100></img>
 
 <div>
