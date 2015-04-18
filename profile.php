@@ -29,7 +29,7 @@ if ($result->num_rows > 0) {
 
 	var region = "<?php echo $row['region']; ?>";
 	
-	
+	alert("Hello");
 	if(region.localeCompare("") !== 0){
     	var sumName = "<?php echo $row['summoner']; ?>";
     	var API_KEY = "01edb1d0-a26b-4f78-afbb-3eeb9de5b0f9";
