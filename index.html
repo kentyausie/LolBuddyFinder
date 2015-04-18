@@ -1,7 +1,7 @@
 <!Doctype>
 <html>
 <?php 
-	if(isset($_POST['submit'])) {
+	
 		$servername = "lovett.usask.ca";
 		$username = "cmpt350_key053"; 
 		$password = "awp0t6pokb";
@@ -14,7 +14,7 @@
 			die("Connection failed: " . $conn->connect_error);
 			echo "<script> alert('database fail'); </script>";
 		}
-		
+		if(isset($_POST['submit'])) {
 		var $email=$password="";
 		var $emailError=$passwordError="";
 		var $valid="true";
