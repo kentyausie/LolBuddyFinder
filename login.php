@@ -37,7 +37,7 @@
 
 		if($valid=="true"){
 		
-		$sql = "SELECT * FROM Registration WHERE email='".$email;
+		$sql = "SELECT * FROM Registration WHERE email='".$email."'";
 		if ($conn->query($sql) === FALSE) {
     		echo $conn->error;
     		alert("database fail");
