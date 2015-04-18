@@ -13,18 +13,18 @@
 	}
 
 	if(isset($_POST['submit'])) {
-		echo "<script> alert('hello'); </script>";
+		
 		$email=$password="";
 		$emailError=$passwordError="";
 		$valid="true";
-		
+		echo "<script> alert('hello1'); </script>";
 		if (empty($_POST["email"])){
 			$emailError = "Email address is required";
 			$valid = "false"; 
 		} else {
 		    $email = test_input($_POST["email"]);
    		}
-
+		echo "<script> alert('hello2'); </script>";
 		if (empty($_POST["password"]))
 		{
 			$passwordError = "Password is required";
@@ -34,7 +34,7 @@
  		{
 			$password = test_input($_POST["password"]);
 		}
-		
+		echo "<script> alert('hello3'); </script>";
 		if($valid=="true"){
 		
 		$sql = "SELECT * FROM Registration WHERE email='".$email;
@@ -42,7 +42,7 @@
     		echo $conn->error;
     		alert("database fail");
 		}
-		
+		echo "<script> alert('hello4'); </script>";
 		$result = $conn->query($sql);
 
 		if ($result->num_rows > 0) {
