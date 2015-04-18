@@ -66,7 +66,7 @@ if ($result->num_rows > 0) {
 <div>
 	<label><?php echo $row['summoner']; ?></label><br>
 	<p id="level" style="margin: 0px 0px 0px 0px;"></p><br>
-	<label><?php echo $row['summonerId']; ?></label><br>
+	<p id="id" style="margin: 0px 0px 0px 0px;"></p><br>
 </div>
 
 <div style="background-color:LightSteelBlue; margin:80px 0px 0px 0px;">
@@ -74,6 +74,7 @@ if ($result->num_rows > 0) {
 </div>
 <script>
 	document.getElementById('level').innerHTML = ""+sumInfo.summonerLevel;
+	document.getElementById('id').innerHTML = ""+sumInfo.id;
 	document.getElementById("profileIcon").src = "http://ddragon.leagueoflegends.com/cdn/4.3.12/img/profileicon/"+sumInfo.profileIconId+".png";
 </script>
 </html>
