@@ -60,6 +60,7 @@ if ($result->num_rows > 0) {
 <label><?php echo $row['region']; ?></label><br>
 <p id="level"></p>
 <script>
+	alert(sumInfo.summonerLevel);
   document.getElementById('level').innerHTML = ""+sumInfo.summonerLevel;
 </script>
 </html>
