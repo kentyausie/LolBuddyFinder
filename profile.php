@@ -46,12 +46,35 @@ if ($result->num_rows > 0) {
 				var sumInfo = arr[sumName];
 			}
 			else if(xmlhttp.status == 404){
-				document.getElementById("sumInfo").value = 404;
+				alert("Summoner Not Found!");
 			}
 			else{
 				alert("Unknown error");
 			}
     	}
+    	
+    	var id = sumInfo.id;
+    	
+    	if (id !== "") {
+       		var xmlhttp = new XMLHttpRequest();
+			var url = "https://na.api.pvp.net/api/lol/"+region+"/v2.5/league/by-summoner/"+id+"?api_key="+API_KEY;			
+
+			xmlhttp.open("GET", url, false);
+			xmlhttp.send();
+			if(xmlhttp.status == 200){
+				var arr = JSON.parse(xmlhttp.responseText);
+				var leagueInfo = arr[id];
+			}
+			else if(xmlhttp.status == 404){
+				alert("Summoner Not Found!");
+			}
+			else{
+				alert("Unknown error");
+			}
+			alert("No id");
+    	}
+    	
+    	
 	}
 </script>
 <h1>Profile</h1><br>
@@ -61,8 +84,8 @@ if ($result->num_rows > 0) {
 <div  style="margin: 0px 0px 0px 110px;">
 	<div style="float: left; width: 150px">
 		<label>Summoner Name: </label><br>
-		<label>Summoner Level: </level>
-		
+		<label>Summoner Level: </level><br>
+		<label>Summoner Rank: </level><br>
 	</div>
 </div>
 <div>
