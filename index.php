@@ -9,7 +9,7 @@
 	
 </head>
 <body>
-		<form name="login" style="text-align:center;" method="post">
+		<form name="login" style="text-align:center;" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 			<input class="textbox" type="email" value="" placeholder="E-Mail Address" name="email"></input>
 			<span class="error"><?php echo $emailError;?></span><br>
 			<input class="textbox" type="password" value="" placeholder="Password" name="password"><br><br>
