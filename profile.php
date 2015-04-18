@@ -64,6 +64,7 @@ if ($result->num_rows > 0) {
 			if(xmlhttp.status == 200){
 				var arr = JSON.parse(xmlhttp.responseText);
 				var leagueInfo = arr[id];
+				alert(leagueInfo.id);
 			}
 			else if(xmlhttp.status == 404){
 				alert("Summoner Not Found!");
