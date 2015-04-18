@@ -63,7 +63,8 @@ if ($result->num_rows > 0) {
 </div>
 <div>
 	<label><?php echo $row['summoner']; ?></label><br>
-	<p id="level" style="margin: 0px 0px 0px 0px;"></p>
+	<p id="level" style="margin: 0px 0px 0px 0px;"></p><br>
+	<label><?php echo $row['id']; ?></label><br>
 </div>
 
 <div style="background-color:LightSteelBlue; margin:80px 0px 0px 0px;">
