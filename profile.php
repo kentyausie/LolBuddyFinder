@@ -63,7 +63,7 @@ if ($result->num_rows > 0) {
 </div>
 <div>
 <label><?php echo $row['summoner']; ?></label><br>
-<p id="level"></p>
+<p id="level" style="margin: 0px 0px 0px 0px;"></p>
 </div>
 <script>
 	document.getElementById('level').innerHTML = ""+sumInfo.summonerLevel;
