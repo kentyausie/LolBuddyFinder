@@ -62,7 +62,7 @@ if ($result->num_rows > 0) {
 			xmlhttp.send();
 			if(xmlhttp.status == 200){
 				var arr2 = JSON.parse(xmlhttp.responseText);
-				var leagueInfo = arr2[id];
+				var leagueInfo = arr2[""+id];
 				alert(id);
 				alert(leagueInfo.id);
 			}
