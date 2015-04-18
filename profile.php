@@ -26,7 +26,6 @@ if ($result->num_rows > 0) {
 ?>
 
 <script>
-
 	var region = "<?php echo $row['region']; ?>";
 	
 	alert("Hello");
@@ -51,7 +50,7 @@ if ($result->num_rows > 0) {
 				alert("Unknown error");
 			}
     	}
-
+	}
 </script>
 
 
