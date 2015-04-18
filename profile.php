@@ -17,7 +17,7 @@ if ($conn->connect_error) {
 
 //$name=$_SESSION['name'];
 $name = "wretchedthrawn";
-$sql = "SELECT * FROM address_book WHERE summoner='".$name."'";
+$sql = "SELECT * FROM Registration WHERE summoner='".$name."'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
