@@ -106,8 +106,12 @@ $conn->close();
 </div>
 
 <div>
-	<h2>Champions:<h2>
+	<h3>Champions:</h3>
 	<img id="champ1" height=0 width=0></img>
+	<img id="champ2" height=0 width=0></img>
+	<img id="champ3" height=0 width=0></img>
+	<img id="champ4" height=0 width=0></img>
+	<img id="champ5" height=0 width=0></img>
 </div>
 
 <div style="background-color:LightSteelBlue; margin:80px 0px 0px 0px;">
@@ -125,6 +129,26 @@ $conn->close();
 		document.getElementById("champ1").src = "/champion_icons/<?php echo $row['champ1']; ?>square.png";
 		document.getElementById("champ1").height = 50;
 		document.getElementById("champ1").width = 50;
+	}
+	if("<?php echo $row['champ2']; ?>" !=""){
+		document.getElementById("champ2").src = "/champion_icons/<?php echo $row['champ2']; ?>square.png";
+		document.getElementById("champ2").height = 50;
+		document.getElementById("champ2").width = 50;
+	}
+	if("<?php echo $row['champ3']; ?>" !=""){
+		document.getElementById("champ3").src = "/champion_icons/<?php echo $row['champ3']; ?>square.png";
+		document.getElementById("champ3").height = 50;
+		document.getElementById("champ3").width = 50;
+	}
+	if("<?php echo $row['champ4']; ?>" !=""){
+		document.getElementById("champ4").src = "/champion_icons/<?php echo $row['champ4']; ?>square.png";
+		document.getElementById("champ4").height = 50;
+		document.getElementById("champ4").width = 50;
+	}
+	if("<?php echo $row['champ5']; ?>" !=""){
+		document.getElementById("champ5").src = "/champion_icons/<?php echo $row['champ5']; ?>square.png";
+		document.getElementById("champ5").height = 50;
+		document.getElementById("champ5").width = 50;
 	}
 </script>
 </html>
