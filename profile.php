@@ -30,6 +30,7 @@ $conn->close();
 ?>
 
 <script>
+	var leagueCheck="";
 	var region = "<?php echo $row['region']; ?>";
 	//var region = "na";
 	if(region.localeCompare("") !== 0){
@@ -69,13 +70,13 @@ $conn->close();
 			}
 			else if(xmlhttp.status == 404){
 				alert("Summoner match Not Found!");
-				leagueInfo = "UNRANKED";
+				leagueCheck = "UNRANKED";
 			}
 			else{
 				alert("Unknown error");
 			}
 			
-			if (leagueInfo.localCompare("UNRANKED") ==0){
+			if (leagueCheck.localCompare("UNRANKED") ==0){
 				var tier = "UNRANKED";
 			} else {
 				var tier = leagueInfo[0].tier;
