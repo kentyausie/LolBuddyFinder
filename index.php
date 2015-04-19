@@ -19,8 +19,5 @@
 		<form action="signup.php" style="text-align:center;padding-top: 15px;">
 			<input class="submitButton" type="submit" name="submit" value="Sign Up">
 		</form>
-		<form action="profile.php" style="text-align:center;padding-top: 15px;">
-			<input class="submitButton" type="submit" name="submit" value="profile">
-		</form>
 </body>
 </html>
