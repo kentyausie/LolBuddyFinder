@@ -1,4 +1,6 @@
-<?php include 'signupValidation.php'; ?>
+<?php 
+header('Content-Type: text/html; charset=utf-8');
+include 'signupValidation.php'; ?>
 <!DOCTYPE HTML>
 <html>
 <style>
