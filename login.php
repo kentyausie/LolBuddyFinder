@@ -52,7 +52,7 @@
 			$valid = "false";
 		}
 
-   	 	echo "<script> alert('".$row['email'."'); </script>";
+   	 	echo "<script> alert('".$row['email']."'); </script>";
    	 	/*
     	session_start();
     	$_SESSION['name']=$sumName;
