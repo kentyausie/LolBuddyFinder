@@ -93,7 +93,7 @@ $conn->close();
 	<div style="float: left; width: 150px">
 		<label>Summoner Name: </label><br>
 		<label>Summoner Level: </level><br>
-		<label style="margin: 25px 0px 0px 0px">Summoner Rank: </level><br>
+		<label style="margin: 100px 0px 0px 0px">Summoner Rank: </level><br>
 	</div>
 </div>
 <div>
