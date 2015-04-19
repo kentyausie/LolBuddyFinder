@@ -101,7 +101,6 @@ $conn->close();
 	<p id="level" style="margin: 0px 0px 0px 0px;"></p>
 	<p id="rank" style="margin: 0px 0px 0px 0px;display: inline;"></p>
 	<img id="rankIcon" height=25 width=25></img>
-	<p id="id" style="margin: 0px 0px 0px 0px;"></p>
 	
 </div>
 
@@ -131,7 +130,6 @@ $conn->close();
 	document.getElementById("rankIcon").src = "/rank_icons/"+tier+".png";
 	document.getElementById('name').innerHTML = ""+sumInfo.name;
 	document.getElementById('level').innerHTML = ""+sumInfo.summonerLevel;
-	document.getElementById('id').innerHTML = ""+id;
 	document.getElementById('rank').innerHTML = tier;
 	
 	if("<?php echo $row['champ1']; ?>" !=""){
