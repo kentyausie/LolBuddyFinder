@@ -37,30 +37,34 @@
 
 		if($valid=="true"){
 		
-		$sql = "SELECT * FROM Registration WHERE email='".$email."'";
-		if ($conn->query($sql) === FALSE) {
-    		echo $conn->error;
-    		echo "<script> alert('database fail'); </script>";
+			$sql = "SELECT * FROM Registration WHERE email='".$email."'";
+			if ($conn->query($sql) === FALSE) {
+    			echo $conn->error;
+    			echo "<script> alert('database fail'); </script>";
+			}
+
+			$result = $conn->query($sql);
+
+			if ($result->num_rows > 0) {
+    			$row = $result->fetch_assoc();
+			} else {
+				$emailError = "Invalid email";
+				$valid = "false";
+			}
+			
+			if (strcmp($password,$_POST['password']) != 0){
+				$passwordError = "Invalid Password";
+				$valid="false";
+			}
+			
+			if($valid = "true"{
+    			session_start();
+    			$_SESSION['name']=$row['summoner'];
+    			header('LOCATION: profile.php');
+       			exit();
+			}
 		}
-
-		$result = $conn->query($sql);
-
-		if ($result->num_rows > 0) {
-    		$row = $result->fetch_assoc();
-		} else {
-			$emailError = "Invalid email";
-			$valid = "false";
-		}
-
-   	 	echo "<script> alert('".$row['email']."'); </script>";
-   	 	/*
-    	session_start();
-    	$_SESSION['name']=$sumName;
-    	header('LOCATION: profile.php');
-       	exit();
-       	*/
-	}
-	$conn->close();
+		$conn->close();
 	
 	}
 	

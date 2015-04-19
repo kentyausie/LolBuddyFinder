@@ -17,8 +17,8 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-//$name=$_SESSION['name'];
-$name = "kingkoryo";
+$name=$_SESSION['name'];
+//$name = "kingkoryo";
 $sql = "SELECT * FROM Registration WHERE summoner='".$name."'";
 $result = $conn->query($sql);
 
@@ -30,11 +30,11 @@ $conn->close();
 ?>
 
 <script>
-	//var region = "<?php echo $row['region']; ?>";
-	var region = "na";
+	var region = "<?php echo $row['region']; ?>";
+	//var region = "na";
 	if(region.localeCompare("") !== 0){
-    	//var sumName = "<?php echo $row['summoner']; ?>";
-    	var sumName = "kingkoryo";
+    	var sumName = "<?php echo $row['summoner']; ?>";
+    	//var sumName = "kingkoryo";
     	var API_KEY = "01edb1d0-a26b-4f78-afbb-3eeb9de5b0f9";
     	if (sumName !== "") {
        		var xmlhttp = new XMLHttpRequest();
