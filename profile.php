@@ -105,6 +105,11 @@ $conn->close();
 	
 </div>
 
+<div>
+	<h2>Champions:<h2><br>
+	<img id="champ1" height=0 width=0></img>
+</div>
+
 <div style="background-color:LightSteelBlue; margin:80px 0px 0px 0px;">
 	<h3>Match History</h3>
 </div>
@@ -115,5 +120,11 @@ $conn->close();
 	document.getElementById('level').innerHTML = ""+sumInfo.summonerLevel;
 	document.getElementById('id').innerHTML = ""+id;
 	document.getElementById('rank').innerHTML = tier;
+	
+	if("<?php echo $row['champ1']; ?>" !=""){
+		document.getElementById("champ1").src = "/champion_icons/"+"<?php echo $row['champ1']; ?>"+".png";
+		document.getElementById("champ1").height = 50;
+		document.getElementById("champ1").width = 50;
+	}
 </script>
 </html>
