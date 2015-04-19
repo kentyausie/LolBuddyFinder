@@ -106,7 +106,7 @@ $conn->close();
 </div>
 
 <div>
-	<h2>Champions:<h2><br>
+	<h2>Champions:<h2>
 	<img id="champ1" height=0 width=0></img>
 </div>
 
