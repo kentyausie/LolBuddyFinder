@@ -114,7 +114,7 @@ $conn->close();
 </div>
 
 <div>
-	<h3>Roles:</h3>
+	<h3 style="top-margin:100px;">Roles:</h3>
 	<img id="top" height=0 width=0></img>
 	<img id="mid" height=0 width=0></img>
 	<img id="jungle" height=0 width=0></img>
