@@ -109,7 +109,7 @@ $conn->close();
 	} else {
 		var tier = leagueInfo[0].tier;
 	}
-	document.getElementById('rank').innerHTML = ""+leagueInfo[0].tier;
+	document.getElementById('rank').innerHTML = tier;
 	document.getElementById("profileIcon").src = "http://ddragon.leagueoflegends.com/cdn/4.3.12/img/profileicon/"+sumInfo.profileIconId+".png";
 </script>
 </html>
