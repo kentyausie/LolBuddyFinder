@@ -69,7 +69,6 @@ $conn->close();
 				var leagueInfo = arr2[id];
 			}
 			else if(xmlhttp.status == 404){
-				alert("Summoner match Not Found!");
 				leagueCheck = "UNRANKED";
 			}
 			else{
