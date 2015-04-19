@@ -76,7 +76,7 @@ $conn->close();
 				alert("Unknown error");
 			}
 			
-			if (leagueCheck.localCompare("UNRANKED") ==0){
+			if (leagueCheck=="UNRANKED"){
 				var tier = "UNRANKED";
 			} else {
 				var tier = leagueInfo[0].tier;
