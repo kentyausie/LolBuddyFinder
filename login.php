@@ -57,7 +57,7 @@
 				$valid="false";
 			}
 			
-			if($valid = "true"){
+			if($valid == "true"){
     			session_start();
     			$_SESSION['name']=$row['summoner'];
     			header('LOCATION: profile.php');
