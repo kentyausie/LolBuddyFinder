@@ -9,7 +9,7 @@
 	// Check connection
 	if ($conn->connect_error) {
 		die("Connection failed: " . $conn->connect_error);
-		echo "<script> alert(".$conn->connect_error.");";
+		echo "<script> alert('connction failure');";
 	}
 
 	if(isset($_POST['submit'])) {
@@ -54,6 +54,7 @@
 		}
    	 	echo "<script> alert('hello4'); </script>";
    	 	echo "<script> alert(".$row['email']."); </script>";
+   	 	echo "<script> alert('hello4'); </script>";
    	 	/*
     	session_start();
     	$_SESSION['name']=$sumName;
