@@ -114,6 +114,15 @@ $conn->close();
 	<img id="champ5" height=0 width=0></img>
 </div>
 
+<div>
+	<h3>Roles:</h3>
+	<img id="top" height=0 width=0></img>
+	<img id="mid" height=0 width=0></img>
+	<img id="jungle" height=0 width=0></img>
+	<img id="adc" height=0 width=0></img>
+	<img id="support" height=0 width=0></img>
+</div>
+
 <div style="background-color:LightSteelBlue; margin:80px 0px 0px 0px;">
 	<h3>Match History</h3>
 </div>
@@ -149,6 +158,32 @@ $conn->close();
 		document.getElementById("champ5").src = "/champion_icons/<?php echo $row['champ5']; ?>square.png";
 		document.getElementById("champ5").height = 50;
 		document.getElementById("champ5").width = 50;
+	}
+	
+	if("<?php echo $row['roleTop']; ?>" ==1){
+		document.getElementById("top").src = "/roles/top.png";
+		document.getElementById("top").height = 50;
+		document.getElementById("top").width = 50;
+	}
+	if("<?php echo $row['roleMid']; ?>" ==1){
+		document.getElementById("mid").src = "/roles/mid.png";
+		document.getElementById("mid").height = 50;
+		document.getElementById("mid").width = 50;
+	}
+	if("<?php echo $row['roleJungle']; ?>" ==1){
+		document.getElementById("jungle").src = "/roles/jungle.png";
+		document.getElementById("jungle").height = 50;
+		document.getElementById("jungle").width = 50;
+	}
+	if("<?php echo $row['roleADC']; ?>" ==1){
+		document.getElementById("adc").src = "/roles/adc.png";
+		document.getElementById("adc").height = 50;
+		document.getElementById("adc").width = 50;
+	}
+	if("<?php echo $row['roleSupport']; ?>" ==1){
+		document.getElementById("support").src = "/roles/support.png";
+		document.getElementById("support").height = 50;
+		document.getElementById("support").width = 50;
 	}
 </script>
 </html>
