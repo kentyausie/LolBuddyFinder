@@ -99,9 +99,10 @@ $conn->close();
 <div>
 	<p id="name" style="margin: 0px 0px 0px 0px;"></p>
 	<p id="level" style="margin: 0px 0px 0px 0px;"></p>
-	<p id="rank" style="margin: 0px 0px 0px 0px;"></p><br>
-	<p id="id" style="margin: 0px 0px 0px 0px;"></p>
+	<p id="rank" style="margin: 0px 0px 0px 0px;"></p>
 	<img id="rankIcon" height=100 width=100></img>
+	<p id="id" style="margin: 0px 0px 0px 0px;"></p>
+	
 </div>
 
 <div style="background-color:LightSteelBlue; margin:80px 0px 0px 0px;">
