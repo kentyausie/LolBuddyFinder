@@ -40,7 +40,7 @@
 		$sql = "SELECT * FROM Registration WHERE email='".$email."'";
 		if ($conn->query($sql) === FALSE) {
     		echo $conn->error;
-    		alert("database fail");
+    		echo "<script> alert('database fail'); </script>";
 		}
 
 		$result = $conn->query($sql);
