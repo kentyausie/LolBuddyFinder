@@ -69,6 +69,7 @@ $conn->close();
 			}
 			else if(xmlhttp.status == 404){
 				alert("Summoner match Not Found!");
+				leagueInfo = "UNRANKED";
 			}
 			else{
 				alert("Unknown error");
@@ -105,6 +106,7 @@ $conn->close();
 	document.getElementById('id').innerHTML = ""+id;
 	document.getElementById('rank').innerHTML = ""+leagueInfo[0].tier;
 	alert(sumInfo.profileIconId);
+	alert(sumInfo.name);
 	document.getElementById("profileIcon").src = "http://ddragon.leagueoflegends.com/cdn/4.3.12/img/profileicon/"+sumInfo.profileIconId+".png";
 </script>
 </html>
