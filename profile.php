@@ -67,7 +67,7 @@ $conn->close();
 				var leagueInfo = arr2[id];
 			}
 			else if(xmlhttp.status == 404){
-				alert("Summoner Not Found!");
+				alert("Summoner match Not Found!");
 			}
 			else{
 				alert("Unknown error");
