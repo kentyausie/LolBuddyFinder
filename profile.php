@@ -122,7 +122,7 @@ $conn->close();
 	document.getElementById('rank').innerHTML = tier;
 	
 	if("<?php echo $row['champ1']; ?>" !=""){
-		document.getElementById("champ1").src = "/champion_icons/<?php echo $row['champ1']; ?>.png";
+		document.getElementById("champ1").src = "/champion_icons/<?php echo $row['champ1']; ?>square.png";
 		document.getElementById("champ1").height = 50;
 		document.getElementById("champ1").width = 50;
 	}
