@@ -74,6 +74,12 @@ $conn->close();
 			else{
 				alert("Unknown error");
 			}
+			
+			if (leagueInfo.localCompare("UNRANKED") ==0){
+				var tier = "UNRANKED";
+			} else {
+				var tier = leagueInfo[0].tier;
+			}
     	}
     	
     	
@@ -101,15 +107,10 @@ $conn->close();
 	<h3>Match History</h3>
 </div>
 <script>
+	document.getElementById("profileIcon").src = "http://ddragon.leagueoflegends.com/cdn/4.3.12/img/profileicon/"+sumInfo.profileIconId+".png";
 	document.getElementById('name').innerHTML = ""+sumInfo.name;
 	document.getElementById('level').innerHTML = ""+sumInfo.summonerLevel;
 	document.getElementById('id').innerHTML = ""+id;
-	if (leagueInfo.localCompare("UNRANKED") ==0){
-		var tier = "UNRANKED";
-	} else {
-		var tier = leagueInfo[0].tier;
-	}
 	document.getElementById('rank').innerHTML = tier;
-	document.getElementById("profileIcon").src = "http://ddragon.leagueoflegends.com/cdn/4.3.12/img/profileicon/"+sumInfo.profileIconId+".png";
 </script>
 </html>
