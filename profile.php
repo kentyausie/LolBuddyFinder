@@ -102,6 +102,7 @@ $conn->close();
 	<p id="level" style="margin: 0px 0px 0px 0px;"></p>
 	<p id="rank" style="margin: 0px 0px 0px 0px;"></p><br>
 	<p id="id" style="margin: 0px 0px 0px 0px;"></p>
+	<img id="rankIcon" height=100 width=100></img>
 </div>
 
 <div style="background-color:LightSteelBlue; margin:80px 0px 0px 0px;">
@@ -109,6 +110,7 @@ $conn->close();
 </div>
 <script>
 	document.getElementById("profileIcon").src = "http://ddragon.leagueoflegends.com/cdn/4.3.12/img/profileicon/"+sumInfo.profileIconId+".png";
+	document.getElementById("rankIcon").src = "/rank_icons/"+tier+".png";
 	document.getElementById('name').innerHTML = ""+sumInfo.name;
 	document.getElementById('level').innerHTML = ""+sumInfo.summonerLevel;
 	document.getElementById('id').innerHTML = ""+id;
