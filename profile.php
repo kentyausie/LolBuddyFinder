@@ -109,6 +109,10 @@ $conn->close();
     		<td><p id="language" style="margin: 0px 0px 0px 0px;display: inline;"></p></td>
   		</tr>
   		<tr>
+    		<td>Timezone:</td>
+    		<td><p id="timezone" style="margin: 0px 0px 0px 0px;display: inline;"></p></td>
+  		</tr>
+  		<tr>
     		<td>Summoner Rank:</td>
     		<td><p id="rank" style="margin: 0px 0px 0px 0px;display: inline;"></p>
 			<img id="rankIcon" height=25 width=25></img></td>
@@ -198,5 +202,6 @@ $conn->close();
 	}
 	
 	document.getElementById('language').innerHTML = "<?php echo $row['language']; ?>";
+	document.getElementById('timezone').innerHTML = "<?php echo $row['timezone']; ?>";
 </script>
 </html>
