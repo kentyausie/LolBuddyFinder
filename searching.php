@@ -23,7 +23,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		}
 	}
 	if ($_POST['role'] !== "select"){
-		if($sqlQuery !== ""){
+		if($sqlQuery == ""){
 			$sqlQuery = $sqlQuery." AND ";
 		}
 		if($_POST['role'] == "top"){
@@ -31,7 +31,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		}
 		echo "<script> alert('".$sqlQuery."'); </script>";
 	} 
-	if ($_POST['region'] !== "select"){
+	if ($_POST['region'] == "select"){
 		if($sqlQuery !== ""){
 			$sqlQuery = $sqlQuery." AND ";
 		}
