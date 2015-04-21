@@ -133,7 +133,7 @@ $conn->close();
 	document.getElementById('name').innerHTML = ""+sumInfo.name;
 	document.getElementById('level').innerHTML = ""+sumInfo.summonerLevel;
 	document.getElementById('rank').innerHTML = tier;
-	document.getElementById('region').innerHTML = ""+sumInfo.region;
+	document.getElementById('region').innerHTML = "<?php echo $row['region'] ?>" ;
 	
 	if("<?php echo $row['champ1']; ?>" !=""){
 		document.getElementById("champ1").src = "/champion_icons/<?php echo $row['champ1']; ?>square.png";
