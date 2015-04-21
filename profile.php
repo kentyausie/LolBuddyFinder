@@ -91,6 +91,7 @@ $conn->close();
 	<img id="profileIcon" height=100 width=100 style="float: left; "></img>
 
 	<table style="margin: 0px 0px 0px 110px;">
+  		<tbody>
   		<tr>
     		<td>Summoner Name:</td>
     		<td><p id="name" style="margin: 0px 0px 0px 0px; display: inline;"></p></td>
@@ -109,8 +110,8 @@ $conn->close();
     		<td><p id="rank" style="margin: 0px 0px 0px 0px;display: inline;"></p>
 			<img id="rankIcon" height=25 width=25></img></td>
   		</tr>
-
-
+		</tbody>
+	</table>
 
 	<h3>Champions:</h3>
 	<img id="champ1" height=0 width=0></img>
