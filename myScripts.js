@@ -416,7 +416,7 @@ function summonerLookUp() {
 	else {
 		alert("Select a region");
 	}
-	
+	alert(region);
 	
 	if(region.localeCompare("") !== 0){
     	var sumName = document.getElementById("sumName").value;
