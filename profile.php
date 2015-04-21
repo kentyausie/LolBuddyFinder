@@ -3,7 +3,6 @@
 <?php 
 
 session_start(); 
-header('Content-type: application/json');
 
 include 'UpdateValidation.php';
 $servername = "lovett.usask.ca";
