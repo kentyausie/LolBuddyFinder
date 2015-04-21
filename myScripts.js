@@ -420,10 +420,11 @@ function summonerLookUp() {
 	
 	if(region.localeCompare("") !== 0){
     	var sumName = document.getElementById("sumName").value;
+    	var SUMMONER_NAME_NOSPACES = sumName.replace(" ", "");
     	var API_KEY = "01edb1d0-a26b-4f78-afbb-3eeb9de5b0f9";
     	if (sumName !== "") {
        		var xmlhttp = new XMLHttpRequest();
-			var url = "https://na.api.pvp.net/api/lol/"+region+"/v1.4/summoner/by-name/"+sumName+"?api_key="+API_KEY;
+			var url = "https://na.api.pvp.net/api/lol/"+region+"/v1.4/summoner/by-name/"+SUMMONER_NAME_NOSPACES+"?api_key="+API_KEY;
 			
 
 			xmlhttp.open("GET", url, false);
