@@ -435,9 +435,9 @@ function summonerLookUp() {
 				alert("Hello1");
 				var arr = JSON.parse(xmlhttp.responseText);
 				alert("Hello2");
-				var sumInfo = arr[sumName];
+				var sumInfo = arr[SUMMONER_NAME_NOSPACES];
 				alert("Hello3");
-				alert(sumInfo[0].id);
+				alert(sumInfo.id);
 				alert("Hello4");
 				document.getElementById("sumInfo").value = sumInfo;
 				document.getElementById("sumRegion").value = region;
