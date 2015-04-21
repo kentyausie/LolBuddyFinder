@@ -51,7 +51,7 @@
 				$emailError = "Invalid email";
 				$valid = "false";
 			}
-			
+			echo "<script> alert('".strcmp($password,$_POST['password'])."'); </script>";
 			if (strcmp($password,$_POST['password']) != 0){
 				$passwordError = "Invalid Password";
 				$valid="false";
