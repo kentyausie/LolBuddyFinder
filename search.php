@@ -8,6 +8,7 @@
 <body>
 	<form action="search.php" style="text-align:center;padding-top: 15px;">
 		<select name="language" class="selectBox">
+			<option value="select">Language</option>
 			<option value="english">English</option>
 			<option value="french">French</option>
 			<option value="german">German</option>
