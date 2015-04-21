@@ -1,6 +1,9 @@
 <!DOCTYPE HTML>
 <html>
-
+<head>
+	<title>Search</title>
+	<h2>Search</h2>
+</head>
 <body>
 	<form action="search.php" style="text-align:center;padding-top: 15px;">
 		<select name="language" class="selectBox">
