@@ -53,7 +53,7 @@ $conn->close();
 				alert("Unknown error");
 			}
     		
-			url = "https://na.api.pvp.net/api/lol/"+region+"/v2.5/league/by-summoner/"+sumId+"?api_key="+API_KEY;			
+			url = "https://"+region+".api.pvp.net/api/lol/"+region+"/v2.5/league/by-summoner/"+sumId+"?api_key="+API_KEY;			
 
 			xmlhttp.open("GET", url, false);
 			xmlhttp.send();
