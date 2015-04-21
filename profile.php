@@ -86,7 +86,9 @@ $conn->close();
 	<form action="search.php" style="text-align:center;padding-top: 15px;">
 		<input type="submit" name="submit" value="Search">
 	</form>
-	<button type="button" href="gohome.php">Home</button>
+	<form action="gohome.php" style="text-align:center;padding-top: 15px;">
+		<input type="submit" name="submit" value="Home">
+	</form>
 	<img id="profileIcon" height=100 width=100 style="float: left; "></img>
 
 	<table style="margin: 0px 0px 0px 110px;">
