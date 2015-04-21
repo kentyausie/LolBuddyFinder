@@ -33,18 +33,18 @@ $conn->close();
 	var leagueCheck="";
 	var region = "<?php echo $row['region']; ?>";
 	if(region.localeCompare("") !== 0){
-    	var sumName = "<?php echo $row['summoner']; ?>";
+    	var sumId = "<?php echo $row['summonerID']; ?>";
     	var API_KEY = "01edb1d0-a26b-4f78-afbb-3eeb9de5b0f9";
-    	if (sumName !== "") {
+    	if (sumId !== "") {
        		var xmlhttp = new XMLHttpRequest();
-			var url = "https://na.api.pvp.net/api/lol/"+region+"/v1.4/summoner/by-name/"+sumName+"?api_key="+API_KEY;
+			var url = "https://na.api.pvp.net/api/lol/"+region+"/v1.4/summoner/"+sumId+"?api_key="+API_KEY;
 			
 
 			xmlhttp.open("GET", url, false);
 			xmlhttp.send();
 			if(xmlhttp.status == 200){
 				var arr = JSON.parse(xmlhttp.responseText);
-				var sumInfo = arr[sumName];
+				var sumInfo = arr[sumId];
 			}
 			else if(xmlhttp.status == 404){
 				alert("Summoner Not Found!");
@@ -52,10 +52,7 @@ $conn->close();
 			else{
 				alert("Unknown error");
 			}
-    	}
-    	
-    	var id = sumInfo.id;
-    	if (id !== "") {
+    		
        		var xmlhttp = new XMLHttpRequest();
 			var url = "https://na.api.pvp.net/api/lol/"+region+"/v2.5/league/by-summoner/"+id+"?api_key="+API_KEY;			
 
