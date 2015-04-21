@@ -80,7 +80,7 @@ if ($result->num_rows > 0) {
 				$.ajax({url: 'profile.php',
 				type: 'POST',
 				data: {tierName: tier}
-    			contentType: "text/json;",
+    			contentType: "application/json",
     			dataType: "json",
 				success: function(data){
 				alert("success");
