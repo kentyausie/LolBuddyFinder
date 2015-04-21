@@ -78,6 +78,8 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 	else
  	{
 		$password2 = test_input($_POST["password2"]);
+		echo "<script> alert('".$password1."'); </script>";
+		echo "<script> alert('".$password2."'); </script>";
 		if(strcmp($password1,$password2) != 0){
 			$password2Error = "Password doesn't match";
 			$valid = "false";
