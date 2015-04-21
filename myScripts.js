@@ -432,6 +432,7 @@ function summonerLookUp() {
 			alert(xmlhttp.status);
 			alert(xmlhttp.status == 200);
 			if(xmlhttp.status == 200){
+				alert("Hello1");
 				var arr = JSON.parse(xmlhttp.responseText);
 				var sumInfo = arr[sumName].id;
 				alert(sumInfo);
