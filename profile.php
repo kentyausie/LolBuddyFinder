@@ -18,7 +18,6 @@ if ($conn->connect_error) {
 }
 
 $name=$_SESSION['name'];
-//$name = "kingkoryo";
 $sql = "SELECT * FROM Registration WHERE summoner='".$name."'";
 $result = $conn->query($sql);
 
@@ -84,7 +83,8 @@ $conn->close();
 	<h2 class="headText"><?php echo $row['summoner']; ?></h2>
 </head>
 <body>
-
+	<button type="button" onclick="alert('Hello world!')">Search</button>
+	<button type="button" onclick="<?php $_SESSION['name']=$_SESSION['user']?>" href="profile.php">Home</button>
 	<img id="profileIcon" height=100 width=100 style="float: left; "></img>
 
 	<table style="margin: 0px 0px 0px 110px;">

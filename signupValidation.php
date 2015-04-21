@@ -133,7 +133,8 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		}
     
     	session_start();
-    	$_SESSION['name']=$sumName;
+    	$_SESSION['user']=$sumName;
+    	$_SESSION['name']=$_SESSION['user'];
     	header('LOCATION: profile.php');
        	exit();
 	}

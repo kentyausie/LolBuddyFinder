@@ -53,7 +53,8 @@
 				
 					if($valid == "true"){
     					session_start();
-    					$_SESSION['name']=$row['summoner'];
+    					$_SESSION['user']=$row['summoner'];
+    					$_SESSION['name']=$_SESSION['user'];
     					header('LOCATION: profile.php');
        					exit();
 					}
