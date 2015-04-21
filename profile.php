@@ -87,9 +87,10 @@ $conn->close();
 </script>
 <h1>Profile</h1><br>
 <div>
-<img id="profileIcon" height=100 width=100 style="float: left; "></img>
+
 </div>
 <div  style="margin: 0px 0px 0px 110px;">
+	<img id="profileIcon" height=100 width=100 style="float: left; "></img>
 	<table style="width:300px">
   		<tr>
     		<td>Summoner Name:</td>
