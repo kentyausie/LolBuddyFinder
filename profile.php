@@ -90,19 +90,20 @@ $conn->close();
 <img id="profileIcon" height=100 width=100 style="float: left; "></img>
 </div>
 <div  style="margin: 0px 0px 0px 110px;">
-	<div>
-		<label style="margin-right:50px;">Summoner Name: </label>
-		<p id="name" style="margin: 0px 0px 0px 0px; display: inline;"></p><br>
-		<label style="margin-right:50px;">Summoner Level: </label>
-		<p id="level" style="margin: 0px 0px 0px 0px;display: inline;"></p><br>
-		<label style="margin-right:50px;"> Region:</label>
-		<p id="region" style="margin: 0px 0px 0px 0px;display: inline;"></p><br>
-		
-		<label style="margin-top: 100px;margin-right:50px;">Summoner Rank: </label>
-		<p id="rank" style="margin: 0px 0px 0px 0px;display: inline;"></p>
-		<img id="rankIcon" height=25 width=25></img><br>
-		
-	</div>
+	<table style="width:100%">
+  		<tr>
+    		<td>Summoner Name:</td>
+    		<td>Summoner Level:</td> 
+    		<td>Region:</td>
+    		<td>Summoner Rank:</td>
+  		</tr>
+  		<tr>
+    		<td><p id="name" style="margin: 0px 0px 0px 0px; display: inline;"></p></td>
+    		<td><p id="level" style="margin: 0px 0px 0px 0px;display: inline;"></p></td> 
+    		<td><p id="region" style="margin: 0px 0px 0px 0px;display: inline;"></p></td>
+    		<td><p id="rank" style="margin: 0px 0px 0px 0px;display: inline;"></p>
+			<img id="rankIcon" height=25 width=25></img></td>
+  		</tr>
 </div>
 <div>
 	
