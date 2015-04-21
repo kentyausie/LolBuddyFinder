@@ -79,7 +79,7 @@ if ($result->num_rows > 0) {
 				//$.post('profile.php', {tier: tier});
 				$.ajax({url: 'profile.php',
 				type: 'POST',
-				data: {tierName: tier},
+				data: JSON.stringify({ "tierName": tier})
 				dataType: 'JSON',
 				success: function(data){
 				alert("success");
