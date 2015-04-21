@@ -86,9 +86,7 @@ if ($result->num_rows > 0) {
     	}
 	}
 </script>
-<?php if(isset($_POST['tier'])){
-			echo "<script> alert('true'); </script>";
-		} ?>
+<?php if(isset($_POST['tier'])){echo "<script> alert('true'); </script>";} ?>
 <head>
 	<link rel="stylesheet" href="style.css">
 	<title id="title"><?php echo $row['summoner']; ?>'s Profile</title>
@@ -161,7 +159,7 @@ if ($result->num_rows > 0) {
 	document.getElementById("rankIcon").src = "/rank_icons/"+tier+".png";
 	document.getElementById('name').innerHTML = ""+sumInfo.name;
 	document.getElementById('level').innerHTML = ""+sumInfo.summonerLevel;
-	document.getElementById('rank').innerHTML = tier;
+	document.getElementById('rank').innerHTML = "<?php echo $_POST['tier']; ?>";
 	document.getElementById('region').innerHTML =  regionText;
 	
 	if("<?php echo $row['champ1']; ?>" !=""){
