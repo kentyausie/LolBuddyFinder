@@ -18,6 +18,7 @@ if ($conn->connect_error) {
 }
 
 $name=$_SESSION['name'];
+$tier="";
 $sql = "SELECT * FROM Registration WHERE summoner='".$name."'";
 $result = $conn->query($sql);
 
@@ -25,7 +26,7 @@ if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
 };
 
-$conn->close();
+
 ?>
 
 <script>
@@ -72,6 +73,9 @@ $conn->close();
 				var tier = "UNRANKED";
 			} else {
 				var tier = leagueInfo[0].tier;
+			}
+			if(tier == "undefined"){
+				window.location.href="http://lolteams.azurewebsites.net/profile.php?"+tier;
 			}
     	}
     	var regionText = "";
@@ -212,4 +216,5 @@ $conn->close();
 	document.getElementById('language').innerHTML = "<?php echo $row['language']; ?>";
 	document.getElementById('timezone').innerHTML = "<?php echo $row['timezone']; ?>";
 </script>
+<?php $conn->close(); ?>
 </html>
