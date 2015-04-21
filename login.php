@@ -45,7 +45,7 @@
  				{
 					$password = $_POST["password"];
 				
-					if ($password != $row['password']){
+					if ($password != md5($row['password'])){
 						$passwordError = "Invalid Password";
 						$valid="false";
 					}
