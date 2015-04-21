@@ -7,13 +7,25 @@
 </head>
 <body>
 	<form action="search.php" style="text-align:center;padding-top: 15px;">
-		<select name="role" calss="selectBox">
+		<select name="role" class="selectBox">
 			<option value="select">Role</option>
 			<option value="top">Top</option>
 			<option value="mid">Mid</option>
 			<option value="jungle">Jungle</option>
 			<option value="adc">ADC</option>
 			<option value="support">Support</option>
+		</select>
+		<select name="region" class="selectBox">
+			<option value="select">Region</option>
+			<option value="br">Brazil</option>
+			<option value="eune">EU Nordic & East</option>
+			<option value="euw">EU West</option>
+			<option value="lan">Latin America North</option>
+			<option value="las">Latin America South</option>
+			<option value="na">North America</option>
+			<option value="oce">Oceania</option>
+			<option value="ru">Russia</option>
+			<option value="tr">Turkey</option>
 		</select>
 		<select name="language" class="selectBox">
 			<option value="select">Language</option>
