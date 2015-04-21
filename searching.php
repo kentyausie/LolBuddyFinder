@@ -38,7 +38,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		}
 		echo "<script> alert('".$sqlQuery."'); </script>";
 		$sqlQuery = $sqlQuery."region='".$_POST['region']."'";
-		echo "<script> alert('".$sqlQuery."'); </script>";
+		echo '<script> alert("'.$sqlQuery.'"); </script>';
 	} 
 	if($_POST["sumInfo"]==404 || $_POST["sumInfo"]==""){
 		//echo "<script> alert('".$sumName."'); </script>";
