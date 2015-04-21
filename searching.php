@@ -12,13 +12,12 @@ if ($conn->connect_error) {
 }
 
 
-$sumName ="";
+$sqlQuery ="";
 
 if(isset($_POST['submit'])) { // Checking null values in message.
 	if ($_POST['region'] !== "select"){
-		echo "<script> alert('region'); </script>";
-		$sumError = "Summoner name is required";
-		$valid = "false"; 
+		$sqlQuery = $sqlQuery."region=".$_POST['region'];
+		echo "<script> alert('".$sqlQuery."'); </script>";
 	} else {
 		
 		$sumName = ucwords(test_input($_POST["sumName"])); // check name only contains letters and whitespace
