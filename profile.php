@@ -92,8 +92,9 @@ $conn->close();
 <div  style="margin: 0px 0px 0px 110px;">
 	<div style="float: left; width: 150px">
 		<label>Summoner Name: </label><br>
-		<label>Summoner Level: </level><br>
-		<label style="margin: 100px 0px 0px 0px">Summoner Rank: </level><br>
+		<label>Summoner Level: </label><br>
+		<label style="margin: 100px 0px 0px 0px">Summoner Rank: </label><br>
+		<label> Region:</label><br>
 	</div>
 </div>
 <div>
@@ -101,6 +102,7 @@ $conn->close();
 	<p id="level" style="margin: 0px 0px 0px 0px;"></p>
 	<p id="rank" style="margin: 0px 0px 0px 0px;display: inline;"></p>
 	<img id="rankIcon" height=25 width=25></img>
+	<p id="region"></p>
 	
 </div>
 
@@ -131,6 +133,7 @@ $conn->close();
 	document.getElementById('name').innerHTML = ""+sumInfo.name;
 	document.getElementById('level').innerHTML = ""+sumInfo.summonerLevel;
 	document.getElementById('rank').innerHTML = tier;
+	document.getElementById('region').innerHTML = ""+sumInfo.region;
 	
 	if("<?php echo $row['champ1']; ?>" !=""){
 		document.getElementById("champ1").src = "/champion_icons/<?php echo $row['champ1']; ?>square.png";
