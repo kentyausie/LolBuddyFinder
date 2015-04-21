@@ -105,6 +105,10 @@ $conn->close();
     		<td><p id="region" style="margin: 0px 0px 0px 0px;display: inline;"></p></td>
   		</tr>
   		<tr>
+    		<td>Language:</td>
+    		<td><p id="language" style="margin: 0px 0px 0px 0px;display: inline;"></p></td>
+  		</tr>
+  		<tr>
     		<td>Summoner Rank:</td>
     		<td><p id="rank" style="margin: 0px 0px 0px 0px;display: inline;"></p>
 			<img id="rankIcon" height=25 width=25></img></td>
@@ -192,5 +196,7 @@ $conn->close();
 		document.getElementById("support").height = 50;
 		document.getElementById("support").width = 50;
 	}
+	
+	document.getElementById('language').innerHTML = "<?php echo $row['language']; ?>";
 </script>
 </html>
