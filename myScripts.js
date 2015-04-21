@@ -421,6 +421,7 @@ function summonerLookUp() {
 	if(region.localeCompare("") !== 0){
     	var sumName = document.getElementById("sumName").value;
     	var SUMMONER_NAME_NOSPACES = sumName.replace(" ", "");
+    	alert(SUMMONER_NAME_NOSPACES);
     	var API_KEY = "01edb1d0-a26b-4f78-afbb-3eeb9de5b0f9";
     	if (sumName !== "") {
        		var xmlhttp = new XMLHttpRequest();
