@@ -90,7 +90,7 @@ $conn->close();
 <img id="profileIcon" height=100 width=100 style="float: left; "></img>
 </div>
 <div  style="margin: 0px 0px 0px 110px;">
-	<table style="width:100%">
+	<table style="width:300px">
   		<tr>
     		<td>Summoner Name:</td>
     		<td>Summoner Level:</td> 
