@@ -108,6 +108,9 @@ if ($result->num_rows > 0) {
 	<form action="gohome.php" style="text-align:center;padding-top: 15px;">
 		<input type="submit" name="submit" value="Home">
 	</form>
+	<form action="logout.php" style="text-align:center;padding-top: 15px;">
+		<input type="submit" name="submit" value="Logout">
+	</form>
 	<img id="profileIcon" height=150 width=150 style="float: left; "></img>
 
 	<table style="margin: 0px 0px 0px 110px;">
