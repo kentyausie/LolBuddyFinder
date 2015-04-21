@@ -75,7 +75,7 @@ if ($result->num_rows > 0) {
 				tier = leagueInfo[0].tier;
 			}
 			if(tier !== "undefined"){
-				$.post('profile.php', {'tier': tier});
+				$.post('profile.php', {tier: tier});
 			}
     	}
     	var regionText = "";
