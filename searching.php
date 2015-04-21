@@ -22,6 +22,15 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 			$sqlQuery = $sqlQuery." AND (champ1=".$_POST['champion']." OR champ2=".$_POST['champion']." OR champ3=".$_POST['champion']." OR champ4=".$_POST['champion']." OR champ5=".$_POST['champion'];
 		}
 	}
+	if ($_POST['role'] !== "select"){
+		if($sqlQuery !== ""){
+			$sqlQuery = $sqlQuery." AND ";
+		}
+		if($_POST['role'] == "top"){
+			$sqlQuery = $sqlQuery."roleTop == 1";
+		}
+		echo "<script> alert('".$sqlQuery."'); </script>";
+	} 
 	if ($_POST['region'] !== "select"){
 		if($sqlQuery == ""){
 			$sqlQuery = "region=".$_POST['region'];
@@ -31,7 +40,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		echo "<script> alert('".$sqlQuery."'); </script>";
 	} 
 	if($_POST["sumInfo"]==404 || $_POST["sumInfo"]==""){
-		echo "<script> alert('".$sumName."'); </script>";
+		//echo "<script> alert('".$sumName."'); </script>";
 		$sumError="Invalid Summoner name";
 		$valid=false;
 	} else {
