@@ -148,7 +148,7 @@ include 'signupValidation.php'; ?>
 <input type="checkbox" name="champions[]" id="kennen" value="kennen" onClick="return KeepCount()"><label for="kennen"><img src="/champion_icons/kennensquare.png" height=50 ></img></label></input>
 <br>
 
-<input type="checkbox" name="champions[]" id="khazix" value="zhazix" onClick="return KeepCount()"><label for="khazix"><img src="/champion_icons/khazixsquare.png" height=50 ></img></label></input>
+<input type="checkbox" name="champions[]" id="khazix" value="khazix" onClick="return KeepCount()"><label for="khazix"><img src="/champion_icons/khazixsquare.png" height=50 ></img></label></input>
 <input type="checkbox" name="champions[]" id="kogmaw" value="kogmaw" onClick="return KeepCount()"><label for="kogmaw"><img src="/champion_icons/kogmawsquare.png" height=50 ></img></label></input>
 <input type="checkbox" name="champions[]" id="leblanc" value="leblanc" onClick="return KeepCount()"><label for="leblanc"><img src="/champion_icons/leblancsquare.png" height=50 ></img></label></input>
 <input type="checkbox" name="champions[]" id="leesin" value="leesin" onClick="return KeepCount()"><label for="leesin"><img src="/champion_icons/leesinsquare.png" height=50 ></img></label></input>
