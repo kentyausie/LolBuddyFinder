@@ -76,7 +76,16 @@ if ($result->num_rows > 0) {
 				tier = leagueInfo[0].tier;
 			}
 			if(tier !== "undefined"){
-				$.post('profile.php', {tier: tier});
+				//$.post('profile.php', {tier: tier});
+				$.ajax({url: 'ajax/add-user.php',
+				type: 'POST',
+				data: {tierName: tier},
+				dataType: 'html',
+				success: function(data){
+				alert("success");
+				console.log(data);
+				},error: function (xhr, ajaxOptions, thrownError) {alert("ERROR:" + xhr.responseText+" - "+thrownError);}
+			});
 			}
     	}
     	var regionText = "";
@@ -87,7 +96,7 @@ if ($result->num_rows > 0) {
     	}
 	}
 </script>
-<?php if(isset($_POST['tier'])){echo "<script> alert('true'); </script>";} ?>
+<?php if(isset($_POST['tierName'])){echo "<script> alert('true'); </script>";} ?>
 <head>
 	<link rel="stylesheet" href="style.css">
 	<title id="title"><?php echo $row['summoner']; ?>'s Profile</title>
