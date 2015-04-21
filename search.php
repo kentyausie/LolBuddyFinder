@@ -20,7 +20,7 @@
 			<option value="hindi">Hindi</option>
 
 			<option value="penguin">Penguin</option>
-		</select><br><br>
+		</select>
 		<input class="submitButton" type="submit" name="submit" value="Search">
 	</form>	
 </body>
