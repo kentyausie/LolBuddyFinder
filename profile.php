@@ -84,7 +84,9 @@ $conn->close();
 	}
 </script>
 <head>
-	<title>Profile</title>
+	<link rel="stylesheet" href="style.css">
+	<title class="headtext">Profile</title>
+</head>
 <body>
 <h1>Profile</h1><br>
 
