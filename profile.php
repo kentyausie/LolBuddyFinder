@@ -77,7 +77,7 @@ if ($result->num_rows > 0) {
 			}
 			if(tier !== "undefined"){
 				//$.post('profile.php', {tier: tier});
-				$.ajax({url: 'ajax/add-user.php',
+				$.ajax({url: 'profile.php',
 				type: 'POST',
 				data: {tierName: tier},
 				dataType: 'html',
