@@ -21,6 +21,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		} else {
 			$sqlQuery = $sqlQuery." AND (champ1=".$_POST['champion']." OR champ2=".$_POST['champion']." OR champ3=".$_POST['champion']." OR champ4=".$_POST['champion']." OR champ5=".$_POST['champion'];
 		}
+	}
 	if ($_POST['region'] !== "select"){
 		if($sqlQuery == ""){
 			$sqlQuery = "region=".$_POST['region'];
@@ -28,11 +29,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 			$sqlQuery = $sqlQuery." AND region=".$_POST['region'];
 		}
 		echo "<script> alert('".$sqlQuery."'); </script>";
-	} else {
-		
-		$sumName = ucwords(test_input($_POST["sumName"])); // check name only contains letters and whitespace
-		$region = $_POST["sumRegion"];
-	} // Checking null values in the message.
+	} 
 	if($_POST["sumInfo"]==404 || $_POST["sumInfo"]==""){
 		echo "<script> alert('".$sumName."'); </script>";
 		$sumError="Invalid Summoner name";
