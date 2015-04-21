@@ -75,7 +75,7 @@ if ($result->num_rows > 0) {
 				var tier = leagueInfo[0].tier;
 			}
 			if(tier !== "undefined"){
-				window.location.href="http://lolteams.azurewebsites.net/profile.php?"+tier;
+				$.post('profile.php', {tier: tier});
 			}
     	}
     	var regionText = "";
@@ -86,6 +86,9 @@ if ($result->num_rows > 0) {
     	}
 	}
 </script>
+<?php if(isset($_POST['tier'])){
+			echo "<script> alert('true'); </script>";
+		} ?>
 <head>
 	<link rel="stylesheet" href="style.css">
 	<title id="title"><?php echo $row['summoner']; ?>'s Profile</title>
