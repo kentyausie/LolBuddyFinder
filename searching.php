@@ -29,10 +29,8 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		if($_POST['role'] == "top"){
 			$sqlQuery = $sqlQuery."roleTop = 1";
 		}
-		echo "<script> alert('".$sqlQuery."'); </script>";
 	} 
 	if ($_POST['region'] !== "select"){
-		echo '<script> alert("'.$sqlQuery.'"); </script>';
 		if($sqlQuery !== ""){
 			$sqlQuery = $sqlQuery." AND ";
 		}
