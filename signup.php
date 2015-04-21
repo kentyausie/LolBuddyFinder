@@ -29,7 +29,7 @@ include 'signupValidation.php'; ?>
     }
 </style>
 
-<script src="myScripts.js" type="text/javascript"></script>
+<script type="text/javascript" src="myScripts.js"></script>
 
 <head>
 <img src="head_img.jpg" class="headImg"></img>
