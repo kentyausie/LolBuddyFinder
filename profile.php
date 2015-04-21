@@ -41,7 +41,7 @@ $conn->close();
 			
 
 			xmlhttp.open("GET", url, false);
-			response.addHeader("Access-Control-Allow-Origin", "*");
+			//response.addHeader("Access-Control-Allow-Origin", "*");
 			xmlhttp.send();
 			if(xmlhttp.status == 200){
 				var arr = JSON.parse(xmlhttp.responseText);
