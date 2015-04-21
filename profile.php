@@ -53,7 +53,7 @@ $conn->close();
 			else{
 				alert("Unknown error");
 			}
-			document.getElementById('title').value = sumName + "'s Profile";
+			document.getElementById('title').value = ""+sumName + "'s Profile";
     	}
     	
     	var id = sumInfo.id;
