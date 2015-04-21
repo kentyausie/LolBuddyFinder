@@ -12,20 +12,21 @@ if ($conn->connect_error) {
 }
 
 
-$sqlQuery ="a";
+$sqlQuery ="";
 
 if(isset($_POST['submit'])) { // Checking null values in message.
 	if ($_POST['champion'] !== "select"){
-		if($sqlQuery !== ""){
-			$sqlQuery = $sqlQuery." AND ";
+		if($sqlQuery == ""){
+			$sqlQuery = "(champ1=".$_POST['champion']." OR champ2=".$_POST['champion']." OR champ3=".$_POST['champion']." OR champ4=".$_POST['champion']." OR champ5=".$_POST['champion'];
+		} else {
+			$sqlQuery = $sqlQuery." AND (champ1=".$_POST['champion']." OR champ2=".$_POST['champion']." OR champ3=".$_POST['champion']." OR champ4=".$_POST['champion']." OR champ5=".$_POST['champion'];
 		}
-		$sqlQuery = $sqlQuery."(champ1=".$_POST['champion']." OR champ2=".$_POST['champion']." OR champ3=".$_POST['champion']." OR champ4=".$_POST['champion']." OR champ5=".$_POST['champion'];
 	if ($_POST['region'] !== "select"){
-		if($sqlQuery !== ""){
-			$sqlQuery = $sqlQuery." AND ";
+		if($sqlQuery == ""){
+			$sqlQuery = "region=".$_POST['region'];
+		} else {
+			$sqlQuery = $sqlQuery." AND region=".$_POST['region'];
 		}
-		$sqlQuery = $sqlQuery."region=".$_POST['region'];
-		
 		echo "<script> alert('".$sqlQuery."'); </script>";
 	} else {
 		
