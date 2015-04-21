@@ -2,7 +2,7 @@
 <html>
 <?php include 'login.php'; ?>
 <head>
-<img src="head_img.jpg" class="headImg"></img>
+	<img src="head_img.jpg" class="headImg"></img>
 	<title>LoL Buddy Finder</title>
 	<link rel="stylesheet" href="style.css">
 	<h2 class="headText">LOL Buddy Finder </h2>

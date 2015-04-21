@@ -35,7 +35,6 @@ $conn->close();
 	//var region = "na";
 	if(region.localeCompare("") !== 0){
     	var sumName = "<?php echo $row['summoner']; ?>";
-    	//var sumName = "kingkoryo";
     	var API_KEY = "01edb1d0-a26b-4f78-afbb-3eeb9de5b0f9";
     	if (sumName !== "") {
        		var xmlhttp = new XMLHttpRequest();
@@ -54,7 +53,7 @@ $conn->close();
 			else{
 				alert("Unknown error");
 			}
-			
+			document.getElementById('title').value = sumName + "'s Profile";
     	}
     	
     	var id = sumInfo.id;
@@ -85,6 +84,8 @@ $conn->close();
     	
 	}
 </script>
+<head>
+	<title id="title"></title>
 <body>
 <h1>Profile</h1><br>
 
@@ -97,7 +98,6 @@ $conn->close();
     		<td><p id="name" style="margin: 0px 0px 0px 0px; display: inline;"></p></td>
   		</tr>
   		<tr>
-    		
     		<td>Summoner Level:</td> 
     		<td><p id="level" style="margin: 0px 0px 0px 0px;display: inline;"></p></td> 
   		</tr>
