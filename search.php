@@ -137,7 +137,6 @@ include 'searching.php' ?>;
 			<option value="ziggs">Ziggs</option>
 			<option value="zilean">Zilean</option>
 			<option value="zyra">Zyra</option>
-			<option value="select">Champion</option>
 		</select>
 		<select name="role" class="selectBox">
 			<option value="select">Role</option>

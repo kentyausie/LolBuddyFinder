@@ -59,7 +59,7 @@ if ($result->num_rows > 0) {
 			xmlhttp.open("GET", url, false);
 			xmlhttp.send();
 			if(xmlhttp.status == 200){
-				var arr2 = JSON.stringify(xmlhttp.responseText);
+				var arr2 = JSON.Parse(xmlhttp.responseText);
 				var leagueInfo = arr2[sumId];
 			}
 			else if(xmlhttp.status == 404){
@@ -78,7 +78,7 @@ if ($result->num_rows > 0) {
 				//$.post('profile.php', {tier: tier});
 				$.ajax({url: 'profile.php',
 				type: 'POST',
-				data: JSON.parse({tierName: tier}),
+				data: JSON.stringify({tierName: tier}),
     			contentType: "application/json",
     			dataType: "json",
 				success: function(data){
