@@ -85,10 +85,10 @@ $conn->close();
 </script>
 <head>
 	<link rel="stylesheet" href="style.css">
-	<title class="headtext">Profile</title>
+	<title>Profile</title>
+	<h2 class="headText">Profile</h2>
 </head>
 <body>
-<h1>Profile</h1><br>
 
 	<img id="profileIcon" height=100 width=100 style="float: left; "></img>
 
