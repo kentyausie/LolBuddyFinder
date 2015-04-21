@@ -3,7 +3,7 @@
 <?php 
 
 session_start(); 
-header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Origin: https://na.api.pvp.net');
 include 'UpdateValidation.php';
 $servername = "lovett.usask.ca";
 $username = "cmpt350_key053";
