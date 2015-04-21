@@ -169,7 +169,7 @@ if ($result->num_rows > 0) {
 	document.getElementById("rankIcon").src = "/rank_icons/"+tier+".png";
 	document.getElementById('name').innerHTML = ""+sumInfo.name;
 	document.getElementById('level').innerHTML = ""+sumInfo.summonerLevel;
-	document.getElementById('rank').innerHTML = "<?php echo $_POST['tier']; ?>";
+	document.getElementById('rank').innerHTML = "<?php echo $_POST['tierName']; ?>";
 	document.getElementById('region').innerHTML =  regionText;
 	
 	if("<?php echo $row['champ1']; ?>" !=""){
