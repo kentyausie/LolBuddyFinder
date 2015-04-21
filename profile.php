@@ -83,7 +83,9 @@ $conn->close();
 	<h2 class="headText"><?php echo $row['summoner']; ?></h2>
 </head>
 <body>
-	<button type="button" href="search.php">Search</button>
+	<form action="search.php" style="text-align:center;padding-top: 15px;">
+		<input type="submit" name="submit" value="Search">
+	</form>
 	<button type="button" href="gohome.php">Home</button>
 	<img id="profileIcon" height=100 width=100 style="float: left; "></img>
 
