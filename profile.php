@@ -85,7 +85,7 @@ if ($result->num_rows > 0) {
 				alert("success");
 				console.log(data);
 				},error: function (xhr, ajaxOptions, thrownError) {alert("ERROR:" + xhr.responseText+" - "+thrownError);}
-			});
+				});
 			}
     	}
     	var regionText = "";
@@ -96,7 +96,6 @@ if ($result->num_rows > 0) {
     	}
 	}
 </script>
-<?php if(isset($_POST['tierName'])){echo "<script> alert('true'); </script>";} ?>
 <head>
 	<link rel="stylesheet" href="style.css">
 	<title id="title"><?php echo $row['summoner']; ?>'s Profile</title>
