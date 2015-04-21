@@ -91,21 +91,24 @@ $conn->close();
 </div>
 <div  style="margin: 0px 0px 0px 110px;">
 	<div style="float: left;">
-		<label>Summoner Name: </label>
+		<label style="margin:50px">Summoner Name: </label>
 		<p id="name" style="margin: 0px 0px 0px 0px;"></p>
-		<label>Summoner Level: </label><br>
-		<label> Region:</label><br>
+		<label>Summoner Level: </label>
+		<p id="level" style="margin: 0px 0px 0px 0px;"></p>
+		<label> Region:</label>
+		<p id="region" style="margin: 0px 0px 0px 0px;"></p>
 		
-		<label style="margin: 100px 0px 0px 0px">Summoner Rank: </label><br>
+		<label style="margin: 100px 0px 0px 0px">Summoner Rank: </label>
+		<p id="rank" style="margin: 0px 0px 0px 0px;display: inline;"></p>
+		<img id="rankIcon" height=25 width=25></img>
 		
 	</div>
 </div>
 <div>
 	
-	<p id="level" style="margin: 0px 0px 0px 0px;"></p>
-	<p id="region"></p>
-	<p id="rank" style="margin: 0px 0px 0px 0px;display: inline;"></p>
-	<img id="rankIcon" height=25 width=25></img>
+	
+	
+	
 	
 	
 </div>
