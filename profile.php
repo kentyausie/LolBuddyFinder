@@ -79,11 +79,11 @@ if ($result->num_rows > 0) {
 				//$.post('profile.php', {tier: tier});
 				$.ajax({url: 'profile.php',
 				type: 'POST',
-				data: {tierName: tier},
+				data: {tierName: leagueInfo[0].tier},
 				dataType: 'html',
 				success: function(data){
 				alert("success");
-				console.log("true");
+				console.log(data);
 				},error: function (xhr, ajaxOptions, thrownError) {alert("ERROR:" + xhr.responseText+" - "+thrownError);}
 				});
 			}
