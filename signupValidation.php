@@ -49,7 +49,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		$region = $_POST["sumRegion"];
 	} // Checking null values in the message.
 	if($_POST["sumInfo"]==404 || $_POST["sumInfo"]==""){
-		echo "<script> alert('".$sumName."'); </script>";
+		echo "<script> alert('".$_POST["sumInfo"]."'); </script>";
 		$sumError="Invalid Summoner name";
 		$valid=false;
 	} else {
