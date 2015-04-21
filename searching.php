@@ -19,7 +19,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		if($sqlQuery == ""){
 			$sqlQuery = "region=".$_POST['region'];
 		} else {
-			$sqlQuery = $sqlQuery." AND ".$_POST['region'];
+			$sqlQuery = $sqlQuery." AND region=".$_POST['region'];
 		}
 		echo "<script> alert('".$sqlQuery."'); </script>";
 	} else {
