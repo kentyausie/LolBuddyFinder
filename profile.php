@@ -53,14 +53,13 @@ $conn->close();
 				alert("Unknown error");
 			}
     		
-       		var xmlhttp = new XMLHttpRequest();
-			var url = "https://na.api.pvp.net/api/lol/"+region+"/v2.5/league/by-summoner/"+id+"?api_key="+API_KEY;			
+			url = "https://na.api.pvp.net/api/lol/"+region+"/v2.5/league/by-summoner/"+sumId+"?api_key="+API_KEY;			
 
 			xmlhttp.open("GET", url, false);
 			xmlhttp.send();
 			if(xmlhttp.status == 200){
 				var arr2 = JSON.parse(xmlhttp.responseText);
-				var leagueInfo = arr2[id];
+				var leagueInfo = arr2[sumId];
 			}
 			else if(xmlhttp.status == 404){
 				leagueCheck = "UNRANKED";
