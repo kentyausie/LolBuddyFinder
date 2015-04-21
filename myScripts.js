@@ -435,7 +435,7 @@ function summonerLookUp() {
 				alert("Hello1");
 				var arr = JSON.parse(xmlhttp.responseText);
 				alert("Hello2");
-				var sumInfo = arr[sumName].id;
+				var sumInfo = arr[sumName]['id'];
 				alert("Hello3");
 				alert(sumInfo);
 				alert("Hello4");
