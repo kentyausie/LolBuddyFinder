@@ -80,8 +80,8 @@ $conn->close();
 </script>
 <head>
 	<link rel="stylesheet" href="style.css">
-	<title><?php echo $row['summoner']; ?>'s Profile</title>
-	<h2 class="headText"><?php echo $row['summoner']; ?></h2>
+	<title id="title"><?php echo $row['summoner']; ?>'s Profile</title>
+	<h2 class="headText" id="head"><?php echo $row['summoner']; ?></h2>
 </head>
 <body>
 	<form action="search.php" style="text-align:center;padding-top: 15px;">
@@ -144,6 +144,8 @@ $conn->close();
 </div>
 </body>
 <script>
+	document.getElementById('title').innerHTML = sumInfo.name+"'s Profile";
+	document.getElementById('head').innerHTML = sumInfo.name+"'s Profile";
 	document.getElementById("profileIcon").src = "http://ddragon.leagueoflegends.com/cdn/4.3.12/img/profileicon/"+sumInfo.profileIconId+".png";
 	document.getElementById("rankIcon").src = "/rank_icons/"+tier+".png";
 	document.getElementById('name').innerHTML = ""+sumInfo.name;
