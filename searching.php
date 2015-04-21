@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 }
 
 
-$sqlQuery ="a";
+$sqlQuery ="";
 
 if(isset($_POST['submit'])) { // Checking null values in message.
 	if ($_POST['region'] !== "select"){
