@@ -84,7 +84,7 @@ $conn->close();
 </head>
 <body>
 	<button type="button" onclick="alert('Hello world!')">Search</button>
-	<button type="button" onclick="<?php $_SESSION['name']=$_SESSION['user']?>" href="profile.php">Home</button>
+	<button type="button" href="gohome.php">Home</button>
 	<img id="profileIcon" height=100 width=100 style="float: left; "></img>
 
 	<table style="margin: 0px 0px 0px 110px;">
