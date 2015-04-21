@@ -28,7 +28,7 @@ if ($result->num_rows > 0) {
 
 
 ?>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
 <script type="text/javascript">
 	var leagueCheck="";
 	var region = "<?php echo $row['region']; ?>";
@@ -78,7 +78,7 @@ if ($result->num_rows > 0) {
 				//$.post('profile.php', {tier: tier});
 				$.ajax({url: 'profile.php',
 				type: 'POST',
-				data: {tierName: tier},
+				data: JSON.parse({tierName: tier}),
     			contentType: "application/json",
     			dataType: "json",
 				success: function(data){
