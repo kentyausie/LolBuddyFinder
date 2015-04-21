@@ -74,7 +74,7 @@ if ($result->num_rows > 0) {
 			} else {
 				var tier = leagueInfo[0].tier;
 			}
-			if(tier == "undefined"){
+			if(tier !== "undefined"){
 				window.location.href="http://lolteams.azurewebsites.net/profile.php?"+tier;
 			}
     	}
