@@ -85,6 +85,7 @@ $conn->close();
     	
 	}
 </script>
+<body>
 <h1>Profile</h1><br>
 <div>
 <img id="profileIcon" height=100 width=100 style="float: left; "></img>
@@ -133,6 +134,7 @@ $conn->close();
 <div style="background-color:LightSteelBlue; margin:80px 0px 0px 0px;">
 	<h3>Match History</h3>
 </div>
+</body>
 <script>
 	document.getElementById("profileIcon").src = "http://ddragon.leagueoflegends.com/cdn/4.3.12/img/profileicon/"+sumInfo.profileIconId+".png";
 	document.getElementById("rankIcon").src = "/rank_icons/"+tier+".png";
