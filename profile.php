@@ -36,6 +36,7 @@ $conn->close();
     	var API_KEY = "01edb1d0-a26b-4f78-afbb-3eeb9de5b0f9";
     	if (sumId !== "") {
        		var xmlhttp = new XMLHttpRequest();
+       		xmlhttp.addHeader("Access-Control-Allow-Origin", "*");
 			var url = "https://na.api.pvp.net/api/lol/"+region+"/v1.4/summoner/"+sumId+"?api_key="+API_KEY;
 			
 
