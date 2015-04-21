@@ -68,14 +68,14 @@ if ($result->num_rows > 0) {
 			else{
 				alert("Unknown error");
 			}
-			
+			var tier;
 			if (leagueCheck=="UNRANKED"){
-				var tier = "UNRANKED";
+				tier = "UNRANKED";
 			} else {
-				var tier = leagueInfo[0].tier;
+				tier = leagueInfo[0].tier;
 			}
 			if(tier !== "undefined"){
-				$.post('profile.php', {tier: tier});
+				$.post('profile.php', {'tier': tier});
 			}
     	}
     	var regionText = "";
