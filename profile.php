@@ -83,7 +83,7 @@ if ($result->num_rows > 0) {
 				dataType: 'html',
 				success: function(data){
 				alert("success");
-				console.log(data);
+				console.log("true");
 				},error: function (xhr, ajaxOptions, thrownError) {alert("ERROR:" + xhr.responseText+" - "+thrownError);}
 				});
 			}
