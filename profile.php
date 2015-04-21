@@ -4,6 +4,7 @@
 
 session_start(); 
 header('Access-Control-Allow-Origin: *');
+header("Content-Type: application/json", true);
 include 'UpdateValidation.php';
 $servername = "lovett.usask.ca";
 $username = "cmpt350_key053";
