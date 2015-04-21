@@ -87,9 +87,9 @@ $conn->close();
 </script>
 <body>
 <h1>Profile</h1><br>
-<div>
+
 <img id="profileIcon" height=100 width=100 style="float: left; "></img>
-</div>
+
 <div  style="margin: 0px 0px 0px 110px;">
 	
 	<table>
@@ -113,23 +113,23 @@ $conn->close();
   		</tr>
 </div>
 
-<div>
+
 	<h3>Champions:</h3>
 	<img id="champ1" height=0 width=0></img>
 	<img id="champ2" height=0 width=0></img>
 	<img id="champ3" height=0 width=0></img>
 	<img id="champ4" height=0 width=0></img>
 	<img id="champ5" height=0 width=0></img>
-</div>
 
-<div>
+
+
 	<h3 style="top-margin:100px;">Roles:</h3>
 	<img id="top" height=0 width=0></img>
 	<img id="mid" height=0 width=0></img>
 	<img id="jungle" height=0 width=0></img>
 	<img id="adc" height=0 width=0></img>
 	<img id="support" height=0 width=0></img>
-</div>
+
 
 <div style="background-color:LightSteelBlue; margin:80px 0px 0px 0px;">
 	<h3>Match History</h3>
