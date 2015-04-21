@@ -382,7 +382,6 @@ function KeepCount() {
 }
 
 function summonerLookUp() {
-	alert("Hello");
 	var region = "";
 	if(document.getElementById("na").checked){
 		region = "na";
@@ -417,7 +416,6 @@ function summonerLookUp() {
 	else {
 		alert("Select a region");
 	}
-	alert(region);
 	
 	if(region.localeCompare("") !== 0){
     	var sumName = document.getElementById("sumName").value;
@@ -431,6 +429,7 @@ function summonerLookUp() {
 
 			xmlhttp.open("GET", url, false);
 			xmlhttp.send();
+			alert(xmlhttp.status);
 			if(xmlhttp.status == 200){
 				var arr = JSON.parse(xmlhttp.responseText);
 				var sumInfo = arr[sumName].id;
