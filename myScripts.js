@@ -434,8 +434,11 @@ function summonerLookUp() {
 			if(xmlhttp.status == 200){
 				alert("Hello1");
 				var arr = JSON.parse(xmlhttp.responseText);
+				alert("Hello2");
 				var sumInfo = arr[sumName].id;
+				alert("Hello3");
 				alert(sumInfo);
+				alert("Hello4");
 				document.getElementById("sumInfo").value = sumInfo;
 				document.getElementById("sumRegion").value = region;
 			}
