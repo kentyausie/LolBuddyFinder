@@ -93,27 +93,23 @@ $conn->close();
 	<table style="width:300px">
   		<tr>
     		<td>Summoner Name:</td>
-    		<td>Summoner Level:</td> 
-    		<td>Region:</td>
-    		<td>Summoner Rank:</td>
+    		<td><p id="name" style="margin: 0px 0px 0px 0px; display: inline;"></p></td>
   		</tr>
   		<tr>
-    		<td><p id="name" style="margin: 0px 0px 0px 0px; display: inline;"></p></td>
+    		
+    		<td>Summoner Level:</td> 
     		<td><p id="level" style="margin: 0px 0px 0px 0px;display: inline;"></p></td> 
+  		</tr>
+  		<tr>
+    		<td>Region:</td>
     		<td><p id="region" style="margin: 0px 0px 0px 0px;display: inline;"></p></td>
+  		</tr>
+  		<tr>
+    		<td>Summoner Rank:</td>
     		<td><p id="rank" style="margin: 0px 0px 0px 0px;display: inline;"></p>
 			<img id="rankIcon" height=25 width=25></img></td>
   		</tr>
 </div>
-<div>
-	
-	
-	
-	
-	
-	
-</div>
-
 <div>
 	<h3>Champions:</h3>
 	<img id="champ1" height=0 width=0></img>
