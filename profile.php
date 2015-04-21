@@ -92,15 +92,15 @@ $conn->close();
 <div  style="margin: 0px 0px 0px 110px;">
 	<div>
 		<label style="margin-right:50px;">Summoner Name: </label>
-		<p id="name" style="margin: 0px 0px 0px 0px; display: inline;"></p>
-		<label>Summoner Level: </label>
-		<p id="level" style="margin: 0px 0px 0px 0px;"></p>
-		<label> Region:</label>
-		<p id="region" style="margin: 0px 0px 0px 0px;"></p>
+		<p id="name" style="margin: 0px 0px 0px 0px; display: inline;"></p><br>
+		<label style="margin-right:50px;">Summoner Level: </label>
+		<p id="level" style="margin: 0px 0px 0px 0px;display: inline;"></p><br>
+		<label style="margin-right:50px;"> Region:</label>
+		<p id="region" style="margin: 0px 0px 0px 0px;display: inline;"></p><br>
 		
-		<label style="margin: 100px 0px 0px 0px">Summoner Rank: </label>
+		<label style="margin-top: 100px;margin-right:50px;">Summoner Rank: </label>
 		<p id="rank" style="margin: 0px 0px 0px 0px;display: inline;"></p>
-		<img id="rankIcon" height=25 width=25></img>
+		<img id="rankIcon" height=25 width=25></img><br>
 		
 	</div>
 </div>
