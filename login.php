@@ -44,13 +44,12 @@
 				else
  				{
 					$password = $_POST["password"];
-					echo "<script> alert('".$password."'); </script>";
-					echo "<script> alert('".$row['password']."'); </script>";
-					if ($password != md5($row['password'])){
+					/*
+					if ($password != $row['password']){
 						$passwordError = "Invalid Password";
 						$valid="false";
 					}
-			
+					*/
 				
 					if($valid == "true"){
     					session_start();
