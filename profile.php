@@ -102,6 +102,7 @@ if ($result->num_rows > 0) {
 	<h2 class="headText" id="head"><?php echo $row['summoner']; ?></h2>
 </head>
 <body>
+	<div>
 	<form action="search.php" style="text-align:center;padding-top: 15px;display: inline;">
 		<input type="submit" name="submit" value="Search">
 	</form>
@@ -111,6 +112,8 @@ if ($result->num_rows > 0) {
 	<form action="logout.php" style="text-align:center;padding-top: 15px;display: inline;">
 		<input type="submit" name="submit" value="Logout">
 	</form>
+	</div>
+	<div>
 	<img id="profileIcon" height=150 width=150 style="float: left; "></img>
 
 	<table style="margin: 0px 0px 0px 110px;">
@@ -159,7 +162,7 @@ if ($result->num_rows > 0) {
 	<img id="adc" height=0 width=0></img>
 	<img id="support" height=0 width=0></img>
 
-
+</div>
 <div style="background-color:LightSteelBlue; margin:20px 0px 0px 0px;">
 	<h3>Match History</h3>
 </div>
