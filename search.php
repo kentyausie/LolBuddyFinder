@@ -25,7 +25,7 @@
 
 			<option value="penguin">Penguin</option>
 		</select>
-		<input class="submitButton" type="submit" name="submit" value="Search">
+		<input class="topButton" type="submit" name="submit" value="Search">
 	</form>	
 </body>
 </html>
