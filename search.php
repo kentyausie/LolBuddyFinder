@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title>Search</title>
-	<h2>Search</h2>
+	<link rel="stylesheet" href="style.css">
+	<h2 class="headText">Search</h2>
 </head>
 <body>
 	<form action="search.php" style="text-align:center;padding-top: 15px;">
