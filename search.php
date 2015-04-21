@@ -1,6 +1,9 @@
 <!DOCTYPE HTML>
 <html>
-<?php include 'searching.php' ?>;
+<?php
+header('Content-Type: text/html; charset=utf-8');
+include 'searching.php' ?>;
+
 <head>
 	<title>Search</title>
 	<link rel="stylesheet" href="style.css">
