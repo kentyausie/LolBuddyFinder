@@ -27,7 +27,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 			$sqlQuery = $sqlQuery." AND ";
 		}
 		if($_POST['role'] == "top"){
-			$sqlQuery = $sqlQuery."roleTop == 1";
+			$sqlQuery = $sqlQuery."roleTop = 1";
 		}
 		echo "<script> alert('".$sqlQuery."'); </script>";
 	} 
