@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+<?php include 'searching.php' ?>;
 <head>
 	<title>Search</title>
 	<link rel="stylesheet" href="style.css">
