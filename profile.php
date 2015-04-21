@@ -102,13 +102,13 @@ if ($result->num_rows > 0) {
 	<h2 class="headText" id="head"><?php echo $row['summoner']; ?></h2>
 </head>
 <body>
-	<form action="search.php" style="text-align:center;padding-top: 15px;">
+	<form action="search.php" style="text-align:center;padding-top: 15px;display: inline;">
 		<input type="submit" name="submit" value="Search">
 	</form>
-	<form action="gohome.php" style="text-align:center;padding-top: 15px;">
+	<form action="gohome.php" style="text-align:center;padding-top: 15px;display: inline;">
 		<input type="submit" name="submit" value="Home">
 	</form>
-	<form action="logout.php" style="text-align:center;padding-top: 15px;">
+	<form action="logout.php" style="text-align:center;padding-top: 15px;display: inline;">
 		<input type="submit" name="submit" value="Logout">
 	</form>
 	<img id="profileIcon" height=150 width=150 style="float: left; "></img>
