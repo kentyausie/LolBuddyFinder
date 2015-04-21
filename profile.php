@@ -91,7 +91,7 @@ $conn->close();
 </div>
 <div  style="margin: 0px 0px 0px 110px;">
 	<div>
-		<label style="margin-right:50px">Summoner Name: </label>
+		<label style="margin-right:50px; display: inline;">Summoner Name: </label>
 		<p id="name" style="margin: 0px 0px 0px 0px;"></p>
 		<label>Summoner Level: </label>
 		<p id="level" style="margin: 0px 0px 0px 0px;"></p>
