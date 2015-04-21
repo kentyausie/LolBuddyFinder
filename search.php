@@ -6,7 +6,10 @@
 	<h2 class="headText">Search</h2>
 </head>
 <body>
-	<form action="search.php" style="text-align:center;padding-top: 15px;">
+	<form action="search.php" style="text-align:center;padding-top: 15px;" method="post">
+		<select name="champion" class="selectBox">
+			<option value="select">Champion</option>
+		</select>
 		<select name="role" class="selectBox">
 			<option value="select">Role</option>
 			<option value="top">Top</option>
