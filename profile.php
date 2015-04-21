@@ -41,7 +41,6 @@ $conn->close();
 			
 
 			xmlhttp.open("GET", url, false);
-			//response.addHeader("Access-Control-Allow-Origin", "*");
 			xmlhttp.send();
 			if(xmlhttp.status == 200){
 				var arr = JSON.parse(xmlhttp.responseText);
@@ -91,7 +90,7 @@ $conn->close();
 	<form action="gohome.php" style="text-align:center;padding-top: 15px;">
 		<input type="submit" name="submit" value="Home">
 	</form>
-	<img id="profileIcon" height=100 width=100 style="float: left; "></img>
+	<img id="profileIcon" height=150 width=150 style="float: left; "></img>
 
 	<table style="margin: 0px 0px 0px 110px;">
   		<tbody>
@@ -140,7 +139,7 @@ $conn->close();
 	<img id="support" height=0 width=0></img>
 
 
-<div style="background-color:LightSteelBlue; margin:80px 0px 0px 0px;">
+<div style="background-color:LightSteelBlue; margin:20px 0px 0px 0px;">
 	<h3>Match History</h3>
 </div>
 </body>
