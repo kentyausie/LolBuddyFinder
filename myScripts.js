@@ -420,7 +420,6 @@ function summonerLookUp() {
 	if(region.localeCompare("") !== 0){
     	var sumName = document.getElementById("sumName").value;
     	var SUMMONER_NAME_NOSPACES = sumName.replace(" ", "");
-    	alert(SUMMONER_NAME_NOSPACES);
     	var API_KEY = "01edb1d0-a26b-4f78-afbb-3eeb9de5b0f9";
     	if (sumName !== "") {
        		var xmlhttp = new XMLHttpRequest();
@@ -432,13 +431,9 @@ function summonerLookUp() {
 			alert(xmlhttp.status);
 			alert(xmlhttp.status == 200);
 			if(xmlhttp.status == 200){
-				alert("Hello1");
 				var arr = JSON.parse(xmlhttp.responseText);
-				alert("Hello2");
-				var sumInfo = arr[SUMMONER_NAME_NOSPACES];
-				alert("Hello3");
+				var sumInfo = arr[SUMMONER_NAME_NOSPACES].id;
 				alert(sumInfo.id);
-				alert("Hello4");
 				document.getElementById("sumInfo").value = sumInfo;
 				document.getElementById("sumRegion").value = region;
 			}
