@@ -23,19 +23,6 @@
 			$valid = "false"; 
 		} else {
 		    $email = test_input($_POST["email"]);
-   		}
-
-		if (empty($_POST["password"]))
-		{
-			$passwordError = "Password is required";
-			$valid = "false"; 
-		}
-		else
- 		{
-			$password = test_input($_POST["password"]);
-		}
-
-		if($valid=="true"){
 		
 			$sql = "SELECT * FROM Registration WHERE email='".$email."'";
 			if ($conn->query($sql) === FALSE) {
@@ -48,22 +35,34 @@
 			if ($result->num_rows > 0) {
     			$row = $result->fetch_assoc();
 			
-				if ($password != $row['password']){
-					$passwordError = "Invalid Password";
-					$valid="false";
+				
+				if (empty($_POST["password"]))
+				{
+					$passwordError = "Password is required";
+					$valid = "false"; 
 				}
+				else
+ 				{
+					$password = $_POST["password"];
+				
+					if ($password != $row['password']){
+						$passwordError = "Invalid Password";
+						$valid="false";
+					}
 			
-				if($valid == "true"){
-    				session_start();
-    				$_SESSION['name']=$row['summoner'];
-    				header('LOCATION: profile.php');
-       				exit();
+				
+					if($valid == "true"){
+    					session_start();
+    					$_SESSION['name']=$row['summoner'];
+    					header('LOCATION: profile.php');
+       					exit();
+					}
 				}
 			} else {
 				$emailError = "Invalid email";
 				$valid = "false";
 			}
-			
+		
 		}
 		$conn->close();
 	
