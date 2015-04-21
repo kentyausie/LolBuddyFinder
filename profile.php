@@ -53,7 +53,6 @@ $conn->close();
 			else{
 				alert("Unknown error");
 			}
-			document.getElementById('title').value = ""+sumName + "'s Profile";
     	}
     	
     	var id = sumInfo.id;
@@ -85,7 +84,7 @@ $conn->close();
 	}
 </script>
 <head>
-	<title id="title"></title>
+	<title>Profile</title>
 <body>
 <h1>Profile</h1><br>
 
