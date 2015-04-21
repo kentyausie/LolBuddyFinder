@@ -45,7 +45,7 @@
  				{
 					$password = $_POST["password"];
 					echo "<script> alert('".$password."'); </script>";
-					echo "<script> alert('".$row['password']."'); </script>";
+					echo "<script> alert('".md5($row['password'])."'); </script>";
 					if ($password != md5($row['password'])){
 						$passwordError = "Invalid Password";
 						$valid="false";
