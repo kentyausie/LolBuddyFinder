@@ -7,6 +7,14 @@
 </head>
 <body>
 	<form action="search.php" style="text-align:center;padding-top: 15px;">
+		<select name="role" calss="selectBox">
+			<option value="select">Role</option>
+			<option value="top">Top</option>
+			<option value="mid">Mid</option>
+			<option value="jungle">Jungle</option>
+			<option value="adc">ADC</option>
+			<option value="support">Support</option>
+		</select>
 		<select name="language" class="selectBox">
 			<option value="select">Language</option>
 			<option value="english">English</option>
