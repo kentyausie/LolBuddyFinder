@@ -44,12 +44,12 @@
 				else
  				{
 					$password = $_POST["password"];
-					/*
+					
 					if ($password != $row['password']){
 						$passwordError = "Invalid Password";
 						$valid="false";
 					}
-					*/
+					
 				
 					if($valid == "true"){
     					session_start();
