@@ -16,7 +16,11 @@ $sqlQuery ="";
 
 if(isset($_POST['submit'])) { // Checking null values in message.
 	if ($_POST['region'] !== "select"){
-		$sqlQuery = $sqlQuery."region=".$_POST['region'];
+		if($sqlQuery == ""){
+			$sqlQuery = "region=".$_POST['region'];
+		} else {
+			$sqlQuery = $sqlQuery." AND ".$_POST['region'];
+		}
 		echo "<script> alert('".$sqlQuery."'); </script>";
 	} else {
 		
