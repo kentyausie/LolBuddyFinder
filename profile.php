@@ -3,7 +3,7 @@
 <?php 
 
 session_start(); 
-
+header('Access-Control-Allow-Origin: *');
 include 'UpdateValidation.php';
 $servername = "lovett.usask.ca";
 $username = "cmpt350_key053";
