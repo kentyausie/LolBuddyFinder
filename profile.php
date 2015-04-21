@@ -80,7 +80,7 @@ if ($result->num_rows > 0) {
 				type: 'POST',
 				data: {tierName: tier}
     			contentType: "application/json",
-    			dataType: "json",
+    			dataType: "json"},
 				success: function(data){
 				alert("success");
 				console.log(data);
