@@ -85,8 +85,8 @@ $conn->close();
 </script>
 <head>
 	<link rel="stylesheet" href="style.css">
-	<title>"<?php echo $row['summoner']; ?>"'s Profile</title>
-	<h2 class="headText">Profile</h2>
+	<title><?php echo $row['summoner']; ?>'s Profile</title>
+	<h2 class="headText"><?php echo $row['summoner']; ?>/h2>
 </head>
 <body>
 
