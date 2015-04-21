@@ -31,6 +31,7 @@ include 'signupValidation.php'; ?>
 
 <script src="myScripts.js" type="text/javascript">
 function summonerLookUp() {
+	alert("Hello");
 	var region = "";
 	if(document.getElementById("na").checked){
 		region = "na";

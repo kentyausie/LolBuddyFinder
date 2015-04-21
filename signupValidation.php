@@ -44,6 +44,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		$sumError = "Summoner name is required";
 		$valid = "false"; 
 	} else {
+		echo "<script> summonerLookUp(); </script>";
 		$sumName = test_input($_POST["sumName"]); // check name only contains letters and whitespace
 		$region = $_POST["sumRegion"];
 	} // Checking null values in the message.
