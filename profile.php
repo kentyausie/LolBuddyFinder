@@ -122,7 +122,7 @@ $conn->close();
 		</tbody>
 	</table>
 
-	<h3>Champions:</h3>
+	<h3 class="formDescriptionText">Champions:</h3>
 	<img id="champ1" height=0 width=0></img>
 	<img id="champ2" height=0 width=0></img>
 	<img id="champ3" height=0 width=0></img>
@@ -131,7 +131,7 @@ $conn->close();
 
 
 
-	<h3 style="top-margin:100px;">Roles:</h3>
+	<h3 class="formDescriptionText" style="top-margin:100px;">Roles:</h3>
 	<img id="top" height=0 width=0></img>
 	<img id="mid" height=0 width=0></img>
 	<img id="jungle" height=0 width=0></img>
