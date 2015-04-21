@@ -90,7 +90,7 @@ $conn->close();
 <img id="profileIcon" height=100 width=100 style="float: left; "></img>
 </div>
 <div  style="margin: 0px 0px 0px 110px;">
-	<div style="float: left; width: 150px">
+	<div style="float: left;">
 		<label>Summoner Name: </label>
 		<p id="name" style="margin: 0px 0px 0px 0px;"></p>
 		<label>Summoner Level: </label><br>
