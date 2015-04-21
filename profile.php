@@ -102,7 +102,7 @@ if ($result->num_rows > 0) {
 	<h2 class="headText" id="head"><?php echo $row['summoner']; ?></h2>
 </head>
 <body>
-	<div>
+	<div style="alignment: center;">
 	<form action="search.php" style="text-align:center;padding-top: 15px;display: inline;">
 		<input type="submit" name="submit" value="Search">
 	</form>
