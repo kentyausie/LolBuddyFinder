@@ -128,13 +128,11 @@ $row['language'] = ucfirst($row['language']);
     		<td>Timezone:</td>
     		<td><p id="timezone" style="margin: 0px 0px 0px 0px;display: inline;"></p></td>
   		</tr>
-  		<tr>
-    		<td>Summoner Rank:</td>
-    		<td><p id="rank" style="margin: 0px 0px 0px 0px;display: inline;"></p>
-			<img id="rankIcon" height=25 width=25></img></td>
-  		</tr>
 		</tbody>
 	</table>
+	
+	<h3 class="formDescriptionText">Summoner Rank: <p id="rank" style="margin: 0px 0px 0px 0px;"></h3>
+	<img id="rankIcon" height=400 width=400></img><br>
 
 	<h3 class="formDescriptionText">Champions:</h3>
 	<img id="champ1" height=0 width=0></img>
