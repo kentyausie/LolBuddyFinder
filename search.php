@@ -458,7 +458,7 @@ if ($result->num_rows > 0) {
 				echo "<script>
 				document.getElementById('champ5[".$i."]').src = '/champion_icons/".$row['champ5']."square.png';
 				document.getElementById('champ5[".$i."]').height = 50;
-				document.getElementById('champ5[".$i."]').width = 50; </script>"
+				document.getElementById('champ5[".$i."]').width = 50; </script>";
 			}
 	
 			if($row['roleTop'] == 1){
