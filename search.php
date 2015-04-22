@@ -285,7 +285,10 @@ return $data;
 			<td><img id="champ5[0]" height=0 width=0></img></td>
     	</tr>
     	<tr>
-    		<td><a id="mailLink[0]" href="messages.php"><img id="mailIcon[0]" src="/misc/mail.png" height=25 width=25></img></a></td>
+    		<td><form action="message.php" style="visibility: hidden;" method="post" id="mail[0]">
+    			<input type="hidden" id="hidden[0]" value=""></input>
+				<input type="image" src="/misc/mail.png" alt="Submit" width="25" height="25">
+			</form></td>
     	</tr>
 		</tbody>
 	</table>
@@ -318,7 +321,10 @@ return $data;
 			<td><img id="champ5[1]" height=0 width=0></img></td>
     	</tr>
     	<tr>
-    		<td><a id="mailLink[1]"><img id="mailIcon[1]" height=0 width=0></img></a></td>
+    		<td><form action="message.php" style="visibility: hidden;" method="post" id="mail[1]">
+    			<input type="hidden" id="hidden[1]" value=""></input>
+				<input type="image" src="/misc/mail.png" alt="Submit" width="25" height="25">
+			</form></td>
     	</tr>
 		</tbody>
 	</table>
@@ -352,7 +358,10 @@ return $data;
 			<td><img id="champ5[2]" height=0 width=0></img></td>
     	</tr>
     	<tr>
-    		<td><a id="mailLink[2]"><img id="mailIcon[2]" height=0 width=0></img></a></td>
+    		<td><form action="message.php" style="visibility: hidden;" method="post" id="mail[2]">
+    			<input type="hidden" id="hidden[4]" value=""></input>
+				<input type="image" src="/misc/mail.png" alt="Submit" width="25" height="25">
+			</form></td>
     	</tr>
 		</tbody>
 	</table>
@@ -386,7 +395,10 @@ return $data;
 			<td><img id="champ5[3]" height=0 width=0></img></td>
     	</tr>
     	<tr>
-    		<td><a id="mailLink[3]"><img id="mailIcon[3]" height=0 width=0></img></a></td>
+    		<td><form action="message.php" style="visibility: hidden;" method="post" id="mail[3]">
+    			<input type="hidden" id="hidden[3]" value=""></input>
+				<input type="image" src="/misc/mail.png" alt="Submit" width="25" height="25">
+			</form></td>
     	</tr>
 		</tbody>
 	</table>
@@ -420,7 +432,10 @@ return $data;
 			<td><img id="champ5[4]" height=0 width=0></img></td>
     	</tr>
     	<tr>
-    		<td><a id="mailLink[4]"><img id="mailIcon[4]" height=0 width=0></img></a></td>
+    		<td><form action="message.php" style="visibility: hidden;" method="post" id="mail[4]">
+    			<input type="hidden" id="hidden[4]" value=""></input>
+				<input type="image" src="/misc/mail.png" alt="Submit" width="25" height="25">
+			</form></td>
     	</tr>
 		</tbody>
 	</table>
@@ -445,10 +460,8 @@ if ($result->num_rows > 0) {
 			document.getElementById('name[".$i."]').innerHTML = '".$row['summoner']."';
 			document.getElementById('level[".$i."]').innerHTML = '".$row['level']."';
 			document.getElementById('region[".$i."]').innerHTML = '".$row['region']."';
-			document.getElementById('mailLink[".$i."]').href = 'message.php?name='".$row['summoner']."';
-			document.getElementById('mailIcon[".$i."]').src = '/misc/mail.png';
-			document.getElementById('mailIcon[".$i."]').height=100;
-			document.getElementById('mailIcon[".$i."]').width=100;</script>";
+			document.getElementById('hidden[".$i."]').value='".$row['summoner']."'; 
+			document.getElementById('mail[".$i."]').style.visibility='';</script>";
 			if($row['champ1'] !== ""){
 				echo " <script>
 				document.getElementById('champ1[".$i."]').src = '/champion_icons/".$row['champ1']."square.png';
