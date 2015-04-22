@@ -11,13 +11,15 @@
  // initiate a new pm class
  $pm = new cpm($userid);
   
- function sendmail($to,$subject = '',$body = ''){require_once('../class.phpmailer.php');$mail = new PHPMailer(); // create a new object
+ function sendmail($to,$subject = '',$body = ''){
+  echo "IN";
+require_once('../class.phpmailer.php');$mail = new PHPMailer(); // create a new object
 $mail->IsSMTP(); // enable SMTP
 $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
 $mail->SMTPAuth = true; // authentication enabled
 $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for GMail
 $mail->Host = "smtp.gmail.com";
-$mail->Port = 465; // or 587
+$mail->Port = 587; // or 587
 $mail->IsHTML(true);
 $mail->Username = "eddie81020@gmail.com";
 $mail->Password = "jiz322tif192";
