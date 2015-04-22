@@ -332,29 +332,29 @@ if ($result->num_rows > 0) {
 			}
 	
 			if(".isset($row['roleTop'])."){
-				document.getElementById('top').src = '/roles/top.png';
-				document.getElementById('top').height = 50;
-				document.getElementById('top').width = 50;
+				document.getElementById('top[".$i."]').src = '/roles/top.png';
+				document.getElementById('top[".$i."]').height = 50;
+				document.getElementById('top[".$i."]').width = 50;
 			}
 			if(".isset($row['roleMid'])."){
-				document.getElementById('mid').src = '/roles/mid.png';
-				document.getElementById('mid').height = 50;
-				document.getElementById('mid').width = 50;
+				document.getElementById('mid[".$i."]').src = '/roles/mid.png';
+				document.getElementById('mid[".$i."]').height = 50;
+				document.getElementById('mid[".$i."]').width = 50;
 			}
 			if(".isset($row['roleJungle'])."){
-				document.getElementById('jungle').src = '/roles/jungle.png';
-				document.getElementById('jungle').height = 50;
-				document.getElementById('jungle').width = 50;
+				document.getElementById('jungle[".$i."]').src = '/roles/jungle.png';
+				document.getElementById('jungle[".$i."]').height = 50;
+				document.getElementById('jungle[".$i."]').width = 50;
 			}
 			if(".isset($row['roleADC'])."){
-				document.getElementById('adc').src = '/roles/adc.png';
-				document.getElementById('adc').height = 50;
-				document.getElementById('adc').width = 50;
+				document.getElementById('adc[".$i."]').src = '/roles/adc.png';
+				document.getElementById('adc[".$i."]').height = 50;
+				document.getElementById('adc[".$i."]').width = 50;
 			}
 			if(".isset($row['roleSupport'])."){
-				document.getElementById('support').src = '/roles/support.png';
-				document.getElementById('support').height = 50;
-				document.getElementById('support').width = 50;
+				document.getElementById('support[".$i."]').src = '/roles/support.png';
+				document.getElementById('support[".$i."]').height = 50;
+				document.getElementById('support[".$i."]').width = 50;
 			}
 			</script>";
 			$i=$i+1;
