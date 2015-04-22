@@ -26,7 +26,7 @@
      echo "Message successfully sent!";
      
 
-$mail_sent = @mail( $to, $subject, $message, $headers );
+$mail_sent = @mail ( string $to , string $subject , string $message [, string $additional_headers [, string $additional_parameters ]] );
 //if the message is sent successfully print "Mail sent". Otherwise print "Mail failed" 
 echo $mail_sent ? "Mail sent" : "Mail failed";
 
