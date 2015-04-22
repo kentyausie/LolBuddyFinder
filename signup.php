@@ -420,7 +420,7 @@ include 'signupValidation.php'; ?>
 </p>
 </form>
 
-<form action="index.html">
+<form action="signup.php">
     <p class="align">
     <input type="submit" value="Home" class="submitButton">
 	</p>
