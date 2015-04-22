@@ -32,7 +32,7 @@ include 'signupValidation.php'; ?>
 <script type="text/javascript" src="myScripts.js"></script>
 
 <head>
-<img src="head_img.jpg" class="headImg"></img>
+<a href="http://lolteams.azurewebsites.net/"><img src="head_img.jpg" class="headImg"></img></a>
 <link rel="stylesheet" href="style.css">
 <!--<img src="headpic.jpg" class="headImg"></img>-->
 <title>Sign up form</title>
