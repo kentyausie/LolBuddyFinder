@@ -64,7 +64,7 @@ $row['language'] = ucfirst($row['language']);
 
 
 	</div>
-	<div>
+<div style="float:left;">
 	<img id="profileIcon" height=150 width=150 style="float: left; "></img>
 
 	<table style="margin: 0px 0px 0px 110px;">
