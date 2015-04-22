@@ -54,7 +54,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		}
 		$sqlQuery = $sqlQuery."language='".$_POST['language']."'";
 	}
-	echo "<script> alert('".$sqlQuery."'); </script>";
+	echo '<script> alert("'.$sqlQuery.'"); </script>';
 	
 	if($valid=="true"){
 		
