@@ -2,7 +2,7 @@
 require_once 'lib/swift_required.php';
  
 // Create the mail transport configuration
-$transport = Swift_MailTransport::newInstance();
+$transport = Swift_MailTransport::newInstance('smtp.live.com', 25);
  
 // Create the message
 $message = Swift_Message::newInstance();
