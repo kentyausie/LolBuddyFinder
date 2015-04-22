@@ -40,18 +40,18 @@ echo "STEP1";
 
  // Tell curl to use HTTP POST
  curl_setopt ($session, CURLOPT_POST, true);
-
+echo "STEP2";
  // Tell curl that this is the body of the POST
  curl_setopt ($session, CURLOPT_POSTFIELDS, $params);
 
  // Tell curl not to return headers, but do return the response
  curl_setopt($session, CURLOPT_HEADER, false);
  curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
-
+echo "STEP3";
  // obtain response
  $response = curl_exec($session);
  curl_close($session);
-
+echo "STEP4";
  // print everything out
  print_r($response);
 
