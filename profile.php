@@ -93,7 +93,7 @@ var sumName = document.getElementById("sumName").value;
 
 
 	</div>
-<div style="float:left;">
+<div>
 	<img id="profileIcon" height=150 width=150 style="float: left; "></img>
 
 	<table style="margin: 0px 0px 0px 110px;">
