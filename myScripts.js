@@ -440,7 +440,7 @@ function summonerLookUp() {
 				document.getElementById("level").value = sumInfo.summonerLevel;
 				
 				
-				url="https://"+region+".api.pvp.net/api/lol/"+region+"/v1.4/summoner/"+sumId+"?api_key="+API_KEY;
+				url="https://"+region+".api.pvp.net/api/lol/"+region+"/v2.5/league/by-summoner/"+sumId+"/entry?api_key="+API_KEY;
 				xmlhttp.open("GET", url, false);
 				xmlhttp.send();
 				if(xmlhttp.status == 200){
