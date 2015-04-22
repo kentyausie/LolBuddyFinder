@@ -16,7 +16,6 @@
     require_once('class.phpmailer.php');
     include('class.smtp.php');
     $mail             = new PHPMailer(); //Initialize a new PHPMailer object;
-    $body            = eregi_replace("[\]",'',$body); //Replace unwanted characters of the content
     $mail->CharSet ="ISO-8859-1";//Set the character set you need to specify
     $mail->IsSMTP(); // Use SMTP service
     $mail->SMTPDebug  = 1;                     // Enable debugging for SMTP
@@ -25,7 +24,7 @@
     $mail->SMTPAuth   = true;                  // Enable authentication feature for the SMTP server
     $mail->SMTPSecure = "ssl";                 // Use SSL, you may comment this line out
     $mail->Host       = 'smtp.hotmail.com';      // SMTP server
-    $mail->Port       = 25;                   //SMTP port, not all email services use default port 25, please refer to your mail service provider.
+    $mail->Port       = 587;                   //SMTP port, not all email services use default port 25, please refer to your mail service provider.
     $mail->Username   = 'lolteambuilder@hotmail.com';  //Username of your email account
     $mail->Password   = 'P@$$word123';            //Password of your email account
     $mail->SetFrom('lolteambuilder@hotmail.com', 'Notification');
