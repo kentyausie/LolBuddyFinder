@@ -94,7 +94,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		document.getElementById('rankIcon[".$i."]').src = '/rank_icons/".$row['tier'].".png';
 		document.getElementById('name[".$i."]').innerHTML = ".$row['summoner'].";
 		document.getElementById('level[".$i."]').innerHTML = ".$row['level'].";
-		document.getElementById('region[".$i."]').innerHTML = "$row['region'].";</script>";
+		document.getElementById('region[".$i."]').innerHTML = ".$row['region'].";</script>";
 		}
 	
 	} else {
