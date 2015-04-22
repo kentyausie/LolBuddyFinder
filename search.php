@@ -4,17 +4,6 @@
 header('Content-Type: text/html; charset=utf-8');
 ?>
 
-<script>
-	function displayResults(i) {
-		
-		document.getElementById("profileIcon["+i+"]").src = "http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/<?php echo $row['profileID']?>.png";
-		document.getElementById("rankIcon["+i+"]").src = "/rank_icons/<?php echo $row['tier']; ?>.png";
-		document.getElementById('name['+i+']').innerHTML = "<?php echo $row['summoner']; ?>";
-		document.getElementById('level['+i+']').innerHTML = "<?php echo $row['level']; ?>";
-		document.getElementById('region['+i+']').innerHTML = "<?php echo $upRegion; ?>";
-	}
-</script>
-
 <head>
 	<title>Search</title>
 	<link rel="stylesheet" href="style.css">
