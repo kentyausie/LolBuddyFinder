@@ -265,10 +265,10 @@ return $data;
 	<table style="margin: 0px 0px 0px 110px;">
   		<tbody>
   		<tr>
-    		<td><p class="formDescriptionText" id="name[0]" style="margin: 0px 0px 0px 0px; display: inline;"></p></td>
-    		<td><p id="level[0]" style="margin: 0px 0px 0px 0px;display: inline;text-align: center;"></p></td> 
-    		<td><p id="region[0]" style="margin: 0px 0px 0px 0px;display: inline;text-align: center;"></p></td>
-    		<td><p id="language[0]" style="margin: 0px 0px 0px 0px;display: inline;text-align: center;"></p></td>
+    		<td style="text-align: center"><p class="formDescriptionText" id="name[0]" colspan="2" style="margin: 0px 0px 0px 0px; display: inline;"></p></td>
+    		<td style="text-align: center"><p id="level[0]" style="margin: 0px 0px 0px 0px;display: inline;text-align: center;"></p></td> 
+    		<td style="text-align: center"><p id="region[0]" style="margin: 0px 0px 0px 0px;display: inline;text-align: center;"></p></td>
+    		<td style="text-align: center"><p id="language[0]" style="margin: 0px 0px 0px 0px;display: inline;text-align: center;"></p></td>
     	</tr>
     	<tr>
     		<td><img id="top[0]" height=0 width=0></img></td>
