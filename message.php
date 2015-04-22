@@ -52,8 +52,6 @@
 //        echo "Message sent successfully!";
     }
 }
-    
-}
   
  // check if a new message had been send
  if(isset($_POST['newmessage'])) {
