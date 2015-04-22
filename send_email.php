@@ -1,17 +1,50 @@
 <?php
 require_once 'Swift/lib/swift_required.php';
 
-$transport = Swift_SmtpTransport::newInstance('smtp.live.com', 25)
-  ->setUsername('lolteambuildere@hotmail.com')
-  ->setPassword('P@$$word123');
+ $transport = Swift_SmtpTransport::newInstance('smtp.sendgrid.net', 25);
+        
+         $username = 'yoursendgridusername';
+         $password = 'yourpassword';
+ // This is your From email address
+ $from = array('lolteambuilder@hotmail.com' => 'Name To Appear');
+ // Email recipients
+ $to = array(
+       'eddie81020@gmail.com'=>'Destination 1 Name',
+       'eddie81020@gmail.com'=>'Destination 2 Name'
+ );
+ $text = "Hi!\nHow are you?\n";
+ $html = "<html>
+       <head></head>
+       <body>
+           <p>Hi!<br>
+               How are you?<br>
+           </p>
+       </body>
+       </html>";
+ 
+        $transport->setUsername($username);
+        $transport->setPassword($password);
+        $swift = Swift_Mailer::newInstance($transport);
 
-$mailer = Swift_Mailer::newInstance($transport);
-$message = Swift_Message::newInstance('Wonderful Subject')
-  ->setFrom(array('lolteambuilder@hotmail.com' => 'MY NAME'))
-  ->setTo(array('eddie81020@gmail.com' => 'YOU'))
-  ->setBody('This is the text of the mail send by Swift using SMTP transport.');
-//$attachment = Swift_Attachment::newInstance(file_get_contents('path/logo.png'), 'logo.png');  
-//$message->attach($attachment);
-$numSent = $mailer->send($message);
-printf("Sent %d messages\n", $numSent);
+        // Create a message (subject)
+        $message = new Swift_Message($subject);
+
+        // attach the body of the email
+        $message->setFrom($from);
+        $message->setBody($html, 'text/html');
+        $message->setTo($to);
+        $message->addPart($text, 'text/plain');
+
+        // send message
+        if ($recipients = $swift->send($message, $failures))
+        {              
+          // This will let us know how many users received this message
+          echo 'Message sent out to '.$recipients.' users';exit;
+        }
+         // something went wrong =(
+ else
+ {
+     echo "Something went wrong - ";
+     print_r($failures);
+ }
 ?>
