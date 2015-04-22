@@ -445,10 +445,7 @@ if ($result->num_rows > 0) {
 			document.getElementById('name[".$i."]').innerHTML = '".$row['summoner']."';
 			document.getElementById('level[".$i."]').innerHTML = '".$row['level']."';
 			document.getElementById('region[".$i."]').innerHTML = '".$row['region']."';</script>
-			document.getElementById('mailLink[".$i."]').href = 'message.php?name='".$row['name']."';
-			document.getElementById('mailIcon[".$i."]').src = '/misc/mail.png';
-			document.getElementById('mailIcon[".$i."]').height=100;
-			document.getElementById('mailIcon[".$i."]').width=100;";
+			";
 			if($row['champ1'] !== ""){
 				echo " <script>
 				document.getElementById('champ1[".$i."]').src = '/champion_icons/".$row['champ1']."square.png';
