@@ -18,7 +18,7 @@
   
      echo "Message successfully sent!";
 
-mail("eddie81020@gmail.com","Script Used","Image swap script was used.","From: lolteambuilder@hotmail.com");
+$mail_sent = mail("eddie81020@gmail.com","Script Used","Image swap script was used.","From: lolteambuilder@hotmail.com");
 
 
  
