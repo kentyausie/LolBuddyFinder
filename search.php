@@ -276,7 +276,54 @@ return $data;
 		<input class="topButton" type="submit" name="submit" value="Search">
 	</form>	
 	
-	<table id="results"></table>
+	<div>
+	<img id="profileIcon" height=150 width=150 style="float: left; "></img>
+	<img id="rankIcon" height=150 width=150 style="float: left; ></img>
+	<table style="margin: 0px 0px 0px 110px;">
+  		<tbody>
+  		<tr>
+    		<td>Summoner Name:</td>
+    		<td><p id="name" style="margin: 0px 0px 0px 0px; display: inline;"></p></td>
+  		</tr>
+  		<tr>
+    		<td>Summoner Level:</td> 
+    		<td><p id="level" style="margin: 0px 0px 0px 0px;display: inline;"></p></td> 
+  		</tr>
+  		<tr>
+    		<td>Region:</td>
+    		<td><p id="region" style="margin: 0px 0px 0px 0px;display: inline;"></p></td>
+  		</tr>
+  		<tr>
+    		<td>Language:</td>
+    		<td><p id="language" style="margin: 0px 0px 0px 0px;display: inline;"></p></td>
+  		</tr>
+  		<tr>
+    		<td>Timezone:</td>
+    		<td><p id="timezone" style="margin: 0px 0px 0px 0px;display: inline;"></p></td>
+  		</tr>
+		</tbody>
+	</table>
+	
+	<h3 class="formDescriptionText">Summoner Rank: <p id="rank" style="margin: 0px 0px 0px 0px;"></h3>
+	<br>
+
+	<h3 class="formDescriptionText">Champions:</h3>
+	<img id="champ1" height=0 width=0></img>
+	<img id="champ2" height=0 width=0></img>
+	<img id="champ3" height=0 width=0></img>
+	<img id="champ4" height=0 width=0></img>
+	<img id="champ5" height=0 width=0></img>
+
+
+
+	<h3 class="formDescriptionText" style="top-margin:100px;">Roles:</h3>
+	<img id="top" height=0 width=0></img>
+	<img id="mid" height=0 width=0></img>
+	<img id="jungle" height=0 width=0></img>
+	<img id="adc" height=0 width=0></img>
+	<img id="support" height=0 width=0></img>
+
+</div>
 	
 	<a href="profile.php?name=King Koryo">Link</a>
 </body>
