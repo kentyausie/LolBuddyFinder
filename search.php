@@ -285,7 +285,7 @@ return $data;
 			<td><img id="champ5[0]" height=0 width=0></img></td>
     	</tr>
     	<tr>
-    		<td><form action="message.php" style="visibility: hidden;" method="post" id="mail[0]">
+    		<td><form action="message.php" style="visibility: hidden;" method="post" id="mail">
     			<input type="hidden" id="hidden[0]" value=""></input>
 				<input type="image" src="/misc/mail.png" alt="Submit" width="25" height="25">
 			</form></td>
@@ -321,7 +321,7 @@ return $data;
 			<td><img id="champ5[1]" height=0 width=0></img></td>
     	</tr>
     	<tr>
-    		<td><form action="message.php" style="visibility: hidden;" method="post" id="mail[1]">
+    		<td><form action="message.php" style="visibility: hidden;" method="post" id="mail">
     			<input type="hidden" id="hidden[1]" value=""></input>
 				<input type="image" src="/misc/mail.png" alt="Submit" width="25" height="25">
 			</form></td>
@@ -358,7 +358,7 @@ return $data;
 			<td><img id="champ5[2]" height=0 width=0></img></td>
     	</tr>
     	<tr>
-    		<td><form action="message.php" style="visibility: hidden;" method="post" id="mail[2]">
+    		<td><form action="message.php" style="visibility: hidden;" method="post" id="mail">
     			<input type="hidden" id="hidden[4]" value=""></input>
 				<input type="image" src="/misc/mail.png" alt="Submit" width="25" height="25">
 			</form></td>
@@ -395,7 +395,7 @@ return $data;
 			<td><img id="champ5[3]" height=0 width=0></img></td>
     	</tr>
     	<tr>
-    		<td><form action="message.php" style="visibility: hidden;" method="post" id="mail[3]">
+    		<td><form action="message.php" style="visibility: hidden;" method="post" id="mail">
     			<input type="hidden" id="hidden[3]" value=""></input>
 				<input type="image" src="/misc/mail.png" alt="Submit" width="25" height="25">
 			</form></td>
@@ -432,7 +432,7 @@ return $data;
 			<td><img id="champ5[4]" height=0 width=0></img></td>
     	</tr>
     	<tr>
-    		<td><form action="message.php" style="visibility: hidden;" method="post" id="mail[4]">
+    		<td><form action="message.php" style="visibility: hidden;" method="post" id="mail">
     			<input type="hidden" id="hidden[4]" value=""></input>
 				<input type="image" src="/misc/mail.png" alt="Submit" width="25" height="25">
 			</form></td>
