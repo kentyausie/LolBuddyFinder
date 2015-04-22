@@ -454,7 +454,6 @@ function summonerLookUp() {
 					arr = JSON.parse(xmlhttp.responseText);
 					sumLeague = arr[sumId];
 					document.getElementById("sumMatches").value = sumMatches;
-					alert("Matches");
 				}
 			}
 			else if(xmlhttp.status == 404){
