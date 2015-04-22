@@ -75,7 +75,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 
 	if ($result->num_rows > 0) {
    		$i=0;
-   		while ($row = mysql_fetch_assoc($result)) {
+   		while ($row = $result->fetch_assoc()) {
    		echo "<script>document.getElementById('profileIcon[".$i."]').src = 'http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/".$row['profileID'].".png';
 		document.getElementById('rankIcon[".$i."]').src = '/rank_icons/".$row['tier'].".png';
 		document.getElementById('name[".$i."]').innerHTML = ".$row['summoner'].";
