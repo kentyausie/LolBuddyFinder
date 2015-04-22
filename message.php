@@ -5,7 +5,6 @@
  include('config.php');
  // Load the class
  require('pm.php');
- // Set the userid to 2 for testing purposes... you should have your own usersystem, so this should contain the userid
  session_start();
  $userid=$_SESSION['id'];
  // initiate a new pm class
@@ -15,7 +14,7 @@
   
  // check if a new message had been send
  if(isset($_POST['newmessage'])) {
-   // check if there is an error while sending the message (beware, the input hasn't been checked, you should never trust users input!)
+   // check if there is an error while sending the message 
    if($pm->sendmessage($_POST['to'],$_POST['subject'],$_POST['message'])) {
   
      echo "Message successfully sent!";
@@ -45,7 +44,7 @@
 </head>
 <body>
 <?php
-// In this switch we check what page has to be loaded, this way we just load the messages we want using numbers from 0 to 3 (0 is standart, so we don't need to type this)
+// In this switch we check what page has to be loaded
 if(isset($_GET['p'])) {
  switch($_GET['p']) {
    // get all new / unread messages
