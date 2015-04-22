@@ -17,7 +17,9 @@
 | region      | varchar(255) | YES  |     | NULL    |       |
 | timezone    | varchar(255) | YES  |     | NULL    |       |
 | language    | varchar(255) | YES  |     | NULL    |       |
-| summonerID  | varchar(255) | YES  |     | NULL    |       |
+| summonerID  | varchar(255) | YES  |     | NULL    |       
+| profileID
+| tier
 +-------------+--------------+------+-----+---------+-------+
 
 changes needed 

@@ -431,10 +431,12 @@ function summonerLookUp() {
 			if(xmlhttp.status == 200){
 				var arr = JSON.parse(xmlhttp.responseText);
 				var sumInfo = arr[SUMMONER_NAME_NOSPACES];
+				var sumId = sumInfo.id;
 				document.getElementById("sumInfo").value = sumInfo;
 				document.getElementById("sumRegion").value = region;
+				document.getElementById("sumId").value = sumId;
 				
-				var sumId = sumInfo.id;
+				
 				url="https://"+region+".api.pvp.net/api/lol/"+region+"/v1.4/summoner/"+sumId+"?api_key="+API_KEY;
 				xmlhttp.open("GET", url, false);
 				xmlhttp.send();
