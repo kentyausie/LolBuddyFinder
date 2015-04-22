@@ -251,7 +251,7 @@ if(!isset($_GET['p']) || $_GET['p'] == 'new') {
 <strong>To:</strong>
 <input type='text' name='to' value='<?php if(isset($_POST['reply'])) { echo $_POST['rfrom']; } ?>' /><br>
 <strong>Subject:</strong>
-<input type='text' name='subject' value='<?php if(isset($_POST['reply'])) { echo $_POST['rsubject']; } ?>' />
+<input type='text' name='subject' value='<?php if(isset($_POST['reply'])) { echo $_POST['rsubject']; } ?>' /><br>
 <strong>Message:</strong><br />
 <textarea name='message'><?php if(isset($_POST['reply'])) { echo $_POST['rmessage']; } ?></textarea>
 <input type='submit' name='newmessage' value='Send' />
