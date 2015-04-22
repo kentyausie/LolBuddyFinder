@@ -27,7 +27,7 @@ $sql = "CREATE TABLE `messages` (
 `from_ddate` DATETIME NULL ,
 `to_ddate` DATETIME NULL ,
 `created` DATETIME NOT NULL
-) ENGINE = MYISAM ;"
+) ENGINE = MYISAM";
 
 if ($conn->query($sql) === TRUE) {
     echo "Table MyGuests created successfully";
