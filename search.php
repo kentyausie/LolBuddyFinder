@@ -77,7 +77,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
    		$i=0;
    		$row = $result->fetch_assoc();
    		//while ($row = $result->fetch_assoc()) {
-   			echo "<script>document.getElementById('profileIcon[".$i."]').src = 'http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/".$row['profileID'].".png';
+   			echo "<script> document.getElementById('profileIcon[".$i."]').src = 'http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/".$row['profileID'].".png';
 			document.getElementById('rankIcon[".$i."]').src = '/rank_icons/".$row['tier'].".png';
 			document.getElementById('name[".$i."]').innerHTML = ".$row['summoner'].";
 			document.getElementById('level[".$i."]').innerHTML = ".$row['level'].";
