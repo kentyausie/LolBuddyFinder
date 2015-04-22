@@ -31,7 +31,7 @@
     // 2 = messages only
     $mail->SMTPAuth   = true;                  // Enable authentication feature for the SMTP server
     $mail->SMTPSecure = "TLS";                 // Use SSL, you may comment this line out
-    $mail->Host       = 'smtp.hotmail.com';      // SMTP server
+    $mail->Host       = 'smtp.live.com';      // SMTP server
     $mail->Port       = 25;                   //SMTP port, not all email services use default port 25, please refer to your mail service provider.
     $mail->Username   = 'lolteambuilder@hotmail.com';  //Username of your email account
     $mail->Password   = 'P@$$word123';            //Password of your email account
