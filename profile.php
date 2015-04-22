@@ -78,21 +78,7 @@ if ($result->num_rows > 0) {
 			} else {
 				tier = leagueInfo[0].tier;
 			}
-			if(tier !== "undefined"){
-				//$.post('profile.php', {tier: tier});
-				$.ajax({url: 'profile.php',
-				type: 'POST',
-				data: JSON.stringify({tierName: tier}),
-    			contentType: "application/json",
-    			dataType: "json",
-				success: function(data){
-				alert("success");
-				console.log(data);
-				},error: function (xhr, ajaxOptions, thrownError) {alert("ERROR:" + xhr.responseText+" - "+thrownError);}
-				});
-			}
     	}
-    	
 	}
 </script>
 <head>
