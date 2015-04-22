@@ -73,21 +73,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 	}
 	$result = $conn->query($sql);
 
-	if ($result->num_rows > 0) {
-   		$i=0;
-   		$row = $result->fetch_assoc();
-   		//while ($row = $result->fetch_assoc()) {
-   			echo "<script> document.getElementById('profileIcon[".$i."]').src = 'http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/".$row['profileID'].".png';
-			document.getElementById('rankIcon[".$i."]').src = '/rank_icons/".$row['tier'].".png';
-			document.getElementById('name[".$i."]').innerHTML = ".$row['summoner'].";
-			document.getElementById('level[".$i."]').innerHTML = ".$row['level'].";
-			document.getElementById('region[".$i."]').innerHTML = ".$row['region'].";</script>";
-			$i=$i+1;
-		//}
 	
-	} else {
-		echo "<h2>No Results</h2>";
-    }
 	
 	
 	$conn->close();
@@ -305,4 +291,21 @@ return $data;
 	
 	<a href="profile.php?name=King Koryo">Link</a>
 </body>
+<?php
+if ($result->num_rows > 0) {
+   		$i=0;
+   		$row = $result->fetch_assoc();
+   		//while ($row = $result->fetch_assoc()) {
+   			echo "<script> document.getElementById('profileIcon[".$i."]').src = 'http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/".$row['profileID'].".png';
+			document.getElementById('rankIcon[".$i."]').src = '/rank_icons/".$row['tier'].".png';
+			document.getElementById('name[".$i."]').innerHTML = ".$row['summoner'].";
+			document.getElementById('level[".$i."]').innerHTML = ".$row['level'].";
+			document.getElementById('region[".$i."]').innerHTML = ".$row['region'].";</script>";
+			$i=$i+1;
+		//}
+	
+	} else {
+		echo "<h2>No Results</h2>";
+    }
+?>
 </html>
