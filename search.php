@@ -74,16 +74,14 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 	$result = $conn->query($sql);
 
 	if ($result->num_rows > 0) {
-   		echo "<script> alert(".$result->num_rows."); </script>";
    		$i=0;
    		while ($row = mysql_fetch_assoc($result)) {
-    		
-		
    		echo "<script>document.getElementById('profileIcon[".$i."]').src = 'http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/".$row['profileID'].".png';
 		document.getElementById('rankIcon[".$i."]').src = '/rank_icons/".$row['tier'].".png';
 		document.getElementById('name[".$i."]').innerHTML = ".$row['summoner'].";
 		document.getElementById('level[".$i."]').innerHTML = ".$row['level'].";
 		document.getElementById('region[".$i."]').innerHTML = ".$row['region'].";</script>";
+		$i=$i+1;
 		}
 	
 	} else {
