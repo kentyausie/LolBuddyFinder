@@ -89,7 +89,7 @@ if(isset($_GET['p'])) {
 // if it's the standart startpage or the page new, then show all new messages
 if(!isset($_GET['p']) || $_GET['p'] == 'new') {
 ?>
-<table border="0" cellspacing="1" cellpadding="1">
+<table border="0" cellspacing="3" cellpadding="3">
  <tr>
    <td>From</td>
    <td>Title</td>
