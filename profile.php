@@ -132,7 +132,7 @@ $row['language'] = ucfirst($row['language']);
 	</table>
 	
 	<h3 class="formDescriptionText">Summoner Rank: <p id="rank" style="margin: 0px 0px 0px 0px;"></h3>
-	<img id="rankIcon" height=200 width=200></img><br>
+	<img id="rankIcon" height=150 width=150></img><br>
 
 	<h3 class="formDescriptionText">Champions:</h3>
 	<img id="champ1" height=0 width=0></img>
