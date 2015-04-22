@@ -66,10 +66,12 @@ if(isset($_POST['submit'])) { // Checking null values in message.
    		$row = $result->fetch_assoc();
    		echo "<script> alert('Found'); </script>";
 	} else {
-		echo "<script> alert('No Results'); </script>";
+		echo "<h2>No Results</h2>";
     }
 	
 	$conn->close();
+	
+	
 }
 function test_input($data)
 {
