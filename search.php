@@ -7,7 +7,7 @@ header('Content-Type: text/html; charset=utf-8');
 <script>
 	function displayResults(arr) {
 		var el = "";
-		int i = "";
+		var i = "";
 		for(i=0;i<arr.length;i++){
 			alert("Hello " + i);
 		}
