@@ -303,7 +303,7 @@ if ($result->num_rows > 0) {
 			document.getElementById('name[".$i."]').innerHTML = '".$row['summoner']."';
 			document.getElementById('level[".$i."]').innerHTML = '".$row['level']."';
 			document.getElementById('region[".$i."]').innerHTML = '".$row['region']."';
-			if(".$row['champ1']." !=""){
+			if(".$row['champ1']." !=''){
 				document.getElementById('champ1[".$i."]').src = '/champion_icons/".$row['champ1']."square.png';
 				document.getElementById('champ1[".$i."]').height = 50;
 				document.getElementById('champ1[".$i."]').width = 50;
@@ -313,17 +313,17 @@ if ($result->num_rows > 0) {
 				document.getElementById('champ2[".$i."]').height = 50;
 				document.getElementById('champ2[".$i."]').width = 50;
 			}
-			if(".$row['champ3']." !=""){
+			if(".$row['champ3']." !=''){
 				document.getElementById('champ3[".$i."]').src = '/champion_icons/".$row['champ3']."square.png';
 				document.getElementById('champ3[".$i."]').height = 50;
 				document.getElementById('champ3[".$i."]').width = 50;
 			}
-			if(".$row['champ4']." !=""){
+			if(".$row['champ4']." !=''){
 				document.getElementById('champ4[".$i."]').src = '/champion_icons/".$row['champ4']."square.png';
 				document.getElementById('champ4[".$i."]').height = 50;
 				document.getElementById('champ4[".$i."]').width = 50;
 			}
-			if(".$row['champ5']." !=""){
+			if(".$row['champ5']." !=''){
 				document.getElementById('champ5[".$i."]').src = '/champion_icons/".$row['champ5']."square.png';
 				document.getElementById('champ5[".$i."]').height = 50;
 				document.getElementById('champ5[".$i."]').width = 50;
@@ -339,7 +339,7 @@ if ($result->num_rows > 0) {
 				document.getElementById('mid').height = 50;
 				document.getElementById('mid').width = 50;
 			}
-			if(".echo $row['roleJungle']." ==1){
+			if(".$row['roleJungle']." ==1){
 				document.getElementById('jungle').src = '/roles/jungle.png';
 				document.getElementById('jungle').height = 50;
 				document.getElementById('jungle').width = 50;
