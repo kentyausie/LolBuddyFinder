@@ -97,7 +97,7 @@ $row['language'] = ucfirst($row['language']);
 	<form action="update.php" style="text-align:center;padding-top: 15px;display: inline;">
 		<input type="submit" name="submit" value="Edit Profile">
 	</form>
-	<form action="logout.php" style="text-align:center;padding-top: 15px;display: inline;">
+	<form action="messages.php" style="text-align:center;padding-top: 15px;display: inline;">
 		<input type="submit" name="submit" value="Logout">
 	</form>
 
