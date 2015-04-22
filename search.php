@@ -297,9 +297,11 @@ if ($result->num_rows > 0) {
    		//while ($row = $result->fetch_assoc() || $i >= 5) {
    			echo "<script> 
    			document.getElementById('profileIcon[".$i."]').src = 'http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/".$row['profileID'].".png';
-			document.getElementById('profileIcon[".$i."]').height=50;
-			document.getElementById('profileIcon[".$i."]').width=50;
+			document.getElementById('profileIcon[".$i."]').height=150;
+			document.getElementById('profileIcon[".$i."]').width=150;
 			document.getElementById('rankIcon[".$i."]').src = '/rank_icons/".$row['tier'].".png';
+			document.getElementById('rankIcon[".$i."]').height=150;
+			document.getElementById('rankIcon[".$i."]').width=150;
 			document.getElementById('name[".$i."]').innerHTML = '".$row['summoner']."';
 			document.getElementById('level[".$i."]').innerHTML = '".$row['level']."';
 			document.getElementById('region[".$i."]').innerHTML = '".$row['region']."';
@@ -308,48 +310,48 @@ if ($result->num_rows > 0) {
 				document.getElementById('champ1[".$i."]').height = 50;
 				document.getElementById('champ1[".$i."]').width = 50;
 			}
-			if(".$row['champ2']." !=''){
+			if(".isset($row['champ2'])."){
 				document.getElementById('champ2[".$i."]').src = '/champion_icons/".$row['champ2']."square.png';
 				document.getElementById('champ2[".$i."]').height = 50;
 				document.getElementById('champ2[".$i."]').width = 50;
 			}
-			if(".$row['champ3']." !=''){
+			if(".isset($row['champ3'])."){
 				document.getElementById('champ3[".$i."]').src = '/champion_icons/".$row['champ3']."square.png';
 				document.getElementById('champ3[".$i."]').height = 50;
 				document.getElementById('champ3[".$i."]').width = 50;
 			}
-			if(".$row['champ4']." !=''){
+			if(".isset($row['champ4'])."){
 				document.getElementById('champ4[".$i."]').src = '/champion_icons/".$row['champ4']."square.png';
 				document.getElementById('champ4[".$i."]').height = 50;
 				document.getElementById('champ4[".$i."]').width = 50;
 			}
-			if(".$row['champ5']." !=''){
+			if(".isset($row['champ5'])."){
 				document.getElementById('champ5[".$i."]').src = '/champion_icons/".$row['champ5']."square.png';
 				document.getElementById('champ5[".$i."]').height = 50;
 				document.getElementById('champ5[".$i."]').width = 50;
 			}
 	
-			if(".$row['roleTop']." ==1){
+			if(".isset($row['roleTop'])."){
 				document.getElementById('top').src = '/roles/top.png';
 				document.getElementById('top').height = 50;
 				document.getElementById('top').width = 50;
 			}
-			if(".$row['roleMid']." ==1){
+			if(".isset($row['roleMid'])."){
 				document.getElementById('mid').src = '/roles/mid.png';
 				document.getElementById('mid').height = 50;
 				document.getElementById('mid').width = 50;
 			}
-			if(".$row['roleJungle']." ==1){
+			if(".isset($row['roleJungle'])."){
 				document.getElementById('jungle').src = '/roles/jungle.png';
 				document.getElementById('jungle').height = 50;
 				document.getElementById('jungle').width = 50;
 			}
-			if(".$row['roleADC']." ==1){
+			if(".isset($row['roleADC'])."){
 				document.getElementById('adc').src = '/roles/adc.png';
 				document.getElementById('adc').height = 50;
 				document.getElementById('adc').width = 50;
 			}
-			if(".$row['roleSupport']." ==1){
+			if(".isset($row['roleSupport'])."){
 				document.getElementById('support').src = '/roles/support.png';
 				document.getElementById('support').height = 50;
 				document.getElementById('support').width = 50;
