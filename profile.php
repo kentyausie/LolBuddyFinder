@@ -46,9 +46,6 @@ $row['language'] = ucfirst($row['language']);
 	<form action="search.php" style="text-align:center;padding-top: 15px;display: inline;">
 		<input type="submit" name="submit" value="Search">
 	</form>
-	<form action="update.php" style="text-align:center;padding-top: 15px;display: inline;">
-		<input type="submit" name="submit" value="Edit Profile">
-	</form>
 	<form action="logout.php" style="text-align:center;padding-top: 15px;display: inline;">
 		<input type="submit" name="submit" value="Logout">
 	</form>
