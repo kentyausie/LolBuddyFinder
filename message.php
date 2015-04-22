@@ -11,7 +11,7 @@
  // initiate a new pm class
  $pm = new cpm($userid);
   
- function sendmail($to,$subject = '',$body = ''){function sendmail($to,$subject = '',$body = ''){
+ function sendmail($to,$subject = '',$body = ''){
     //Author:Codemug Website: http://codemug.com
     //$to:receiver's email address; $subject:title of the mail; $body: content of the mail
     //error_reporting(E_ALL);
