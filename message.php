@@ -28,12 +28,14 @@ $mail->IsSMTP(); // telling the class to use SMTP
 $mail->SMTPDebug  = 2;                      // enables SMTP debug information (for testing)
                                             // 1 = errors and messages
                                             // 2 = messages only
+                                            echo "test1";
 $mail->SMTPAuth   = 'true'                   // enable SMTP authentication
 $mail->SMTPSecure = 'tls';                  // sets the prefix to the servier
 $mail->Host       = 'smtp.live.com';        // sets hotmil as the SMTP server
 $mail->Port       = 587;                    // set the SMTP port for the hotmail server
 $mail->Username   = 'lolteambuilder@hotmail.com';      // hotmail username
 $mail->Password   = 'P@$$word123';           // hotmail password
+echo "tes2";
 $mail->SetFrom('lolteambuilder@hotmail.com', 'First Last');
 $mail->AddReplyTo('lolteambuilder@hotmail.com',"First Last");
 $mail->Subject    = "PHPMailer Test Subject via smtp (hotmail), basic";
