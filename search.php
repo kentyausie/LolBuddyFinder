@@ -448,7 +448,7 @@ if ($result->num_rows > 0) {
 			document.getElementById('mailLink[".$i."]').href = 'message.php?name='".$row['name']."';
 			document.getElementById('mailIcon[".$i."]').src = '/misc/mail.png';
 			document.getElementById('mailIcon[".$i."]').height=25;
-			document.getElementById('mailIcon[".$i."]').width=25;"
+			document.getElementById('mailIcon[".$i."]').width=25;";
 			if($row['champ1'] !== ""){
 				echo " <script>
 				document.getElementById('champ1[".$i."]').src = '/champion_icons/".$row['champ1']."square.png';
