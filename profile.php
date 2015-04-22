@@ -17,7 +17,11 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$name=$_SESSION['name'];
+if(isset($_GET['name'])){
+	$name=$_GET['name'];
+} else {
+	$name=$_SESSION['name'];
+}
 $tier="";
 $sql = "SELECT * FROM Registration WHERE summoner='".$name."'";
 $result = $conn->query($sql);
