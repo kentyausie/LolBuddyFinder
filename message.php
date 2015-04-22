@@ -25,9 +25,9 @@ $mail->SMTPDebug  = 1;                     // Enable debugging for SMTP
 $mail->From = 'lolteambuilder@hotmail.com';
 $mail->FromName = 'Name';
 $mail->SMTPAuth   = true;                
-$mail->SMTPSecure = "SSL";                 
+$mail->SMTPSecure = "tls";                 
 $mail->Host       = 'smtp.live.com';      
-$mail->Port       = '25';                         
+$mail->Port       = '587';                         
 
 
 $mail->Username   = 'lolteambuilder@hotmail.com';            //Username of your email account
