@@ -429,59 +429,69 @@ if ($result->num_rows > 0) {
 			document.getElementById('rankIcon[".$i."]').width=150;
 			document.getElementById('name[".$i."]').innerHTML = '".$row['summoner']."';
 			document.getElementById('level[".$i."]').innerHTML = '".$row['level']."';
-			document.getElementById('region[".$i."]').innerHTML = '".$row['region']."';
-			if(".$row['champ1'] == '1'."){
+			document.getElementById('region[".$i."]').innerHTML = '".$row['region']."';</script>";
+			if($row['champ1'] !== ""){
+				echo " <script>
 				document.getElementById('champ1[".$i."]').src = '/champion_icons/".$row['champ1']."square.png';
 				document.getElementById('champ1[".$i."]').height = 50;
-				document.getElementById('champ1[".$i."]').width = 50;
+				document.getElementById('champ1[".$i."]').width = 50;</script>";
 			}
-			if(".isset($row['champ2'])."){
+			if($row['champ2'] !== ""){
+				echo "<script>
 				document.getElementById('champ2[".$i."]').src = '/champion_icons/".$row['champ2']."square.png';
 				document.getElementById('champ2[".$i."]').height = 50;
-				document.getElementById('champ2[".$i."]').width = 50;
+				document.getElementById('champ2[".$i."]').width = 50; </script>";
 			}
-			if(".isset($row['champ3'])."){
+			if($row['champ3'] !== ""){
+				echo "<script>
 				document.getElementById('champ3[".$i."]').src = '/champion_icons/".$row['champ3']."square.png';
 				document.getElementById('champ3[".$i."]').height = 50;
-				document.getElementById('champ3[".$i."]').width = 50;
+				document.getElementById('champ3[".$i."]').width = 50; </script>";
 			}
-			if(".isset($row['champ4'])."){
+			if($row['champ4'] !== ""){
+				echo "<script>
 				document.getElementById('champ4[".$i."]').src = '/champion_icons/".$row['champ4']."square.png';
 				document.getElementById('champ4[".$i."]').height = 50;
-				document.getElementById('champ4[".$i."]').width = 50;
+				document.getElementById('champ4[".$i."]').width = 50; </script>";
 			}
-			if(".isset($row['champ5'])."){
+			if($row['champ5'] !== ""){
+				echo "<script>
 				document.getElementById('champ5[".$i."]').src = '/champion_icons/".$row['champ5']."square.png';
 				document.getElementById('champ5[".$i."]').height = 50;
-				document.getElementById('champ5[".$i."]').width = 50;
+				document.getElementById('champ5[".$i."]').width = 50; </script>"
 			}
 	
-			if(".isset($row['roleTop'])."){
+			if($row['roleTop'] == 1){
+				echo "<script>
 				document.getElementById('top[".$i."]').src = '/roles/top.png';
 				document.getElementById('top[".$i."]').height = 50;
-				document.getElementById('top[".$i."]').width = 50;
+				document.getElementById('top[".$i."]').width = 50; </script>";
 			}
-			if(".isset($row['roleMid'])."){
+			if($row['roleMid'] == 1){
+				echo "<script>
 				document.getElementById('mid[".$i."]').src = '/roles/mid.png';
 				document.getElementById('mid[".$i."]').height = 50;
-				document.getElementById('mid[".$i."]').width = 50;
+				document.getElementById('mid[".$i."]').width = 50; </script>";
 			}
-			if(".isset($row['roleJungle'])."){
+			if($row['roleJungle'] == 1){
+				echo "<script>
 				document.getElementById('jungle[".$i."]').src = '/roles/jungle.png';
 				document.getElementById('jungle[".$i."]').height = 50;
-				document.getElementById('jungle[".$i."]').width = 50;
+				document.getElementById('jungle[".$i."]').width = 50; </script>";
 			}
-			if(".isset($row['roleADC'])."){
+			if($row['roleADC'] == 1){
+				echo "<script>
 				document.getElementById('adc[".$i."]').src = '/roles/adc.png';
 				document.getElementById('adc[".$i."]').height = 50;
-				document.getElementById('adc[".$i."]').width = 50;
+				document.getElementById('adc[".$i."]').width = 50; </script>";
 			}
-			if(".isset($row['roleSupport'])."){
+			if($row['roleSupport'] == 1){
+				echo "<script>
 				document.getElementById('support[".$i."]').src = '/roles/support.png';
 				document.getElementById('support[".$i."]').height = 50;
-				document.getElementById('support[".$i."]').width = 50;
+				document.getElementById('support[".$i."]').width = 50; </script>";
 			}
-			</script>";
+
 			}
 			$i=$i+1;
 		} 
