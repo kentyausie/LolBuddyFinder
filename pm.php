@@ -1,9 +1,4 @@
 <?php
-/***********************************************************
-*
-* Simple Private Messaging Tutorial Class
-*
-***********************************************************/
  
 class cpm {
  var $userid = '';
@@ -61,7 +56,7 @@ class cpm {
    }
  }
   
- // Fetch the username from a userid, I made this function because I don't know how you did build your usersystem, that's why I also didn't use left join... this way you can easily edit it
+ // Fetch the username from a userid
  function getusername($userid) {
    $sql = "SELECT summoner FROM Registration WHERE `summonerID` = '".$userid."' LIMIT 1";
    $result = mysql_query($sql);
@@ -71,7 +66,6 @@ class cpm {
      $row = mysql_fetch_row($result);
      return $row[0];
    } else {
-     // if not, name him Unknown
      return "Unknown";
    }
  }
@@ -106,7 +100,7 @@ class cpm {
    }
  }
   
- // We need the userid for pms, but we only let users input usernames, so we need to get the userid of the username :)
+ // We need the userid for pms, but we only let users input usernames, so we need to get the userid of the username
  function getuserid($username) {
    $sql = "SELECT summonerID FROM Registration WHERE `Summoner` = '".$username."' LIMIT 1";
    $result = mysql_query($sql);
