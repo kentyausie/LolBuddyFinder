@@ -288,6 +288,129 @@ return $data;
 	</table>
 	
 </div>
+<br><br><br>
+<div>
+	<img id="profileIcon[1]" height=0 width=0 style="float: left; " src=""></img>
+	<img id="rankIcon[1]" height=0 width=0 style="float: left; "></img>
+	<table style="margin: 0px 0px 0px 110px;">
+  		<tbody>
+  		<tr>
+    		<td style="text-align: center" colspan="2"><p class="formDescriptionText" id="name[1]" style="margin: 0px 0px 0px 0px; display: inline;"></p></td>
+    		<td style="text-align: center"><p id="level[1]" style="margin: 0px 0px 0px 0px;display: inline;text-align: center;"></p></td> 
+    		<td style="text-align: center"><p id="region[1]" style="margin: 0px 0px 0px 0px;display: inline;text-align: center;"></p></td>
+    		<td style="text-align: center"><p id="language[1]" style="margin: 0px 0px 0px 0px;display: inline;text-align: center;"></p></td>
+    	</tr>
+    	<tr>
+    		<td><img id="top[1]" height=0 width=0></img></td>
+			<td><img id="mid[1]" height=0 width=0></img></td>
+			<td><img id="jungle[1]" height=0 width=0></img></td>
+			<td><img id="adc[1]" height=0 width=0></img></td>
+			<td><img id="support[1]" height=0 width=0></img></td>
+    	</tr>
+    	<tr>
+			<td><img id="champ1[1]" height=0 width=0></img></td>
+			<td><img id="champ2[1]" height=0 width=0></img></td>
+			<td><img id="champ3[1]" height=0 width=0></img></td>
+			<td><img id="champ4[1]" height=0 width=0></img></td>
+			<td><img id="champ5[1]" height=0 width=0></img></td>
+    	</tr>
+		</tbody>
+	</table>
+	
+</div>
+
+<br><br><br>
+<div>
+	<img id="profileIcon[2]" height=0 width=0 style="float: left; " src=""></img>
+	<img id="rankIcon[2]" height=0 width=0 style="float: left; "></img>
+	<table style="margin: 0px 0px 0px 110px;">
+  		<tbody>
+  		<tr>
+    		<td style="text-align: center" colspan="2"><p class="formDescriptionText" id="name[2]" style="margin: 0px 0px 0px 0px; display: inline;"></p></td>
+    		<td style="text-align: center"><p id="level[2]" style="margin: 0px 0px 0px 0px;display: inline;text-align: center;"></p></td> 
+    		<td style="text-align: center"><p id="region[2]" style="margin: 0px 0px 0px 0px;display: inline;text-align: center;"></p></td>
+    		<td style="text-align: center"><p id="language[2]" style="margin: 0px 0px 0px 0px;display: inline;text-align: center;"></p></td>
+    	</tr>
+    	<tr>
+    		<td><img id="top[2]" height=0 width=0></img></td>
+			<td><img id="mid[2]" height=0 width=0></img></td>
+			<td><img id="jungle[2]" height=0 width=0></img></td>
+			<td><img id="adc[2]" height=0 width=0></img></td>
+			<td><img id="support[2]" height=0 width=0></img></td>
+    	</tr>
+    	<tr>
+			<td><img id="champ1[2]" height=0 width=0></img></td>
+			<td><img id="champ2[2]" height=0 width=0></img></td>
+			<td><img id="champ3[2]" height=0 width=0></img></td>
+			<td><img id="champ4[2]" height=0 width=0></img></td>
+			<td><img id="champ5[2]" height=0 width=0></img></td>
+    	</tr>
+		</tbody>
+	</table>
+	
+</div>
+
+<br><br><br>
+<div>
+	<img id="profileIcon[3]" height=0 width=0 style="float: left; " src=""></img>
+	<img id="rankIcon[3]" height=0 width=0 style="float: left; "></img>
+	<table style="margin: 0px 0px 0px 110px;">
+  		<tbody>
+  		<tr>
+    		<td style="text-align: center" colspan="2"><p class="formDescriptionText" id="name[3]" style="margin: 0px 0px 0px 0px; display: inline;"></p></td>
+    		<td style="text-align: center"><p id="level[3]" style="margin: 0px 0px 0px 0px;display: inline;text-align: center;"></p></td> 
+    		<td style="text-align: center"><p id="region[3]" style="margin: 0px 0px 0px 0px;display: inline;text-align: center;"></p></td>
+    		<td style="text-align: center"><p id="language[3]" style="margin: 0px 0px 0px 0px;display: inline;text-align: center;"></p></td>
+    	</tr>
+    	<tr>
+    		<td><img id="top[3]" height=0 width=0></img></td>
+			<td><img id="mid[3]" height=0 width=0></img></td>
+			<td><img id="jungle[3]" height=0 width=0></img></td>
+			<td><img id="adc[3]" height=0 width=0></img></td>
+			<td><img id="support[3]" height=0 width=0></img></td>
+    	</tr>
+    	<tr>
+			<td><img id="champ1[3]" height=0 width=0></img></td>
+			<td><img id="champ2[3]" height=0 width=0></img></td>
+			<td><img id="champ3[3]" height=0 width=0></img></td>
+			<td><img id="champ4[3]" height=0 width=0></img></td>
+			<td><img id="champ5[3]" height=0 width=0></img></td>
+    	</tr>
+		</tbody>
+	</table>
+	
+</div>
+
+<br><br><br>
+<div>
+	<img id="profileIcon[4]" height=0 width=0 style="float: left; " src=""></img>
+	<img id="rankIcon[4]" height=0 width=0 style="float: left; "></img>
+	<table style="margin: 0px 0px 0px 110px;">
+  		<tbody>
+  		<tr>
+    		<td style="text-align: center" colspan="2"><p class="formDescriptionText" id="name[4]" style="margin: 0px 0px 0px 0px; display: inline;"></p></td>
+    		<td style="text-align: center"><p id="level[4]" style="margin: 0px 0px 0px 0px;display: inline;text-align: center;"></p></td> 
+    		<td style="text-align: center"><p id="region[4]" style="margin: 0px 0px 0px 0px;display: inline;text-align: center;"></p></td>
+    		<td style="text-align: center"><p id="language[4]" style="margin: 0px 0px 0px 0px;display: inline;text-align: center;"></p></td>
+    	</tr>
+    	<tr>
+    		<td><img id="top[4]" height=0 width=0></img></td>
+			<td><img id="mid[4]" height=0 width=0></img></td>
+			<td><img id="jungle[4]" height=0 width=0></img></td>
+			<td><img id="adc[4]" height=0 width=0></img></td>
+			<td><img id="support[4]" height=0 width=0></img></td>
+    	</tr>
+    	<tr>
+			<td><img id="champ1[4]" height=0 width=0></img></td>
+			<td><img id="champ2[4]" height=0 width=0></img></td>
+			<td><img id="champ3[4]" height=0 width=0></img></td>
+			<td><img id="champ4[4]" height=0 width=0></img></td>
+			<td><img id="champ5[4]" height=0 width=0></img></td>
+    	</tr>
+		</tbody>
+	</table>
+	
+</div>
 	
 </body>
 <?php
