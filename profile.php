@@ -63,7 +63,7 @@ if ($result->num_rows > 0) {
 			xmlhttp.open("GET", url, false);
 			xmlhttp.send();
 			if(xmlhttp.status == 200){
-				var arr2 = JSON.Parse(xmlhttp.responseText);
+				var arr2 = JSON.parse(xmlhttp.responseText);
 				var leagueInfo = arr2[sumId];
 			}
 			else if(xmlhttp.status == 404){
