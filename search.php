@@ -6,13 +6,11 @@ header('Content-Type: text/html; charset=utf-8');
 
 <script>
 	function displayResults(count) {
-		var obj = <?php json_encode($row); ?>;
-		alert(obj['0']);
-		//document.getElementById("profileIcon["+count+"]").src = "http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/<?php echo $row['profileID']?>.png";
-		//document.getElementById("rankIcon[0]").src = "/rank_icons/<?php echo $row['tier']; ?>.png";
-		//document.getElementById('name[0]').innerHTML = "<?php echo $row['summoner']; ?>";
-		//document.getElementById('level[0]').innerHTML = "<?php echo $row['level']; ?>";
-		//document.getElementById('region[0]').innerHTML = "<?php echo $upRegion; ?>";
+		document.getElementById("profileIcon["+count+"]").src = "http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/<?php echo $row['profileID']?>.png";
+		document.getElementById("rankIcon[0]").src = "/rank_icons/<?php echo $row['tier']; ?>.png";
+		document.getElementById('name[0]').innerHTML = "<?php echo $row['summoner']; ?>";
+		document.getElementById('level[0]').innerHTML = "<?php echo $row['level']; ?>";
+		document.getElementById('region[0]').innerHTML = "<?php echo $upRegion; ?>";
 	}
 </script>
 
