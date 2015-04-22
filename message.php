@@ -12,7 +12,7 @@
  $pm = new cpm($userid);
   
  function sendmail($to,$subject = '',$body = ''){
-  require_once('../class.phpmailer.php');
+  //require_once('../class.phpmailer.php');
   echo "IN";
 $mail = new PHPMailer();  // create a new object
 	$mail->IsSMTP(); // enable SMTP
