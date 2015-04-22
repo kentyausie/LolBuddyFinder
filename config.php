@@ -14,7 +14,7 @@
 // sql to create table
 $sql = "CREATE TABLE messages (
 id INT( 11 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-title VARCHAR( 255 ) NULL 
+title VARCHAR( 255 ) NULL ,
 message TEXT NOT NULL ,
 from INT( 11 ) NOT NULL ,
 to INT( 11 ) NOT NULL ,
@@ -27,7 +27,7 @@ to_vdate DATETIME NULL ,
 from_ddate DATETIME NULL ,
 to_ddate DATETIME NULL ,
 created DATETIME NOT NULL
-) ENGINE = MYISAM ;
+) ENGINE = MYISAM ;"
 
 if ($conn->query($sql) === TRUE) {
     echo "Table MyGuests created successfully";
