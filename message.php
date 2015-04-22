@@ -73,6 +73,9 @@ if(isset($_GET['p'])) {
 <form action="send_email.php" style="text-align:center;padding-top: 15px;display: inline;">
 		<input type="submit" name="submit" value="PM">
 	</form>
+<form action="gohome.php" style="text-align:center;padding-top: 15px;display: inline;">
+		<input type="submit" name="submit" value="Back to profile">
+	</form>
 <br /><br />
 <?php
 // if it's the standart startpage or the page new, then show all new messages
