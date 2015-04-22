@@ -16,6 +16,7 @@
  * 
  *************************************************************************/
   
+ session_start();
  // Load the config file!
  include('config.php');
  // Load the class
