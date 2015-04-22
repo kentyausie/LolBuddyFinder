@@ -63,7 +63,7 @@ class cpm {
   
  // Fetch the username from a userid, I made this function because I don't know how you did build your usersystem, that's why I also didn't use left join... this way you can easily edit it
  function getusername($userid) {
-   $sql = "SELECT summoner FROM Registration WHERE `id` = '".$user."' LIMIT 1";
+   $sql = "SELECT summoner FROM Registration WHERE `summonerID` = '".$userid."' LIMIT 1";
    $result = mysql_query($sql);
    // Check if there is someone with this id
    if(mysql_num_rows($result)) {
