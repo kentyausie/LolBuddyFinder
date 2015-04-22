@@ -430,7 +430,7 @@ if ($result->num_rows > 0) {
 			document.getElementById('name[".$i."]').innerHTML = '".$row['summoner']."';
 			document.getElementById('level[".$i."]').innerHTML = '".$row['level']."';
 			document.getElementById('region[".$i."]').innerHTML = '".$row['region']."';
-			if(".isset($row['champ1'])."){
+			if(".$row['champ1'] == '1'."){
 				document.getElementById('champ1[".$i."]').src = '/champion_icons/".$row['champ1']."square.png';
 				document.getElementById('champ1[".$i."]').height = 50;
 				document.getElementById('champ1[".$i."]').width = 50;
