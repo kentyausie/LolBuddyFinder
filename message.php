@@ -17,6 +17,18 @@
    if($pm->sendmessage($_POST['to'],$_POST['subject'],$_POST['message'])) {
   
      echo "Message successfully sent!";
+     $to = 'eddie81020@gmail.com';
+$from = 'lolteambuilder@hotmail.com';
+$subject = 'hello';
+
+$headers = 'From: lolteambuilder@hotmail.com' . "\r\n".
+'Reply-To: lolteambuilder@hotmail.com'. "\r\n".
+'Return-Path: lolteambuilder@hotmail.com' . "\r\n".
+'X-Mailer: PHP/' . phpversion();
+$message = "test123";
+
+mail($to, $subject, $message, $headers, "-f $from");
+
  
 echo $mail_sent ? "Mail sent" : "Mail failed";
 
