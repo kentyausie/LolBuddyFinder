@@ -29,7 +29,7 @@ include 'signupValidation.php'; ?>
     }
 </style>
 
-<script type="text/javascript" src="myScripts.js"></script>
+<script type="text/javascript"></script>
 
 <head>
 <img src="head_img.jpg" class="headImg"></img>
@@ -46,15 +46,16 @@ include 'signupValidation.php'; ?>
 <p class="align">
 
 <label class="formDescriptionText">Region</label><br>
-<label class="formDescriptionText"><input type="radio" value="br" name="region" id="br" />BR</label>
-<label class="formDescriptionText"><input type="radio" value="eune" name="region" id="eune" />EUNE</label>
-<label class="formDescriptionText"><input type="radio" value="euw" name="region" id="euw" />EUW</label>
-<label class="formDescriptionText"><input type="radio" value="lan" name="region" id="lan" />LAN</label>
-<label class="formDescriptionText"><input type="radio" value="las" name="region" id="las" />LAS</label>
-<label class="formDescriptionText"><input type="radio" value="na" name="region" id="na" />NA</label>
-<label class="formDescriptionText"><input type="radio" value="oce" name="region" id="oce" />OCE</label>
-<label class="formDescriptionText"><input type="radio" value="ru" name="region" id="ru" />RU</label>
-<label class="formDescriptionText"><input type="radio" value="tr" name="region" id="tr" />TR</label>
+<label class="formDescriptionText"><input type="radio" id="region[]" name="region" value="br" />BR</label>
+<label class="formDescriptionText"><input type="radio" id="region[]" name="region" value="eune" />EUNE</label>
+<label class="formDescriptionText"><input type="radio" id="region[]" name="region" value="euw" />EUW</label>
+<label class="formDescriptionText"><input type="radio" id="region[]" name="region" value="kr" />KR</label>
+<label class="formDescriptionText"><input type="radio" id="region[]" name="region" value="lan" />LAN</label>
+<label class="formDescriptionText"><input type="radio" id="region[]" name="region" value="las" />LAS</label>
+<label class="formDescriptionText"><input type="radio" id="region[]" name="region" value="na" />NA</label>
+<label class="formDescriptionText"><input type="radio" id="region[]" name="region" value="oce" />OCE</label>
+<label class="formDescriptionText"><input type="radio" id="region[]" name="region" value="ru" />RU</label>
+<label class="formDescriptionText"><input type="radio" id="region[]" name="region" value="tr" />TR</label>
 <br>
 
 <label class="formDescriptionText">Summoner Name:&nbsp&nbsp</label>
@@ -64,6 +65,8 @@ include 'signupValidation.php'; ?>
 
 <input type="hidden" name="sumInfo" id="sumInfo" value="">
 <input type="hidden" name="sumRegion" id="sumRegion" value="">
+<input type="hidden" name="sumLeague" id="sumLeague" value="">
+<input type="hidden" name="sumMatches" id="sumMatches" value="">
 
 <label class="formDescriptionText">Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>	
 <input class="textbox" type="email" name="email" placeholder="Email" value="">

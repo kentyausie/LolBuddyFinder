@@ -430,9 +430,27 @@ function summonerLookUp() {
 			xmlhttp.send();
 			if(xmlhttp.status == 200){
 				var arr = JSON.parse(xmlhttp.responseText);
-				var sumInfo = arr[SUMMONER_NAME_NOSPACES].id;
-				document.getElementById("sumInfo").value = sumInfo;
+				var sumInfo = arr[SUMMONER_NAME_NOSPACES];
+				document.getElementById("sumInfo").value = sumInfo.id;
 				document.getElementById("sumRegion").value = region;
+				
+				var sumId = sumInfo.id;
+				url="https://"+region+".api.pvp.net/api/lol/"+region+"/v1.4/summoner/"+sumId+"?api_key="+API_KEY;
+				xmlhttp.open("GET", url, false);
+				xmlhttp.send();
+				if(xmlhttp.status == 200){
+					arr = JSON.parse(xmlHttp.responseText);
+					sumLeague = arr[sumId];
+					document.getElementById("sumLeague").value = sumLeague;
+				}
+				url="https://"+region+".api.pvp.net/api/lol/"+region+"/v2.2/matchhistory/"+sumId+"?endIndex=5&api_key="+API_KEY;
+				xmlhttp.open("GET", url, false);
+				xmlhttp.send();
+				if(xmlhttp.status == 200){
+					arr = JSON.parse(xmlHttp.responseText);
+					sumLeague = arr[sumId];
+					document.getElementById("sumMatches").value = sumMatches;
+				}
 			}
 			else if(xmlhttp.status == 404){
 				document.getElementById("sumInfo").value = 404;

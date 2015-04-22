@@ -11,7 +11,7 @@ if ($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
 }
 
-
+	
 $sumName =""; // Sender Name
 $sumInfo="";
 $email =""; // Sender's email ID
@@ -39,7 +39,7 @@ $champError="";
 $regionError="";
 
 $successMessage =""; // On submitting form below function will execute.
-if(isset($_POST['submit'])) { // Checking null values in message.
+if(isset($_POST['submit'])){
 	if (empty($_POST["sumName"])){
 		$sumError = "Summoner name is required";
 		$valid = "false"; 
