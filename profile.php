@@ -157,7 +157,7 @@ $row['language'] = ucfirst($row['language']);
 <script>
 	document.getElementById('title').innerHTML = sumInfo.name+"'s Profile";
 	document.getElementById('head').innerHTML = sumInfo.name+"'s Profile";
-	document.getElementById("profileIcon").src = "http://ddragon.leagueoflegends.com/cdn/4.3.12/img/profileicon/"+sumInfo.profileIconId+".png";
+	document.getElementById("profileIcon").src = "http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/"+sumInfo.profileIconId+".png";
 	document.getElementById("rankIcon").src = "/rank_icons/"+tier+".png";
 	document.getElementById('name').innerHTML = ""+sumInfo.name;
 	document.getElementById('level').innerHTML = ""+sumInfo.summonerLevel;
