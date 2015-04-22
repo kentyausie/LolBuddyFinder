@@ -55,6 +55,8 @@
     					session_start();
     					$_SESSION['user']=$row['summoner'];
     					$_SESSION['name']=$_SESSION['user'];
+    					$_SESSION['id']=$row['summonerID'];
+    					echo "<script> alert('".$row['summonerID']."'); </script>";
     					header('LOCATION: profile.php');
        					exit();
 					}

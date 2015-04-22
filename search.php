@@ -2,13 +2,104 @@
 <html>
 <?php
 header('Content-Type: text/html; charset=utf-8');
-include 'searching.php' ?>;
+?>;
+
+<script>
+	function displayResults() {
+		var table = document.getElementById("table");
+		
+	}
+</script>
 
 <head>
 	<title>Search</title>
 	<link rel="stylesheet" href="style.css">
 	<h2 class="headText">Search</h2>
 </head>
+<?php
+$servername = "lovett.usask.ca";
+$username = "cmpt350_key053"; 
+$password = "awp0t6pokb";
+$dbname = "cmpt350_key053";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+	die("Connection failed: " . $conn->connect_error);
+}
+
+
+$sqlQuery ="";
+
+if(isset($_POST['submit'])) { // Checking null values in message.
+	if ($_POST['champion'] !== "select"){
+		if($sqlQuery !== ""){
+			$sqlQuery = $sqlQuery." AND ";
+		}
+		$sqlQuery = $sqlQuery."(champ1='".$_POST['champion']."' OR champ2='".$_POST['champion']."' OR champ3='".$_POST['champion']."' OR champ4='".$_POST['champion']."' OR champ5='".$_POST['champion']."')";
+	}
+	if ($_POST['role'] !== "select"){
+		if($sqlQuery !== ""){
+			$sqlQuery = $sqlQuery." AND ";
+		}
+		if($_POST['role'] == "top"){
+			$sqlQuery = $sqlQuery."roleTop = 1";
+		}
+		else if($_POST['role'] == "mid"){
+			$sqlQuery = $sqlQuery."roleMid = 1";
+		}
+		else if($_POST['role'] == "jungle"){
+			$sqlQuery = $sqlQuery."roleJungle = 1";
+		}
+		else if($_POST['role'] == "adc"){
+			$sqlQuery = $sqlQuery."roleADC = 1";
+		}
+		else if($_POST['role'] == "support"){
+			$sqlQuery = $sqlQuery."roleSupport = 1";
+		}
+	}
+	if ($_POST['region'] !== "select"){
+		if($sqlQuery !== ""){
+			$sqlQuery = $sqlQuery." AND ";
+		}
+		$sqlQuery = $sqlQuery."region='".$_POST['region']."'";
+	}
+	if ($_POST['language'] !== "select"){
+		if($sqlQuery !== ""){
+			$sqlQuery = $sqlQuery." AND ";
+		}
+		$sqlQuery = $sqlQuery."language='".$_POST['language']."'";
+	}
+	
+		
+	$sql = "SELECT * FROM Registration WHERE ".$sqlQuery;
+	if ($conn->query($sql) === FALSE) {
+    	echo $conn->error;
+		echo "<script> alert('Lookup Error'); </script>";
+	}
+	$result = $conn->query($sql);
+
+	if ($result->num_rows > 0) {
+   		$row = $result->fetch_assoc();
+   		echo "<script> alert('Found'); </script>";
+   		echo '<script type="text/javascript" src="myScripts.js">displayResults();</script>';
+	} else {
+		echo "<h2>No Results</h2>";
+    }
+	
+	$conn->close();
+	
+	
+}
+function test_input($data)
+{
+$data = trim($data);
+$data = stripslashes($data);
+$data = htmlspecialchars($data);
+return $data;
+}
+?>
 <body>
 	<form action="search.php" style="text-align:center;padding-top: 15px;" method="post">
 		<select name="champion" class="selectBox">
@@ -162,7 +253,7 @@ include 'searching.php' ?>;
 			<option value="select">Language</option>
 			<option value="english">English</option>
 			<option value="french">French</option>
-			<option value="german">German</option>
+			<option3 value="german">German</option>
 			<option value="spanish">Spanish</option>
 			<option value="portuguese">Portuguese</option>
 			<option value="korean">Korean ???</option>
