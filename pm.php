@@ -108,7 +108,7 @@ class cpm {
   
  // We need the userid for pms, but we only let users input usernames, so we need to get the userid of the username :)
  function getuserid($username) {
-   $sql = "SELECT id FROM user WHERE `username` = '".$username."' LIMIT 1";
+   $sql = "SELECT summonerID FROM Registration WHERE `Summoner` = '".$username."' LIMIT 1";
    $result = mysql_query($sql);
    if(mysql_num_rows($result)) {
      $row = mysql_fetch_row($result);
@@ -132,8 +132,7 @@ class cpm {
   
  // Add a new personal message
  function sendmessage($to,$title,$message) {
-   //$to = $this->getuserid($to);
-   $to = $to;
+   $to = $this->getuserid($to);
    $sql = "INSERT INTO messages SET `to` = '".$to."', `from` = '".$this->userid."', `title` = '".$title."', `message` = '".$message."', `created` = NOW()";
    return (@mysql_query($sql)) ? true:false;
  }
