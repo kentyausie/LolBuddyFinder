@@ -285,7 +285,7 @@ return $data;
 			<td><img id="champ5[0]" height=0 width=0></img></td>
     	</tr>
     	<tr>
-    		<td><a id="mailLink[0]"><img id="mailIcon[0]" height=0 width=0></img></a></td>
+    		<td><a id="mailLink[0]" href="messages.php"><img id="mailIcon[0]" src="/misc/mail.png" height=0 width=0></img></a></td>
     	</tr>
 		</tbody>
 	</table>
