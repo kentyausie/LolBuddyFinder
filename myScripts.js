@@ -441,7 +441,7 @@ function summonerLookUp() {
 				xmlhttp.open("GET", url, false);
 				xmlhttp.send();
 				if(xmlhttp.status == 200){
-					arr = JSON.parse(xmlHttp.responseText);
+					arr = JSON.parse(xmlhttp.responseText);
 					sumLeague = arr[sumId];
 					document.getElementById("sumLeague").value = sumLeague;
 					alert("League");
@@ -450,7 +450,7 @@ function summonerLookUp() {
 				xmlhttp.open("GET", url, false);
 				xmlhttp.send();
 				if(xmlhttp.status == 200){
-					arr = JSON.parse(xmlHttp.responseText);
+					arr = JSON.parse(xmlhttp.responseText);
 					sumLeague = arr[sumId];
 					document.getElementById("sumMatches").value = sumMatches;
 					alert("Matches");
