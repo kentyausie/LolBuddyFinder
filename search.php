@@ -417,8 +417,9 @@ return $data;
 if ($result->num_rows > 0) {
    		$i=0;
    		
-   		while ($row = $result->fetch_assoc() || $i < 5){
-
+   		while ($i < 5){
+   			$row = $result->fetch_assoc();
+   			if(isset($row){
    			echo "<script> 
    			document.getElementById('profileIcon[".$i."]').src = 'http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/".$row['profileID'].".png';
 			document.getElementById('profileIcon[".$i."]').height=150;
@@ -481,6 +482,7 @@ if ($result->num_rows > 0) {
 				document.getElementById('support[".$i."]').width = 50;
 			}
 			</script>";
+			}
 			$i=$i+1;
 		} 
 	
