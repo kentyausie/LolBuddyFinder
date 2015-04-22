@@ -165,13 +165,13 @@ $row['language'] = ucfirst($row['language']);
 </div>
 </body>
 <script>
-	document.getElementById('title').innerHTML = "<?php echo $row['name']; ?>'s Profile";
-	document.getElementById('head').innerHTML = "<?php echo $row['name']; ?>'s Profile";
+	document.getElementById('title').innerHTML = "<?php echo $row['summoner']; ?>'s Profile";
+	document.getElementById('head').innerHTML = "<?php echo $row['summoner']; ?>'s Profile";
 	document.getElementById("profileIcon").src = "http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/<?php echo $row['profileID']?>.png";
-	document.getElementById("rankIcon").src = "/rank_icons/"+tier+".png";
-	document.getElementById('name').innerHTML = ""+sumInfo.name;
-	document.getElementById('level').innerHTML = ""+sumInfo.summonerLevel;
-	document.getElementById('rank').innerHTML = tier;
+	document.getElementById("rankIcon").src = "/rank_icons/<?php echo $row['tier']; ?>.png";
+	document.getElementById('name').innerHTML = "<?php echo $row['summoner']; ?>";
+	document.getElementById('level').innerHTML = "<?php echo $row['level']; ?>";
+	document.getElementById('rank').innerHTML = "<?php echo $row['tier']; ?>";
 	document.getElementById('region').innerHTML = "<?php echo $upRegion; ?>";
 	
 	if("<?php echo $row['champ1']; ?>" !=""){
