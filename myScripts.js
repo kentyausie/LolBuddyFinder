@@ -445,6 +445,7 @@ function summonerLookUp() {
 				if(xmlhttp.status == 200){
 					arr = JSON.parse(xmlhttp.responseText);
 					sumLeague = arr[sumId];
+					alert(sumLeague.tier);
 					document.getElementById("tier").value = sumLeague.tier;
 					alert("League");
 				}
