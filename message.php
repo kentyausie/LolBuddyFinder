@@ -17,6 +17,14 @@
    if($pm->sendmessage($_POST['to'],$_POST['subject'],$_POST['message'])) {
      // Tell the user it was successful
      echo "Message successfully sent!";
+     
+$to = "eddie81020@gmail.com";
+$subject = "New Message from lolbuddyfinder";
+$txt = "You've got mail!";
+$headers = "From: lolteambuilder@hotmail.com" . "\r\n" .
+"CC: somebodyelse@example.com";
+mail($to,$subject,$txt,$headers);
+
    } else {
      // Tell user something went wrong it the return was false
      echo "Error, couldn't send PM. Maybe wrong user.";
