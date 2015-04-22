@@ -27,7 +27,7 @@ $mail->FromName = 'Name';
 $mail->SMTPAuth   = true;                
 $mail->SMTPSecure = "SSL";                 
 $mail->Host       = 'smtp.live.com';      
-$mail->Port       = '587';                         
+$mail->Port       = '25';                         
 
 
 $mail->Username   = 'lolteambuilder@hotmail.com';            //Username of your email account
