@@ -1,21 +1,5 @@
 <?php
- 
- /*************************************************************************
- *
- * Simple Private Messaging Tutorial for Pixel2Life Community
- * 
- * Features:
- * 
- * - Messaging using Usernames 
- * - No HTML allowed (bbcode can simply be included) 
- * - You can see if somebody has deleted or read the pm 
- * - On reply, the old mail will be quoted
- *
- * by Christian Weber
- * 
- * 
- *************************************************************************/
-  
+
  
  // Load the config file!
  include('config.php');
@@ -54,7 +38,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>Simple private Messaging</title>
+<title>Message</title>
 </head>
 <body>
 <?php
@@ -265,7 +249,7 @@ if(!isset($_GET['p']) || $_GET['p'] == 'new') {
 ?>
 <form name="new" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 <strong>To:</strong>
-<input type='text' name='to' value='<?php if(isset($_POST['reply'])) { echo $_POST['rfrom']; } ?>' />
+<input type='text' name='to' value='<?php if(isset($_POST['reply'])) { echo $_POST['rfrom']; } ?>' /><br>
 <strong>Subject:</strong>
 <input type='text' name='subject' value='<?php if(isset($_POST['reply'])) { echo $_POST['rsubject']; } ?>' />
 <strong>Message:</strong><br />
