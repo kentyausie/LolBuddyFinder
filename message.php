@@ -44,7 +44,7 @@ $mail = new PHPMailer();  // create a new object
   
      echo "Message successfully sent!";
 
-     sendmail('eddie81020@gmail.com','Howdy!','Hello, my friend!');
+     //sendmail('eddie81020@gmail.com','Howdy!','Hello, my friend!');
 
    } else {
      // Tell user something went wrong it the return was false
