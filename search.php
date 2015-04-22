@@ -298,9 +298,9 @@ if ($result->num_rows > 0) {
    		//while ($row = $result->fetch_assoc()) {
    			echo "<script> document.getElementById('profileIcon[".$i."]').src = 'http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/".$row['profileID'].".png';
 			document.getElementById('rankIcon[".$i."]').src = '/rank_icons/".$row['tier'].".png';
-			document.getElementById('name[".$i."]').innerHTML = ".$row['summoner'].";
-			document.getElementById('level[".$i."]').innerHTML = ".$row['level'].";
-			document.getElementById('region[".$i."]').innerHTML = ".$row['region'].";</script>";
+			document.getElementById('name[".$i."]').innerHTML = '".$row['summoner']."';
+			document.getElementById('level[".$i."]').innerHTML = '".$row['level']."';
+			document.getElementById('region[".$i."]').innerHTML = '".$row['region']."';</script>";
 			$i=$i+1;
 		//}
 	
