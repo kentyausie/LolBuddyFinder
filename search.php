@@ -5,7 +5,7 @@ header('Content-Type: text/html; charset=utf-8');
 ?>;
 
 <script>
-	function displayResults() {
+	function displayResults(var arr) {
 		var el = "";
 		var arr = <?php echo json_encode($row); ?>;
 		int i = "";
@@ -87,7 +87,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 	if ($result->num_rows > 0) {
    		$row = $result->fetch_assoc();
    		echo "<script> alert('Found'); </script>";
-   		echo '<script type="text/javascript" src="myScripts.js">displayResults();</script>';
+   		echo '<script type="text/javascript" src="myScripts.js">displayResults('.json_encode($row).');</script>';
 	} else {
 		echo "<h2>No Results</h2>";
     }
