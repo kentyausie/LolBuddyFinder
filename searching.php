@@ -29,14 +29,24 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		if($_POST['role'] == "top"){
 			$sqlQuery = $sqlQuery."roleTop = 1";
 		}
+		else if($_POST['role'] == "mid"){
+			$sqlQuery = $sqlQuery."roleMid = 1";
+		}
+		else if($_POST['role'] == "jungle"){
+			$sqlQuery = $sqlQuery."roleJungle = 1";
+		}
+		else if($_POST['role'] == "adc"){
+			$sqlQuery = $sqlQuery."roleADC = 1";
+		}
+		else if($_POST['role'] == "support"){
+			$sqlQuery = $sqlQuery."roleSupport = 1";
+		}
 	} 
 	if ($_POST['region'] !== "select"){
 		if($sqlQuery !== ""){
 			$sqlQuery = $sqlQuery." AND ";
 		}
-		echo "<script> alert('".$sqlQuery."'); </script>";
 		$sqlQuery = $sqlQuery."region='".$_POST['region']."'";
-		echo '<script> alert("'.$sqlQuery.'"); </script>';
 	} 
 	if($_POST["sumInfo"]==404 || $_POST["sumInfo"]==""){
 		//echo "<script> alert('".$sumName."'); </script>";

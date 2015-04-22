@@ -189,5 +189,7 @@ include 'searching.php' ?>;
 		</select>
 		<input class="topButton" type="submit" name="submit" value="Search">
 	</form>	
+	
+	<a href="profile.php?name='kingkoryo'">Link</a>
 </body>
 </html>
