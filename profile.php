@@ -33,6 +33,38 @@ $upRegion = strtoupper($row['region']);
 $row['language'] = ucfirst($row['language']);
 ?>
 
+<script>
+var sumName = document.getElementById("sumName").value;
+    	var SUMMONER_NAME_NOSPACES = sumName.replace(" ", "");
+    	var API_KEY = "01edb1d0-a26b-4f78-afbb-3eeb9de5b0f9";
+    	if (sumName !== "") {
+       		var xmlhttp = new XMLHttpRequest();
+			var url = "https://"+region+".api.pvp.net/api/lol/"+region+"/v1.4/summoner/by-name/"+SUMMONER_NAME_NOSPACES+"?api_key="+API_KEY;
+			
+
+			xmlhttp.open("GET", url, false);
+			xmlhttp.send();
+			if(xmlhttp.status == 200){
+				var arr = JSON.parse(xmlhttp.responseText);
+				var sumInfo = arr[SUMMONER_NAME_NOSPACES];
+				var sumId = sumInfo.id;
+				document.getElementById("sumInfo").value = sumInfo;
+				document.getElementById("sumRegion").value = region;
+				document.getElementById("sumId").value = sumId;
+				document.getElementById("profileId").value = sumInfo.profileIconId;
+				document.getElementById("level").value = sumInfo.summonerLevel;
+				
+				
+				url="https://<?php echo $row['region'] ?>.api.pvp.net/api/lol/<?php echo $row['region'] ?>/v2.2/matchhistory/<?php echo $row['summonerID']?>?endIndex=5&api_key="+API_KEY;
+				xmlhttp.open("GET", url, false);
+				xmlhttp.send();
+				if(xmlhttp.status == 200){
+					arr = JSON.parse(xmlhttp.responseText);
+					var sumLeague = arr[sumId][0]['tier'];
+					document.getElementById("tier").value = sumLeague;
+				}
+</script>
+
 <head>
 	<link rel="stylesheet" href="style.css">
 	<title id="title"><?php echo $row['summoner']; ?>'s Profile</title>
@@ -107,6 +139,9 @@ $row['language'] = ucfirst($row['language']);
 	<img id="jungle" height=0 width=0></img>
 	<img id="adc" height=0 width=0></img>
 	<img id="support" height=0 width=0></img>
+
+</div>
+<div>
 
 </div>
 <div style="background-color:LightSteelBlue; margin:20px 0px 0px 0px;">
