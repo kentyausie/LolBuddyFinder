@@ -17,9 +17,9 @@ $sqlQuery ="";
 if(isset($_POST['submit'])) { // Checking null values in message.
 	if ($_POST['champion'] !== "select"){
 		if($sqlQuery == ""){
-			$sqlQuery = "(champ1=".$_POST['champion']." OR champ2=".$_POST['champion']." OR champ3=".$_POST['champion']." OR champ4=".$_POST['champion']." OR champ5=".$_POST['champion'];
+			$sqlQuery = "(champ1=".$_POST['champion']." OR champ2=".$_POST['champion']." OR champ3=".$_POST['champion']." OR champ4=".$_POST['champion']." OR champ5=".$_POST['champion'].")";
 		} else {
-			$sqlQuery = $sqlQuery." AND (champ1=".$_POST['champion']." OR champ2=".$_POST['champion']." OR champ3=".$_POST['champion']." OR champ4=".$_POST['champion']." OR champ5=".$_POST['champion'];
+			$sqlQuery = $sqlQuery." AND (champ1=".$_POST['champion']." OR champ2=".$_POST['champion']." OR champ3=".$_POST['champion']." OR champ4=".$_POST['champion']." OR champ5=".$_POST['champion'].")";
 		}
 	}
 	if ($_POST['role'] !== "select"){
@@ -54,7 +54,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		}
 		$sqlQuery = $sqlQuery."language='".$_POST['language']."'";
 	}
-	echo "<script> alert('".$sqlQuery."'); </script>";
+	echo '<script> alert('".$sqlQuery."'); </script>';
 	
 	if($valid=="true"){
 		
