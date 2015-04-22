@@ -12,31 +12,28 @@
  $pm = new cpm($userid);
   
  function sendmail($to,$subject = '',$body = ''){
+  require_once('../class.phpmailer.php');
   echo "IN";
-require_once('../class.phpmailer.php');$mail = new PHPMailer(); // create a new object
-$mail->IsSMTP(); // enable SMTP
-$mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
-$mail->SMTPAuth = true; // authentication enabled
-$mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for GMail
-$mail->Host = "smtp.gmail.com";
-$mail->Port = 587; // or 587
-$mail->IsHTML(true);
-echo "IN";
-$mail->Username = "eddie81020@gmail.com";
-$mail->Password = "jiz322tif192";
-$mail->SetFrom("eddie81020@gmail.com");
-$mail->Subject = "Test";
-$mail->Body = "hello";
-$mail->AddAddress("eddie81020@gmail.com");
-echo "IN";
- if(!$mail->Send())
-    {
-    echo "Mailer Error: " . $mail->ErrorInfo;
-    }
-    else
-    {
-    echo "Message has been sent";
-    }
+$mail = new PHPMailer();  // create a new object
+	$mail->IsSMTP(); // enable SMTP
+	$mail->SMTPDebug = 0;  // debugging: 1 = errors and messages, 2 = messages only
+	$mail->SMTPAuth = true;  // authentication enabled
+	$mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for GMail
+	$mail->Host = 'smtp.gmail.com';
+	$mail->Port = 465; 
+	$mail->Username = 'eddie81020@gmail.com';  
+	$mail->Password = 'jiz322tif192';           
+	$mail->SetFrom($from, $from_name);
+	$mail->Subject = $subject;
+	$mail->Body = $body;
+	$mail->AddAddress($to);
+	if(!$mail->Send()) {
+		$error = 'Mail error: '.$mail->ErrorInfo; 
+		return false;
+	} else {
+		$error = 'Message sent!';
+		return true;
+	}
     
 }
   
