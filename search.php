@@ -7,7 +7,11 @@ header('Content-Type: text/html; charset=utf-8');
 <script>
 	function displayResults() {
 		var table = document.getElementById("table");
-		
+		var arr = <?php echo json_encode($row); ?>;
+		int i = 0;
+		for(i=0;i<arr.length;i++){
+			table.addRow
+		}
 	}
 </script>
 
@@ -87,6 +91,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 	} else {
 		echo "<h2>No Results</h2>";
     }
+	
 	
 	$conn->close();
 	
