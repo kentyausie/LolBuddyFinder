@@ -128,7 +128,7 @@ if(isset($_POST['submit'])){
 	$language = $_POST['language'];
 	$profileId= $_POST['profileId'];
 	$tier=$_POST['tier'];
-	if($tier == "undefined"){
+	if($tier == "undefined" || $tier == ""){
 		$tier="UNRANKED";
 	}
 	$level=$_POST['level'];
