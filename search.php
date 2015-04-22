@@ -146,16 +146,6 @@ include 'searching.php' ?>;
 			<option value="adc">ADC</option>
 			<option value="support">Support</option>
 		</select>
-		<select name="rank" class="selectBox">
-			<option value="select">Rank</option>
-			<option value="challenger">Challenger</option>
-			<option value="master">Master</option>
-			<option value="diamond">Diamond</option>
-			<option value="platinum">Platinum</option>
-			<option value="gold">Gold</option>
-			<option value="silver">Silver</option>
-			<option value="bronze">Bronze</option>
-		</select>
 		<select name="region" class="selectBox">
 			<option value="select">Region</option>
 			<option value="br">Brazil</option>
