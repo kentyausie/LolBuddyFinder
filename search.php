@@ -5,14 +5,13 @@ header('Content-Type: text/html; charset=utf-8');
 ?>
 
 <script>
-	function displayResults() {
-		var obj = <?php $row; ?>;
-		alert(obj['0']);
-		//document.getElementById("profileIcon["+count+"]").src = "http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/<?php echo $row['profileID']?>.png";
-		//document.getElementById("rankIcon[0]").src = "/rank_icons/<?php echo $row['tier']; ?>.png";
-		//document.getElementById('name[0]').innerHTML = "<?php echo $row['summoner']; ?>";
-		//document.getElementById('level[0]').innerHTML = "<?php echo $row['level']; ?>";
-		//document.getElementById('region[0]').innerHTML = "<?php echo $upRegion; ?>";
+	function displayResults(i) {
+		
+		document.getElementById("profileIcon["+i+"]").src = "http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/<?php echo $row['profileID']?>.png";
+		document.getElementById("rankIcon["+i+"]").src = "/rank_icons/<?php echo $row['tier']; ?>.png";
+		document.getElementById('name['+i+']').innerHTML = "<?php echo $row['summoner']; ?>";
+		document.getElementById('level['+i+']').innerHTML = "<?php echo $row['level']; ?>";
+		document.getElementById('region['+i+']').innerHTML = "<?php echo $upRegion; ?>";
 	}
 </script>
 
@@ -86,10 +85,10 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 	$result = $conn->query($sql);
 
 	if ($result->num_rows > 0) {
-   		$row = $result->fetch_assoc();
    		echo "<script> alert(".$result->num_rows."); </script>";
+   		$i=0;
    		while ($row = mysql_fetch_assoc($result)) {
-    		
+    		echo "<script> displayResult(".$i."); </script>";
 		}
    		echo '<script>displayResults();</script>';
 	
