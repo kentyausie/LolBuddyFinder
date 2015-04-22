@@ -29,7 +29,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
 };
-$upRegion = ucwords($row['region']);
+$upRegion = strtoupper($row['region']);
 $row['language'] = ucfirst($row['language']);
 
 ?>
