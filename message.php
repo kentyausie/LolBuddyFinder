@@ -32,7 +32,7 @@
       'text' => 'testing body',
       'from' => 'lolteambuilder@hotmail.com',
    );
-echo "STEP1";
+echo $url;
  $request = $url.'api/mail.send.json';
 
  // Generate curl request
