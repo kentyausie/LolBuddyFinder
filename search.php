@@ -6,11 +6,11 @@ header('Content-Type: text/html; charset=utf-8');
 
 <script>
 	function displayResults() {
-		var table = document.getElementById("table");
+		var el = "";
 		var arr = <?php echo json_encode($row); ?>;
 		int i = 0;
 		for(i=0;i<arr.length;i++){
-			table.addRow
+			alert("Hello " + i);
 		}
 	}
 </script>
@@ -277,52 +277,33 @@ return $data;
 	</form>	
 	
 	<div>
-	<img id="profileIcon" height=150 width=150 style="float: left; "></img>
-	<img id="rankIcon" height=150 width=150 style="float: left; ></img>
+	<img id="profileIcon[0]" height=150 width=150 style="float: left; "></img>
+	<img id="rankIcon[0]" height=150 width=150 style="float: left; "></img>
 	<table style="margin: 0px 0px 0px 110px;">
   		<tbody>
   		<tr>
-    		<td>Summoner Name:</td>
-    		<td><p id="name" style="margin: 0px 0px 0px 0px; display: inline;"></p></td>
-  		</tr>
-  		<tr>
-    		<td>Summoner Level:</td> 
-    		<td><p id="level" style="margin: 0px 0px 0px 0px;display: inline;"></p></td> 
-  		</tr>
-  		<tr>
-    		<td>Region:</td>
-    		<td><p id="region" style="margin: 0px 0px 0px 0px;display: inline;"></p></td>
-  		</tr>
-  		<tr>
-    		<td>Language:</td>
-    		<td><p id="language" style="margin: 0px 0px 0px 0px;display: inline;"></p></td>
-  		</tr>
-  		<tr>
-    		<td>Timezone:</td>
-    		<td><p id="timezone" style="margin: 0px 0px 0px 0px;display: inline;"></p></td>
-  		</tr>
+    		<td><p id="name[0]" style="margin: 0px 0px 0px 0px; display: inline;"></p></td>
+    		<td><p id="level[0]" style="margin: 0px 0px 0px 0px;display: inline;"></p></td> 
+    		<td><p id="region[0]" style="margin: 0px 0px 0px 0px;display: inline;"></p></td>
+    		<td><p id="language[0]" style="margin: 0px 0px 0px 0px;display: inline;"></p></td>
+    	</tr>
+    	<tr>
+    		<td><img id="top[0]" height=0 width=0></img></td>
+			<td><img id="mid[0]" height=0 width=0></img></td>
+			<td><img id="jungle[0]" height=0 width=0></img></td>
+			<td><img id="adc[0]" height=0 width=0></img></td>
+			<td><img id="support[0]" height=0 width=0></img></td>
+    	</tr>
+    	<tr>
+			<td><img id="champ1[0]" height=0 width=0></img></td>
+			<td><img id="champ2[0]" height=0 width=0></img></td>
+			<td><img id="champ3[0]" height=0 width=0></img></td>
+			<td><img id="champ4[0]" height=0 width=0></img></td>
+			<td><img id="champ5[0]" height=0 width=0></img></td>
+    	</tr>
 		</tbody>
 	</table>
 	
-	<h3 class="formDescriptionText">Summoner Rank: <p id="rank" style="margin: 0px 0px 0px 0px;"></h3>
-	<br>
-
-	<h3 class="formDescriptionText">Champions:</h3>
-	<img id="champ1" height=0 width=0></img>
-	<img id="champ2" height=0 width=0></img>
-	<img id="champ3" height=0 width=0></img>
-	<img id="champ4" height=0 width=0></img>
-	<img id="champ5" height=0 width=0></img>
-
-
-
-	<h3 class="formDescriptionText" style="top-margin:100px;">Roles:</h3>
-	<img id="top" height=0 width=0></img>
-	<img id="mid" height=0 width=0></img>
-	<img id="jungle" height=0 width=0></img>
-	<img id="adc" height=0 width=0></img>
-	<img id="support" height=0 width=0></img>
-
 </div>
 	
 	<a href="profile.php?name=King Koryo">Link</a>
