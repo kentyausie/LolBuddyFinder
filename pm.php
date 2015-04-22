@@ -132,7 +132,8 @@ class cpm {
   
  // Add a new personal message
  function sendmessage($to,$title,$message) {
-   $to = $this->getuserid($to);
+   //$to = $this->getuserid($to);
+   $to = $to;
    $sql = "INSERT INTO messages SET `to` = '".$to."', `from` = '".$this->userid."', `title` = '".$title."', `message` = '".$message."', `created` = NOW()";
    return (@mysql_query($sql)) ? true:false;
  }
