@@ -15,19 +15,17 @@
  if(isset($_POST['newmessage'])) {
    // check if there is an error while sending the message (beware, the input hasn't been checked, you should never trust users input!)
    if($pm->sendmessage($_POST['to'],$_POST['subject'],$_POST['message'])) {
-     // Tell the user it was successful
+    $To = 'eddie81020@gmail.com'; 
+    $Subject = 'Send Email'; 
+    $Message = 'This example demonstrates how you can send plain text email with PHP'; 
+    $Headers = "From: lolteambuilder@hotmail.com \r\n" . 
+    "Reply-To: From: lolteambuilder@hotmail.com \r\n" . 
+    "Content-type: text/html; charset=UTF-8 \r\n"; 
+  
+
      echo "Message successfully sent!";
      
 
-//define the receiver of the email
-$to = 'eddie81020@gmail.com';
-//define the subject of the email
-$subject = 'Test email'; 
-//define the message to be sent. Each line should be separated with \n
-$message = "Hello World!\n\nThis is my first mail."; 
-//define the headers we want passed. Note that they are separated with \r\n
-$headers = "From: lolteambuilder@hotmail.com\r\nReply-To: lolteambuilder@hotmail.com";
-//send the email
 $mail_sent = @mail( $to, $subject, $message, $headers );
 //if the message is sent successfully print "Mail sent". Otherwise print "Mail failed" 
 echo $mail_sent ? "Mail sent" : "Mail failed";
