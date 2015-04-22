@@ -48,6 +48,10 @@
 		color:#BCBCBB;
 		font-family:Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
 	}
+	
+	a {
+		color:#BCBCBB;	
+	}
 </style>
 <body>
 <?php
