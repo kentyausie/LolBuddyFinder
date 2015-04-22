@@ -11,6 +11,38 @@
  // initiate a new pm class
  $pm = new cpm($userid);
   
+ function sendmail($to,$subject = '',$body = ''){
+    error_reporting(E_STRICT);
+    require_once('class.phpmailer.php');
+    include('class.smtp.php');
+    $mail             = new PHPMailer(); //Initialize a new PHPMailer object;
+    $body            = eregi_replace("[\]",'',$body); //Replace unwanted characters of the content
+    $mail->CharSet ="ISO-8859-1";//Set the character set you need to specify
+    $mail->IsSMTP(); // Use SMTP service
+    $mail->SMTPDebug  = 1;                     // Enable debugging for SMTP
+    // 1 = errors and messages
+    // 2 = messages only
+    $mail->SMTPAuth   = true;                  // Enable authentication feature for the SMTP server
+    $mail->SMTPSecure = "ssl";                 // Use SSL, you may comment this line out
+    $mail->Host       = 'smtp.hotmail.com';      // SMTP server
+    $mail->Port       = 25;                   //SMTP port, not all email services use default port 25, please refer to your mail service provider.
+    $mail->Username   = 'lolteambuilder@hotmail.com';  //Username of your email account
+    $mail->Password   = 'P@$$word123';            //Password of your email account
+    $mail->SetFrom('lolteambuilder@hotmail.com', 'Notification');
+    $mail->AddReplyTo('lolteambuilder@hotmail.com','Notification');
+    $mail->Subject    = $subject;
+    $mail->AltBody    = 'To view the message, please use an HTML compatible email viewer!'; // optional, comment out and test
+    $mail->MsgHTML($body);
+    $address = $to;
+    $mail->AddAddress($address, '');
+    if(!$mail->Send()) {
+        echo 'Mailer Error: ' . $mail->ErrorInfo;
+    } else {
+//        echo "Email sent successfully!";
+    }
+} 
+  
+  
  // check if a new message had been send
  if(isset($_POST['newmessage'])) {
    // check if there is an error while sending the message (beware, the input hasn't been checked, you should never trust users input!)
@@ -18,11 +50,7 @@
   
      echo "Message successfully sent!";
 
-$mail_sent = mail("eddie81020@gmail.com","Script Used","Image swap script was used.","From: lolteambuilder@hotmail.com");
-
-
- 
-echo $mail_sent ? "Mail sent" : "Mail failed";
+     sendmail('somebody@somehost.com','Howdy!','Hello, my friend!');
 
    } else {
      // Tell user something went wrong it the return was false
