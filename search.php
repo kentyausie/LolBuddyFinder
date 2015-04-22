@@ -180,6 +180,8 @@ include 'searching.php' ?>;
 		<input class="topButton" type="submit" name="submit" value="Search">
 	</form>	
 	
+	<table id="results"></table>
+	
 	<a href="profile.php?name=King Koryo">Link</a>
 </body>
 </html>

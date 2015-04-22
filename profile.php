@@ -57,6 +57,7 @@ $row['language'] = ucfirst($row['language']);
 		<input type="submit" name="submit" value="Config">
 	</form>
 	<form action="pm.php" style="text-align:center;padding-top: 15px;display: inline;">
+		<input type="hidden" name="id" id="id" value="<?php echo $row['summonerID']; ?>">
 		<input type="submit" name="submit" value="PM">
 	</form>
 	<form action="message.php" style="text-align:center;padding-top: 15px;display: inline;">
