@@ -11,17 +11,29 @@
  // initiate a new pm class
  $pm = new cpm($userid);
   
- function sendmail($to,$subject = '',$body = ''){
-  $mail = new PHPMailer();
-$mail->IsSMTP();
-$mail->CharSet = 'UTF-8';
-$mail->Host       = "smtp.gmail.com";      // SMTP server example, use smtp.live.com for Hotmail
-$mail->SMTPDebug  = 0;                     // enables SMTP debug information (for testing)
-$mail->SMTPAuth   = true;                  // enable SMTP authentication
-$mail->Port       = 465;                   // SMTP port for the GMAIL server 465 or 587
-$mail->Username   = "eddie81020@gmail.com";  // SMTP account username example
-$mail->Password   = "jiz322tif192";            // SMTP account password example
-
+ function sendmail($to,$subject = '',$body = ''){require_once('../class.phpmailer.php');$mail = new PHPMailer(); // create a new object
+$mail->IsSMTP(); // enable SMTP
+$mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
+$mail->SMTPAuth = true; // authentication enabled
+$mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for GMail
+$mail->Host = "smtp.gmail.com";
+$mail->Port = 465; // or 587
+$mail->IsHTML(true);
+$mail->Username = "eddie81020@gmail.com";
+$mail->Password = "jiz322tif192";
+$mail->SetFrom("eddie81020@gmail.com");
+$mail->Subject = "Test";
+$mail->Body = "hello";
+$mail->AddAddress("eddie81020@gmail.com");
+ if(!$mail->Send())
+    {
+    echo "Mailer Error: " . $mail->ErrorInfo;
+    }
+    else
+    {
+    echo "Message has been sent";
+    }
+    
 }
   
  // check if a new message had been send
