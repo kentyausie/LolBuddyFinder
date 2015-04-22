@@ -54,21 +54,22 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		}
 		$sqlQuery = $sqlQuery."language='".$_POST['language']."'";
 	}
-	echo '<script> alert("'.$sqlQuery.'"); </script>';
 	
-	if($valid=="true"){
 		
-		$sql = "INSERT INTO Registration (summonerID, summoner, email, password, roleTop, roleMid, roleJungle, roleADC, roleSupport, champ1, champ2, champ3, champ4, champ5, region, timezone,language) VALUES ('".$id."','".$sumName."','".$email."','".$password."','".$top."','".$mid."','".$jungle."','".$adc."','".$support."','".$champions[0]."','".$champions[1]."','".$champions[2]."','".$champions[3]."','".$champions[4]."','".$region."','".$timezone."','".$language."')";
-		if ($conn->query($sql) === FALSE) {
-    		echo $conn->error;
-		}
-    
-    	session_start();
-    	$_SESSION['user']=$sumName;
-    	$_SESSION['name']=$_SESSION['user'];
-    	header('LOCATION: profile.php');
-       	exit();
+	$sql = "SELECT * FROM Registration WHERE ".$sqlQuery;
+	if ($conn->query($sql) === FALSE) {
+    	echo $conn->error;
+		echo "<script> alert('Lookup Error'); </script>";
 	}
+	$result = $conn->query($sql);
+
+	if ($result->num_rows > 0) {
+   		$row = $result->fetch_assoc();
+   		echo "<script> alert('Found'); </script>";
+	} else {
+		echo "<script> alert('No Results'); </script>";
+    }
+	
 	$conn->close();
 }
 function test_input($data)
