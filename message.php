@@ -16,12 +16,13 @@
  * 
  *************************************************************************/
   
- session_start();
+ 
  // Load the config file!
  include('config.php');
  // Load the class
  require('pm.php');
  // Set the userid to 2 for testing purposes... you should have your own usersystem, so this should contain the userid
+ session_start();
  $userid=$_SESSION['id'];
  // initiate a new pm class
  $pm = new cpm($userid);
