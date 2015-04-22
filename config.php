@@ -20,5 +20,4 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
     echo "<script> alert('connction failure');";
 } 
-echo "Connected successfully";
 ?>
