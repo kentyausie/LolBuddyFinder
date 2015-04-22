@@ -12,45 +12,43 @@
  $pm = new cpm($userid);
   
  function sendmail($to,$subject = '',$body = ''){
-    error_reporting(E_STRICT);
-require_once('class.phpmailer.php');
-include('class.smtp.php');
-$mail             = new PHPMailer(); //Initialize a new PHPMailer object;
-//$body            = preg_replace("[\]",'',$body); //Replace unwanted characters of the content
-$mail->CharSet ="ISO-8859-1";//Set the character set you need to specify
-$mail->IsSMTP(); // Use SMTP service
-$mail->SMTPDebug  = 1;                     // Enable debugging for SMTP
-// 1 = errors and messages
-// 2 = messages only
-$mail->From = 'lolteambuilder@hotmail.com';
-$mail->FromName = 'Name';
-$mail->SMTPAuth   = true;                
-$mail->SMTPSecure = "tls";                 
-$mail->Host       = 'smtp.live.com';      
-$mail->Port       = '587';                         
+error_reporting(E_STRICT);
 
+date_default_timezone_set('America/Toronto');
 
-$mail->Username   = 'lolteambuilder@hotmail.com';            //Username of your email account
-$mail->Password   = 'P@$$word123';                               //Password of your email account
+require_once('../class.phpmailer.php');
+//include("class.smtp.php"); // optional, gets called from within class.phpmailer.php if not already loaded
 
-$mail->SetFrom('lolteambuilder@hotmail.com', 'Name');
-$mail->AddReplyTo('lolteambuilder@hotmail.com','Name');
-$mail->Subject    = $subject;
-$mail->AltBody    = 'To view the message, please use an HTML compatible email viewer!'; // optional, comment out and test
+$mail             = new PHPMailer();
+
+$body             = file_get_contents('contents.html');
+$body             = eregi_replace("[\]",'',$body);
+
+$mail->IsSMTP(); // telling the class to use SMTP
+$mail->SMTPDebug  = 2;                      // enables SMTP debug information (for testing)
+                                            // 1 = errors and messages
+                                            // 2 = messages only
+$mail->SMTPAuth   = true;                   // enable SMTP authentication
+$mail->SMTPSecure = "tls";                  // sets the prefix to the servier
+$mail->Host       = "smtp.live.com";        // sets hotmil as the SMTP server
+$mail->Port       = 587;                    // set the SMTP port for the hotmail server
+$mail->Username   = "lolteambuilder@hotmail.com";      // hotmail username
+$mail->Password   = "P@$$word123";           // hotmail password
+$mail->SetFrom('lolteambuilder@hotmail.com', 'First Last');
+$mail->AddReplyTo("lolteambuilder@hotmail.com","First Last");
+$mail->Subject    = "PHPMailer Test Subject via smtp (hotmail), basic";
+$mail->AltBody    = "To view the message, please use an HTML compatible email viewer!"; // optional, comment out and test
 $mail->MsgHTML($body);
-$address = $to;
-$mail->AddAddress($address, '');
-//$mail->AddAttachment("images/phpmailer.gif");      // attachment
-//$mail->AddAttachment("images/phpmailer_mini.gif"); // attachment
 
-//var_dump($body);
+$address = "eddie81020@gmail.com";
+$mail->AddAddress($address, "John Doe");
+
 if(!$mail->Send()) {
-    //echo $body;
-
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
+  echo "Mailer Error: " . $mail->ErrorInfo;
 } else {
-   echo "Message sent successfully!";
+  echo "Message sent!";
 }
+
 }
   
  // check if a new message had been send
