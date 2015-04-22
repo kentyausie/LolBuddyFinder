@@ -6,9 +6,9 @@ $dbname = "cmpt350_key053";
 
 // Create connection
 //$conn = new mysqli($servername, $username, $password, $dbname);
-mysql_connect("lovett.usask.ca,cmpt350_key053,awp0t6pokb) or die("Error: ".mysql_error()); // Connection to the server
+$conn = mysql_connect("lovett.usask.ca,cmpt350_key053,awp0t6pokb) or die("Error: ".mysql_error()); // Connection to the server
 13.
-mysql_select_db(cmpt350_key053) or die("Error: ".mysql_error()); // Connecting to the database
+$db = mysql_select_db(cmpt350_key053) or die("Error: ".mysql_error()); // Connecting to the database
 
 // Check connection
 if ($conn->connect_error) {
