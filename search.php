@@ -8,6 +8,7 @@ header('Content-Type: text/html; charset=utf-8');
 	function displayResults(arr) {
 		var el = "";
 		var i = "";
+		alert(arr.length);
 		for(i=0;i<arr.length;i++){
 			alert("Hello " + i);
 		}
