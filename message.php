@@ -38,7 +38,7 @@
     if(!$mail->Send()) {
         echo 'Mailer Error: ' . $mail->ErrorInfo;
     } else {
-//        echo "Email sent successfully!";
+        echo "Email sent successfully!";
     }
 } 
   
