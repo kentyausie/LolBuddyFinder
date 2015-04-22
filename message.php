@@ -71,7 +71,7 @@ if(isset($_GET['p'])) {
 <a href='<?php echo $_SERVER['PHP_SELF']; ?>?p=read'>Inbox</a>
 <a href='<?php echo $_SERVER['PHP_SELF']; ?>?p=deleted'>Deleted Messages</a>
 <form action="send_email.php" style="text-align:center;padding-top: 15px;display: inline;">
-		<input type="submit" name="submit" value="PM">
+		<input type="submit" name="submit" value="Send email notification">
 	</form>
 <form action="gohome.php" style="text-align:center;padding-top: 15px;display: inline;">
 		<input type="submit" name="submit" value="Back to profile">
