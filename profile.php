@@ -30,7 +30,7 @@ if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
 };
 $upRegion = ucwords($row['region']);
-$row['language'] = ucfirst($row['region']);
+$row['language'] = ucfirst($row['language']);
 
 ?>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
