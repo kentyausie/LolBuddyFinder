@@ -6,15 +6,11 @@ header('Content-Type: text/html; charset=utf-8');
 
 <script>
 	function displayResults() {
-		var el = "";
-		var i = "";
-		var arr = "<?php echo $row; ?>";
-		alert(arr.length);
-		for(i=0;i<5;i++){
-			//if("<?php echo (current($row) != 'false'); ?>"){
-				document.getElementById('name['+i+']').value = "<?php echo $row['summoner']; ?>";
-			//}
-		}
+		document.getElementById("profileIcon[0]").src = "http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/<?php echo $row['profileID']?>.png";
+		document.getElementById("rankIcon[0]").src = "/rank_icons/<?php echo $row['tier']; ?>.png";
+		document.getElementById('name[0]').innerHTML = "<?php echo $row['summoner']; ?>";
+		document.getElementById('level[0]').innerHTML = "<?php echo $row['level']; ?>";
+		document.getElementById('region[0]').innerHTML = "<?php echo $upRegion; ?>";
 	}
 </script>
 
@@ -280,7 +276,7 @@ return $data;
 	</form>	
 	
 	<div>
-	<img id="profileIcon[0]" height=150 width=150 style="float: left; "></img>
+	<img id="profileIcon[0]" height=150 width=150 style="float: left; " src=""></img>
 	<img id="rankIcon[0]" height=150 width=150 style="float: left; "></img>
 	<table style="margin: 0px 0px 0px 110px;">
   		<tbody>
