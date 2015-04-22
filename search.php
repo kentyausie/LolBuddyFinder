@@ -217,7 +217,7 @@ return $data;
 			<option value="zilean">Zilean</option>
 			<option value="zyra">Zyra</option>
 		</select>
-		<select name="role" class="selectBox">
+		<select name="role" >
 			<option value="select">Role</option>
 			<option value="top">Top</option>
 			<option value="mid">Mid</option>
