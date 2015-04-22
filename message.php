@@ -248,9 +248,9 @@ if(!isset($_GET['p']) || $_GET['p'] == 'new') {
 }
 ?>
 <form name="new" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-<strong>To:</strong>
+<strong>To:</strong><br>
 <input type='text' name='to' value='<?php if(isset($_POST['reply'])) { echo $_POST['rfrom']; } ?>' /><br>
-<strong>Subject:</strong>
+<strong>Subject:</strong><br>
 <input type='text' name='subject' value='<?php if(isset($_POST['reply'])) { echo $_POST['rsubject']; } ?>' /><br>
 <strong>Message:</strong><br />
 <textarea name='message'><?php if(isset($_POST['reply'])) { echo $_POST['rmessage']; } ?></textarea>
