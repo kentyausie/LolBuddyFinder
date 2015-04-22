@@ -42,7 +42,7 @@ $mail->MsgHTML($body);
 
 $address = "eddie81020@gmail.com";
 $mail->AddAddress($address, "John Doe");
-
+echo "test";
 if(!$mail->Send()) {
   echo "Mailer Error: " . $mail->ErrorInfo;
 } else {
