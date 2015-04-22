@@ -5,7 +5,7 @@ header('Content-Type: text/html; charset=utf-8');
 ?>
 
 <script>
-	function displayResults(count) {
+	function displayResults() {
 		var obj = <?php $row; ?>;
 		alert(obj['0']);
 		//document.getElementById("profileIcon["+count+"]").src = "http://ddragon.leagueoflegends.com/cdn/5.2.1/img/profileicon/<?php echo $row['profileID']?>.png";
