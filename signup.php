@@ -46,16 +46,16 @@ include 'signupValidation.php'; ?>
 <p class="align">
 
 <label class="formDescriptionText">Region</label><br>
-<label class="formDescriptionText"><input type="radio" id="region[]" name="region" value="br" />BR</label>
-<label class="formDescriptionText"><input type="radio" id="region[]" name="region" value="eune" />EUNE</label>
-<label class="formDescriptionText"><input type="radio" id="region[]" name="region" value="euw" />EUW</label>
-<label class="formDescriptionText"><input type="radio" id="region[]" name="region" value="kr" />KR</label>
-<label class="formDescriptionText"><input type="radio" id="region[]" name="region" value="lan" />LAN</label>
-<label class="formDescriptionText"><input type="radio" id="region[]" name="region" value="las" />LAS</label>
-<label class="formDescriptionText"><input type="radio" id="region[]" name="region" value="na" />NA</label>
-<label class="formDescriptionText"><input type="radio" id="region[]" name="region" value="oce" />OCE</label>
-<label class="formDescriptionText"><input type="radio" id="region[]" name="region" value="ru" />RU</label>
-<label class="formDescriptionText"><input type="radio" id="region[]" name="region" value="tr" />TR</label>
+<label class="formDescriptionText"><input type="radio" id="br" name="region" value="br" />BR</label>
+<label class="formDescriptionText"><input type="radio" id="eune" name="region" value="eune" />EUNE</label>
+<label class="formDescriptionText"><input type="radio" id="euw" name="region" value="euw" />EUW</label>
+<label class="formDescriptionText"><input type="radio" id="kr" name="region" value="kr" />KR</label>
+<label class="formDescriptionText"><input type="radio" id="lan" name="region" value="lan" />LAN</label>
+<label class="formDescriptionText"><input type="radio" id="las" name="region" value="las" />LAS</label>
+<label class="formDescriptionText"><input type="radio" id="na" name="region" value="na" />NA</label>
+<label class="formDescriptionText"><input type="radio" id="oce" name="region" value="oce" />OCE</label>
+<label class="formDescriptionText"><input type="radio" id="ru" name="region" value="ru" />RU</label>
+<label class="formDescriptionText"><input type="radio" id="tr" name="region" value="tr" />TR</label>
 <br>
 
 <label class="formDescriptionText">Summoner Name:&nbsp&nbsp</label>
