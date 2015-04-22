@@ -2,7 +2,7 @@
 <html>
 <?php
 header('Content-Type: text/html; charset=utf-8');
-?>;
+?>
 
 <script>
 	function displayResults() {
@@ -11,9 +11,9 @@ header('Content-Type: text/html; charset=utf-8');
 		var arr = "<?php echo $row; ?>";
 		alert(arr.length);
 		for(i=0;i<5;i++){
-			if("<?php echo (current($row) != 'false'); ?>"){
+			//if("<?php echo (current($row) != 'false'); ?>"){
 				document.getElementById('name['+i+']').value = "<?php echo $row['summoner']; ?>";
-			}
+			//}
 		}
 	}
 </script>
@@ -285,7 +285,7 @@ return $data;
 	<table style="margin: 0px 0px 0px 110px;">
   		<tbody>
   		<tr>
-    		<td><p id="name[0]" style="margin: 0px 0px 0px 0px; display: inline;"></p></td>
+    		<td><p class="formDescriptionText" id="name[0]" style="margin: 0px 0px 0px 0px; display: inline;"></p></td>
     		<td><p id="level[0]" style="margin: 0px 0px 0px 0px;display: inline;"></p></td> 
     		<td><p id="region[0]" style="margin: 0px 0px 0px 0px;display: inline;"></p></td>
     		<td><p id="language[0]" style="margin: 0px 0px 0px 0px;display: inline;"></p></td>
