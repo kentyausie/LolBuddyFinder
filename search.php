@@ -86,7 +86,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 	if ($result->num_rows > 0) {
    		$row = $result->fetch_assoc();
    		echo "<script> alert(".$result->num_rows."); </script>";
-   		echo '<script type="text/javascript" src="myScripts.js">displayResults('.json_encode($row).');</script>';
+   		echo '<script type="text/javascript" src="myScripts.js">displayResults();</script>';
 	} else {
 		echo "<h2>No Results</h2>";
     }
