@@ -24,6 +24,8 @@
  // Set the userid to 2 for testing purposes... you should have your own usersystem, so this should contain the userid
  session_start();
  $userid=$_SESSION['id'];
+ echo "<script> alert('".$userid."'); </script>";
+ echo "<script> alert('".$_SESSION['id']."'); </script>";
  // initiate a new pm class
  $pm = new cpm($userid);
   
