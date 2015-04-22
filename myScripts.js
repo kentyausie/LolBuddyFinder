@@ -432,7 +432,6 @@ function summonerLookUp() {
 				var arr = JSON.parse(xmlhttp.responseText);
 				var sumInfo = arr[SUMMONER_NAME_NOSPACES];
 				var sumId = sumInfo.id;
-				alert(sumId);
 				document.getElementById("sumInfo").value = sumInfo;
 				document.getElementById("sumRegion").value = region;
 				document.getElementById("sumId").value = sumId;
@@ -446,9 +445,7 @@ function summonerLookUp() {
 				if(xmlhttp.status == 200){
 					arr = JSON.parse(xmlhttp.responseText);
 					var sumLeague = arr[sumId][0]['tier'];
-					alert(sumLeague);
 					document.getElementById("tier").value = sumLeague;
-					alert("League");
 				}
 				url="https://"+region+".api.pvp.net/api/lol/"+region+"/v2.2/matchhistory/"+sumId+"?endIndex=5&api_key="+API_KEY;
 				xmlhttp.open("GET", url, false);
