@@ -40,8 +40,8 @@ class cpm {
        $this->messages[$i]['id'] = $row['id'];
        $this->messages[$i]['title'] = $row['title'];
        $this->messages[$i]['message'] = $row['message'];
-       $this->messages[$i]['fromid'] = $row['from'];
-       $this->messages[$i]['toid'] = $row['to'];
+       $this->messages[$i]['fromid'] = $this->getusername($row['from']);
+       $this->messages[$i]['toid'] = $this->getusername($row['to']);
        $this->messages[$i]['from'] =$row['from'];
        $this->messages[$i]['to'] = $row['to'];
        $this->messages[$i]['from_viewed'] = $row['from_viewed'];
@@ -63,7 +63,7 @@ class cpm {
   
  // Fetch the username from a userid, I made this function because I don't know how you did build your usersystem, that's why I also didn't use left join... this way you can easily edit it
  function getusername($userid) {
-   $sql = "SELECT username FROM user WHERE `id` = '".$userid."' LIMIT 1";
+   $sql = "SELECT summoner FROM Registration WHERE `id` = '".$userid."' LIMIT 1";
    $result = mysql_query($sql);
    // Check if there is someone with this id
    if(mysql_num_rows($result)) {
