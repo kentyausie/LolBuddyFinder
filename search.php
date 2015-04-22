@@ -190,6 +190,6 @@ include 'searching.php' ?>;
 		<input class="topButton" type="submit" name="submit" value="Search">
 	</form>	
 	
-	<a href="profile.php?name='King Koryo'">Link</a>
+	<a href="profile.php?name=King Koryo">Link</a>
 </body>
 </html>
