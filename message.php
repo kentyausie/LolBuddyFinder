@@ -71,6 +71,9 @@ if(isset($_GET['p'])) {
 <a href='<?php echo $_SERVER['PHP_SELF']; ?>?p=send'>Sent</a>
 <a href='<?php echo $_SERVER['PHP_SELF']; ?>?p=read'>Inbox</a>
 <a href='<?php echo $_SERVER['PHP_SELF']; ?>?p=deleted'>Deleted Messages</a>
+<form action="send_email.php" style="text-align:center;padding-top: 15px;display: inline;">
+		<input type="submit" name="submit" value="PM">
+	</form>
 <br /><br />
 <?php
 // if it's the standart startpage or the page new, then show all new messages
