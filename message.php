@@ -81,8 +81,8 @@ if(isset($_GET['p'])) {
 // Standard links
 ?>
 <a href='<?php echo $_SERVER['PHP_SELF']; ?>?p=new'>New Messages</a>
-<a href='<?php echo $_SERVER['PHP_SELF']; ?>?p=send'>Send Messages</a>
-<a href='<?php echo $_SERVER['PHP_SELF']; ?>?p=read'>Read Messages</a>
+<a href='<?php echo $_SERVER['PHP_SELF']; ?>?p=send'>Sent</a>
+<a href='<?php echo $_SERVER['PHP_SELF']; ?>?p=read'>Inbox</a>
 <a href='<?php echo $_SERVER['PHP_SELF']; ?>?p=deleted'>Deleted Messages</a>
 <br /><br />
 <?php
