@@ -68,6 +68,8 @@ include 'signupValidation.php'; ?>
 <input type="hidden" name="sumLeague" id="sumLeague" value="">
 <input type="hidden" name="sumMatches" id="sumMatches" value="">
 <input type="hidden" name="sumId" id="sumId" value="">
+<input type="hidden" name="profileId" id="profileId" value="">
+<input type="hidden" name="tier" id="tier" value="">
 
 <label class="formDescriptionText">Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>	
 <input class="textbox" type="email" name="email" placeholder="Email" value="">
