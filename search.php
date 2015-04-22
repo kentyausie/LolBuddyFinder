@@ -5,12 +5,15 @@ header('Content-Type: text/html; charset=utf-8');
 ?>;
 
 <script>
-	function displayResults(arr) {
+	function displayResults() {
 		var el = "";
 		var i = "";
+		var arr = "<?php echo $row; ?>";
 		alert(arr.length);
-		for(i=0;i<arr.length;i++){
-			alert("Hello " + i);
+		for(i=0;i<5;i++){
+			if("<?php echo (current($row) != 'false'); ?>"){
+				document.getElementById('name['+i+']').value = "<?php echo $row['summoner']; ?>";
+			}
 		}
 	}
 </script>
