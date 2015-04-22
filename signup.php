@@ -422,7 +422,7 @@ include 'signupValidation.php'; ?>
 
 <form action="signup.php">
     <p class="align">
-    <input type="submit" value="Home" class="submitButton">
+    <input type="submit" value="Clear and start over" class="submitButton">
 	</p>
 </form>
 
