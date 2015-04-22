@@ -258,7 +258,7 @@ return $data;
 		</select>
 		<input class="topButton" type="submit" name="submit" value="Search">
 	</form>	
-	
+	<br><br><br>
 	<div>
 	<img id="profileIcon[0]" height=0 width=0 style="float: left; " src=""></img>
 	<img id="rankIcon[0]" height=0 width=0 style="float: left; "></img>
