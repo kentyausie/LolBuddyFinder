@@ -100,6 +100,19 @@ $row['language'] = ucfirst($row['language']);
 	<form action="logout.php" style="text-align:center;padding-top: 15px;display: inline;">
 		<input type="submit" name="submit" value="Logout">
 	</form>
+	<form action="config.php" style="text-align:center;padding-top: 15px;display: inline;">
+		<input type="submit" name="submit" value="Config">
+	</form>
+	<form action="sendpm.php" style="text-align:center;padding-top: 15px;display: inline;">
+		<input type="submit" name="submit" value="Send PM">
+	</form>
+	<form action="outbox.php" style="text-align:center;padding-top: 15px;display: inline;">
+		<input type="submit" name="submit" value="Outbox">
+	</form>
+	<form action="inbox.php" style="text-align:center;padding-top: 15px;display: inline;">
+		<input type="submit" name="submit" value="Inbox">
+	</form>
+
 
 	</div>
 	<div>
