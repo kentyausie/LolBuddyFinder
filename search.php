@@ -284,6 +284,9 @@ return $data;
 			<td><img id="champ4[0]" height=0 width=0></img></td>
 			<td><img id="champ5[0]" height=0 width=0></img></td>
     	</tr>
+    	<tr>
+    		<td><a id="mailLink[0]"><img id="mailIcon[0]" height=0 width=0></img></a></td>
+    	</tr>
 		</tbody>
 	</table>
 	
@@ -313,6 +316,9 @@ return $data;
 			<td><img id="champ3[1]" height=0 width=0></img></td>
 			<td><img id="champ4[1]" height=0 width=0></img></td>
 			<td><img id="champ5[1]" height=0 width=0></img></td>
+    	</tr>
+    	<tr>
+    		<td><a id="mailLink[1]"><img id="mailIcon[1]" height=0 width=0></img></a></td>
     	</tr>
 		</tbody>
 	</table>
@@ -345,6 +351,9 @@ return $data;
 			<td><img id="champ4[2]" height=0 width=0></img></td>
 			<td><img id="champ5[2]" height=0 width=0></img></td>
     	</tr>
+    	<tr>
+    		<td><a id="mailLink[2]"><img id="mailIcon[2]" height=0 width=0></img></a></td>
+    	</tr>
 		</tbody>
 	</table>
 	
@@ -375,6 +384,9 @@ return $data;
 			<td><img id="champ3[3]" height=0 width=0></img></td>
 			<td><img id="champ4[3]" height=0 width=0></img></td>
 			<td><img id="champ5[3]" height=0 width=0></img></td>
+    	</tr>
+    	<tr>
+    		<td><a id="mailLink[3]"><img id="mailIcon[3]" height=0 width=0></img></a></td>
     	</tr>
 		</tbody>
 	</table>
@@ -407,6 +419,9 @@ return $data;
 			<td><img id="champ4[4]" height=0 width=0></img></td>
 			<td><img id="champ5[4]" height=0 width=0></img></td>
     	</tr>
+    	<tr>
+    		<td><a id="mailLink[4]"><img id="mailIcon[4]" height=0 width=0></img></a></td>
+    	</tr>
 		</tbody>
 	</table>
 	
@@ -429,7 +444,11 @@ if ($result->num_rows > 0) {
 			document.getElementById('rankIcon[".$i."]').width=150;
 			document.getElementById('name[".$i."]').innerHTML = '".$row['summoner']."';
 			document.getElementById('level[".$i."]').innerHTML = '".$row['level']."';
-			document.getElementById('region[".$i."]').innerHTML = '".$row['region']."';</script>";
+			document.getElementById('region[".$i."]').innerHTML = '".$row['region']."';</script>
+			document.getElementById('mailLink[".$i."]').href = 'message.php?name='".$row['name']."';
+			document.getElementById('mailIcon[".$i."]').src = '/misc/mail.png';
+			document.getElementById('mailIcon[".$i."]').height=25;
+			document.getElementById('mailIcon[".$i."]').width=25;"
 			if($row['champ1'] !== ""){
 				echo " <script>
 				document.getElementById('champ1[".$i."]').src = '/champion_icons/".$row['champ1']."square.png';
@@ -491,6 +510,7 @@ if ($result->num_rows > 0) {
 				document.getElementById('support[".$i."]').height = 50;
 				document.getElementById('support[".$i."]').width = 50; </script>";
 			}
+			
 
 			}
 			$i=$i+1;
