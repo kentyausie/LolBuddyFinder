@@ -1,37 +1,19 @@
 <?php
-
-$url = 'https://api.sendgrid.com/';
- $user = 'azure_d340c6977566f9e81343beb2c8a64e11@azure.com';
- $pass = 'bLIZOvxl31me82y'; 
-
- $params = array(
-      'api_user' => $user,
-      'api_key' => $pass,
-      'to' => 'eddie81020@gmail.com',
-      'subject' => 'testing from curl',
-      'html' => 'testing body',
-      'text' => 'testing body',
-      'from' => 'lolteambuilder@hotmail.com',
-   );
-echo $url;
- $request = $url.'api/mail.send.json';
-
- // Generate curl request
- $session = curl_init($request);
-
- // Tell curl to use HTTP POST
- curl_setopt ($session, CURLOPT_POST, true);
-echo "STEP2";
- // Tell curl that this is the body of the POST
- curl_setopt ($session, CURLOPT_POSTFIELDS, $params);
-
- // Tell curl not to return headers, but do return the response
- curl_setopt($session, CURLOPT_HEADER, false);
- curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
-echo "STEP3";
- // obtain response
- $response = curl_exec($session);
- curl_close($session);
-echo "STEP4";
- // print everything out
- print_r($response);
+require_once 'lib/swift_required.php';
+ 
+// Create the mail transport configuration
+$transport = Swift_MailTransport::newInstance();
+ 
+// Create the message
+$message = Swift_Message::newInstance();
+$message->setTo(array(
+  "eddie81020@gmail.com" => "Eddie",
+  "eddie81020@gmail.com" => "eddie"
+));
+$message->setSubject("This email is sent using Swift Mailer");
+$message->setBody("You're our best client ever.");
+$message->setFrom("lolteamfinder@hotmail.com", "ABC");
+ 
+// Send the email
+$mailer = Swift_Mailer::newInstance($transport);
+$mailer->send($message);
