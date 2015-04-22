@@ -436,6 +436,7 @@ function summonerLookUp() {
 				document.getElementById("sumRegion").value = region;
 				document.getElementById("sumId").value = sumId;
 				document.getElementById("profileId").value = sumInfo.profileIconId;
+				document.getElementById("level").value = sumInfo.summonerLevel;
 				
 				
 				url="https://"+region+".api.pvp.net/api/lol/"+region+"/v1.4/summoner/"+sumId+"?api_key="+API_KEY;

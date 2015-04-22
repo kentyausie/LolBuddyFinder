@@ -65,7 +65,7 @@ include 'signupValidation.php'; ?>
 
 <input type="hidden" name="sumInfo" id="sumInfo" value="">
 <input type="hidden" name="sumRegion" id="sumRegion" value="">
-<input type="hidden" name="sumLeague" id="sumLeague" value="">
+<input type="hidden" name="level" id="level" value="">
 <input type="hidden" name="sumMatches" id="sumMatches" value="">
 <input type="hidden" name="sumId" id="sumId" value="">
 <input type="hidden" name="profileId" id="profileId" value="">
