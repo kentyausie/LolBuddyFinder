@@ -48,6 +48,13 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 		}
 		$sqlQuery = $sqlQuery."region='".$_POST['region']."'";
 	}
+	if ($_POST['language'] !== "select"){
+		if($sqlQuery !== ""){
+			$sqlQuery = $sqlQuery." AND ";
+		}
+		$sqlQuery = $sqlQuery."language='".$_POST['language']."'";
+	}
+	echo "<script> alert('".$sqlQuery."'); </script>";
 	
 	if($valid=="true"){
 		
