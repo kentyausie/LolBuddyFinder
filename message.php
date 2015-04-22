@@ -43,6 +43,12 @@
 <title>Message</title>
 <link rel="stylesheet" href="style.css">
 </head>
+<style>
+	td {
+		color:#BCBCBB;
+		font-family:Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+	}
+</style>
 <body>
 <?php
 // In this switch we check what page has to be loaded
