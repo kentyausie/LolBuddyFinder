@@ -41,6 +41,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>Message</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <?php
