@@ -52,11 +52,10 @@ if(isset($_POST['submit'])){
 		$region = $_POST["sumRegion"];
 	} // Checking null values in the message.
 	if($_POST["sumInfo"]==404 || $_POST["sumInfo"]==""){
-		echo "<script> alert('".$_POST["sumInfo"]."'); </script>";
 		$sumError="Invalid Summoner name";
 		$valid=false;
 	} else {
-		$id=$_POST["sumInfo"];
+		$id=$_POST["sumId"];
 	}
 	if (empty($_POST["email"])){
 		$emailError = "Email address is required";
@@ -129,6 +128,9 @@ if(isset($_POST['submit'])){
 	$language = $_POST['language'];
 	$profileId= $_POST['profileId'];
 	$tier=$_POST['tier'];
+	if($tier == "undefined"){
+		$tier="UNRANKED";
+	}
 	$level=$_POST['level'];
 	if($valid=="true"){
 		
