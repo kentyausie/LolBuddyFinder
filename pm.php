@@ -40,10 +40,10 @@ class cpm {
        $this->messages[$i]['id'] = $row['id'];
        $this->messages[$i]['title'] = $row['title'];
        $this->messages[$i]['message'] = $row['message'];
-       $this->messages[$i]['fromid'] = $this->getusername($row['from']);
-       $this->messages[$i]['toid'] = $this->getusername($row['to']);
-       $this->messages[$i]['from'] =$row['from'];
-       $this->messages[$i]['to'] = $row['to'];
+       $this->messages[$i]['fromid'] = $row['from'];
+       $this->messages[$i]['toid'] = $row['to'];
+       $this->messages[$i]['from'] = $this->getusername($row['from']);
+       $this->messages[$i]['to'] = $this->getusername($row['to']);
        $this->messages[$i]['from_viewed'] = $row['from_viewed'];
        $this->messages[$i]['to_viewed'] = $row['to_viewed'];
        $this->messages[$i]['from_deleted'] = $row['from_deleted'];
