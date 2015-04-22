@@ -5,9 +5,8 @@ header('Content-Type: text/html; charset=utf-8');
 ?>;
 
 <script>
-	function displayResults(var arr) {
+	function displayResults(arr) {
 		var el = "";
-		var arr = <?php echo json_encode($row); ?>;
 		int i = "";
 		for(i=0;i<arr.length;i++){
 			alert("Hello " + i);
